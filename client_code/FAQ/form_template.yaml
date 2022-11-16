@@ -13,14 +13,14 @@ components:
   components:
   - type: Label
     properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'how can we help you?', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      visible: true, text: 'Comment puis-je vous aider ?', font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'CLQKUW,ZCLXJL'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: find answers to frequently asked questions, font_size: 18,
+        500', visible: true, text: 'Réponses aux questions courantes :', font_size: 18,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: true,
       background: '', bold: false, underline: false, icon: ''}
     name: label_1
@@ -34,7 +34,7 @@ components:
   components:
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: payment., font_size: null, font: '', spacing_above: small,
+      visible: true, text: Paiement., font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_3
@@ -95,7 +95,7 @@ components:
     layout_properties: {grid_position: 'YUGLFN,XXDTCC'}
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: general., font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'Autres questions:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_10

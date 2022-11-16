@@ -6,7 +6,7 @@ container:
 components:
 - type: Label
   properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: get in touch., font_size: null, font: '', spacing_above: small,
+    visible: true, text: Contactez moi !, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: label_1
@@ -18,7 +18,7 @@ components:
   components:
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'name:', font_size: 16, font: '', spacing_above: small,
+      visible: true, text: 'Nom:', font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_2
@@ -32,7 +32,7 @@ components:
     layout_properties: {grid_position: 'TYTZOX,DYFUOM'}
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'email address:', font_size: 16, font: '', spacing_above: small,
+      visible: true, text: 'Email:', font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_3
@@ -46,7 +46,7 @@ components:
     layout_properties: {grid_position: 'MCMUJA,ITYVFH'}
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'topic:', font_size: 16, font: '', spacing_above: small,
+      visible: true, text: 'Sujet:', font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_4
@@ -75,7 +75,7 @@ components:
     layout_properties: {grid_position: 'TLZTDE,XWOOWK'}
   - type: Label
     properties: {role: subheading, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'question/comment:', font_size: 16, font: '', spacing_above: small,
+      visible: true, text: 'Question / commentaire:', font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_5
@@ -89,7 +89,7 @@ components:
     layout_properties: {grid_position: 'HXVNNQ,CVAMVZ'}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: submit, font_size: 16, font: '', spacing_above: small,
+      foreground: '', visible: true, text: Envoyer !, font_size: 16, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: submit_button

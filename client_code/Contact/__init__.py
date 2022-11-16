@@ -11,7 +11,7 @@ class Contact(ContactTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     #TODO: put items in designer
-    self.topic_drop.items = ['pricing', 'tutors', 'classes', 'feedback', 'other']
+    self.topic_drop.items = ['point1', 'point2', 'point3', 'point4', 'autre']
 
   def submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -21,13 +21,13 @@ class Contact(ContactTemplate):
     question = self.question_area.text
     if name and email and topic and question:
       anvil.server.call('add_contact_info', name, email, topic, question)
-      alert("Thanks for getting in touch!")
+      alert("Merci de vouloir me contacter !")
       self.name_box.text = ""
       self.email_box.text = ""
       self.topic_drop.selected_value = None
       self.question_area.text = ""
     else:
-      alert("Please fill out the entire form before submitting.")
+      alert("Remplissez ce formulaire entierrement avant de l'envoyer !")
 
 
 
