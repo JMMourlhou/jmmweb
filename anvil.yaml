@@ -7,9 +7,9 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: Main}
-package_name: Simple_Website_Template
+package_name: JMM_s_Site_Web_
 allow_embedding: false
-name: Simple Website Template
+name: 'JMM''s Site Web '
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {logo_img: ''}
