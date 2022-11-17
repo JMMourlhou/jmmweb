@@ -7,12 +7,12 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: Main}
-package_name: JMM_s_Site_Web_
+package_name: JMM_Web_Services
 allow_embedding: false
-name: 'JMM''s Site Web '
+name: JMM Web Services
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {logo_img: ''}
+metadata: {logo_img: 'asset:Logo small.png'}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
