@@ -11,7 +11,7 @@ class Contact(ContactTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     #TODO: put items in designer
-    self.topic_drop.items = ['point1', 'point2', 'point3', 'point4', 'autre']
+    self.topic_drop.items = ['Question', 'Besoins', 'Tarif', 'Autre']
 
   def submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""

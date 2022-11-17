@@ -46,13 +46,16 @@ components:
     layout_properties: {grid_position: 'RZRLXU,BTRUHL ZXKUXE,OVHOZH'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        fusce sapien augue, tristique et hendrerit ac, ullamcorper nec ante. nunc
-        felis nisi, pretium at tempus non, convallis sed arcu. sed nec semper arcu,
-        sit amet aliquet urna. aliquam quis lacus et arcu consectetur sodales. in
-        placerat efficitur risus, ut hendrerit urna placerat eget. ', font_size: 16,
-      font: '', spacing_above: none, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: "Formateur en secourisme depuis 2014. Je travaille en tr\xe8\
+        s bonne entente avec plusieurs organismes de formation, qui semble appr\xe9\
+        cier ma p\xe9dagogie, autonomie et capacit\xe9 d\u2019adaptation.\n\nAvec\
+        \ la FNMNS-34 et ses antennes,  je forme les Premier Secours en \xc9quipe\
+        \ niveaux 1 et 2 pour les futures BPJEPS Aquatique et Motonautisme, bien s\xfb\
+        r en Fran\xe7ais, mais \xe9galement en Anglais appliqu\xe9 au secourisme.\
+        \ Au CREPS et MHSC Montpellier, je forme les futurs encadrants sportifs au\
+        \ secourisme PSC1.  \n", font_size: 16, font: '', spacing_above: none, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_2
     layout_properties: {grid_position: 'RZRLXU,BTRUHL ZSUMXK,GNAVIP'}
   - type: Label
@@ -64,12 +67,10 @@ components:
     layout_properties: {grid_position: 'RZRLXU,BTRUHL EPRXIQ,YLCCUT'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'mauris volutpat sem ut augue scelerisque convallis. aenean
-        tempor tristique erat sed iaculis. aliquam porta malesuada augue, vel convallis
-        quam elementum a. aenean a lacinia ipsum. fusce dapibus ante nunc, at semper
-        dolor consectetur sit amet. ', font_size: 16, font: '', spacing_above: none,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      visible: true, text: 'Je crée également des sites web, tel que celui-ci, ainsi
+        que des outils pour la formation; Quiz, QCM, Formulaires en ligne ....', font_size: 16,
+      font: '', spacing_above: none, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: label_15
     layout_properties: {grid_position: 'RZRLXU,BTRUHL SURPLS,IZCOAJ'}
 - type: ColumnPanel
