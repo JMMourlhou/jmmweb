@@ -266,7 +266,7 @@ a:hover, a:active {
   width: 58px;
 }
 .left-nav-placeholder .prompt {
-  display: inline-block;
+  display: block;
   white-space: nowrap;
   transform: translate(-50%,0) rotate(-90deg) translate(-50%,0) translate(15px,16px);
   padding: 16px 16px;
