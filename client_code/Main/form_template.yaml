@@ -104,37 +104,42 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-  components:
-  - type: Link
-    properties: {role: text, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Tarifs, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: pricing_link
-    layout_properties: {}
-    event_bindings: {click: pricing_link_click}
-  - type: Link
-    properties: {role: text, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Contact, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: contact_link
-    layout_properties: {}
-    event_bindings: {click: contact_link_click}
-  - type: Link
-    properties: {role: text, url: '', align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Qui suis-je, font_size: null, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: about_link
-    layout_properties: {}
-    event_bindings: {click: about_link_click}
+  components: []
 - type: Link
-  properties: {role: selected, url: '', align: left, tooltip: '', border: '', foreground: '',
-    visible: true, text: JMM, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
+  properties: {role: text, url: '', align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: JMM Formation & Services, font_size: 15, wrap_on: mobile,
+    font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
   name: home_link
   layout_properties: {grid_position: 'ZPXVPX,GYJZYJ', slot: title}
   event_bindings: {click: home_link_click}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {slot: left-nav}
+  components:
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: About, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_1
+    layout_properties: {grid_position: 'VOVQJC,CRLNBP'}
+    event_bindings: {click: about_link_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Prix, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'CTFLEO,DOFKAK'}
+    event_bindings: {click: pricing_link_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Contact, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_3
+    layout_properties: {grid_position: 'JKRRQB,YUCYHZ'}
+    event_bindings: {click: contact_link_click}
