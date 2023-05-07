@@ -148,9 +148,9 @@ a:hover, a:active {
 
 /* Page structure: App bar with optional left nav */
 .structure {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: flex;                                          /* JM note: Instead of using a float to create layouts by floating elements to the left or the right, flexbox allows you to create layouts by aligning items to a single axis. The axis can be horizontal or vertical. It is best used for distributing space for items in the same axis.  */
+  flex-direction: column;                                 /*  defines how the flex items are placed or ordered in the flex container or in other ways it specifies the direct path of the flexible items inside the container. */
+  min-height: 100vh;                                      /*  JM note: 100% of the viewport height */
   min-height: calc(100vh - %anvil-banner-height%);
   height: 0; /* To make flex-grow work in IE */
 }
