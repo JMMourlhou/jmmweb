@@ -5,7 +5,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Home import Home
-from ..About import About
+from ..Mon_histoire import Mon_histoire
 from ..Contact import Contact
 from ..Pricing import Pricing
 from ..FAQ import FAQ
@@ -23,10 +23,10 @@ class Main(MainTemplate):
     self.content_panel.clear()
     self.content_panel.add_component(Contact(), full_width_row=True)
 
-  def about_link_click(self, **event_args):
+  def mon_histoire_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(About(), full_width_row=True)
+    self.content_panel.add_component(Mon_histoire(), full_width_row=True)
 
   def home_link_click(self, **event_args):
     """This method is called when the link is clicked"""

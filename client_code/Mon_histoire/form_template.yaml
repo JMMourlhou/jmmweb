@@ -46,16 +46,13 @@ components:
     layout_properties: {grid_position: 'RZRLXU,BTRUHL ZXKUXE,OVHOZH'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: "Formateur en secourisme depuis 2014. Je travaille en tr\xe8\
-        s bonne entente avec plusieurs organismes de formation, qui semble appr\xe9\
-        cier ma p\xe9dagogie, autonomie et capacit\xe9 d\u2019adaptation.\n\nAvec\
-        \ la FNMNS-34 et ses antennes,  je forme les Premier Secours en \xc9quipe\
-        \ niveaux 1 et 2 pour les futures BPJEPS Aquatique et Motonautisme, bien s\xfb\
-        r en Fran\xe7ais, mais \xe9galement en Anglais appliqu\xe9 au secourisme.\
-        \ Au CREPS et MHSC Montpellier, je forme les futurs encadrants sportifs au\
-        \ secourisme PSC1.  \n", font_size: 16, font: '', spacing_above: none, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
+      visible: true, text: 'Formateur en secourisme depuis 2014. Je travaille en très
+        bonne entente avec plusieurs organismes de formation, qui apprécient ma pédagogie,
+        autonomie et capacité d’adaptation.
+
+
+        ', font_size: 16, font: '', spacing_above: none, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'RZRLXU,BTRUHL ZSUMXK,GNAVIP'}
   - type: Label
@@ -82,7 +79,7 @@ components:
   components:
   - type: Label
     properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: Ce que je fais ..., font_size: null, font: '',
+        500', visible: true, text: Ce que je j'enseigne ..., font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_3
@@ -96,7 +93,7 @@ components:
     layout_properties: {grid_position: 'AXLLLP,EOQHDH MBVPBR,ZWRNYH'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: Stages Premiers Secours en Equipe PSE1, font_size: 16,
+        500', visible: true, text: Premiers Secours en Equipe PSE1, font_size: 16,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: true,
       background: '', bold: true, underline: false, icon: ''}
     name: label_6
@@ -119,7 +116,7 @@ components:
     layout_properties: {grid_position: 'AXLLLP,TPVHZD IPVHFX,JOXVRJ', full_width_row: true}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: Stages Premiers Secours en Equipe PSE2, font_size: 16,
+        500', visible: true, text: Premiers Secours en Equipe PSE2, font_size: 16,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: true,
       background: '', bold: true, underline: false, icon: ''}
     name: label_4
@@ -142,9 +139,11 @@ components:
     layout_properties: {grid_position: 'AXLLLP,EUWQRI DWAVYG,QQIGLL'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        500', visible: true, text: Sauveteur Secouriste du Travail       SST, font_size: 16,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: true,
-      background: '', bold: true, underline: false, icon: ''}
+        500', visible: true, text: 'Sauveteur Secouriste du Travail       SST
+
+        PSC Prévention & secours civique de niveau 1', font_size: 16, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: true, background: '', bold: true,
+      underline: false, icon: ''}
     name: label_5
     layout_properties: {grid_position: 'AXLLLP,EUWQRI FAJQDB,NWRGIR'}
   - type: Label
