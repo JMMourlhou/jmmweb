@@ -41,9 +41,11 @@ components:
     layout_properties: {grid_position: 'AXLLLP,EOQHDH WBRZJF,LHKNPW'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Pour les futurs BNSSA, secourites aquatiques', font_size: null,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: 'Pour les futurs BNSSA,
+
+        secouristes aquatiques', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_7
     layout_properties: {grid_position: 'AXLLLP,EOQHDH EJDJGZ,PVLPKC'}
   - type: Image
@@ -62,9 +64,11 @@ components:
     layout_properties: {grid_position: 'AXLLLP,TPVHZD SLMVPI,YJVOPR'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Pour les futurs Maîtres Najeurs; formation BPJEPS AAN,
-      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: 'Pour les futurs Maîtres Nageurs,
+
+        formation BPJEPS AAN', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_9
     layout_properties: {grid_position: 'AXLLLP,TPVHZD RFTQDG,QIMWKA'}
   - type: Image
@@ -88,7 +92,7 @@ components:
     layout_properties: {grid_position: 'AXLLLP,EUWQRI FAJQDB,NWRGIR'}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Pour les entreprises et associations, font_size: null,
+      visible: true, text: "Pour les entreprises\n et associations", font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: label_8
