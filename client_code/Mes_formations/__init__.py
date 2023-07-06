@@ -1,11 +1,11 @@
-from ._anvil_designer import Mon_histoireTemplate
+from ._anvil_designer import Mes_formationsTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class Mon_histoire(Mon_histoireTemplate):
+class Mes_formations(Mes_formationsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

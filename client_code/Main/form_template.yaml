@@ -18,7 +18,7 @@ components:
     layout_properties: {grid_position: 'UDYRYM,GZDDHG', full_width_row: true}
   - type: ColumnPanel
     properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"JJSWQA":15,"GUOKSB":15,"XLGEZQ":15,"GJVQXX":15}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"JJSWQA":15,"XLGEZQ":15,"GJVQXX":15}',
       spacing_below: none, background: 'theme:White'}
     name: card_6
     layout_properties: {grid_position: 'JQXBUF,MXBGRM', full_width_row: true}
@@ -31,28 +31,29 @@ components:
       name: label_23
       layout_properties: {grid_position: 'NXRKBI,LIRHIC'}
     - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#000000',
-        visible: true, text: Addresse., font_size: 16, font: '', spacing_above: small,
+      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+          500', visible: true, text: Adresse, font_size: 16, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_24
       layout_properties: {grid_position: 'NXRKBI,EALHEQ'}
     - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#000000',
-        visible: true, text: Entreprise, font_size: 16, font: '', spacing_above: small,
+      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+          500', visible: true, text: Entreprise, font_size: 16, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_25
       layout_properties: {grid_position: 'NXRKBI,DOEFTG'}
     - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '#000000',
-        visible: true, text: Site Web., font_size: 16, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
+      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+          500', visible: true, text: "Web Designer :\nJMM Web Services \n07 82 09\
+          \ 98 60", font_size: 16, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: false, underline: false,
+        icon: ''}
       name: label_26
       layout_properties: {grid_position: 'NXRKBI,RPGYVO'}
     - type: Spacer
-      properties: {height: 32}
+      properties: {height: 81}
       name: spacer_2
       layout_properties: {grid_position: 'TYEMCK,JJSWQA'}
     - type: Label
@@ -61,10 +62,12 @@ components:
 
           Bat C3, Boîte 48
 
+          34070 Montpellier
+
           ', font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: none,
         italic: false, background: '', bold: false, underline: false, icon: ''}
       name: label_27
-      layout_properties: {grid_position: 'TYEMCK,GUOKSB'}
+      layout_properties: {grid_position: 'TYEMCK,NKVUYJ'}
     - type: Link
       properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '',
         visible: true, text: about us., font_size: null, wrap_on: mobile, font: '',
@@ -120,12 +123,20 @@ components:
   components:
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: Mon histoire, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      foreground: '', visible: true, text: Acceuil, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_4
+    layout_properties: {grid_position: 'YTEZVU,THMOHI'}
+    event_bindings: {click: acceuil_link_click}
+  - type: Button
+    properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Mon CV, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: button_1
     layout_properties: {grid_position: 'VOVQJC,CRLNBP'}
-    event_bindings: {click: mon_histoire_link_click}
+    event_bindings: {click: mon_cv_link_click}
   - type: Button
     properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Mes formations, font_size: null, font: '',
