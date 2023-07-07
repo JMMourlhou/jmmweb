@@ -42,12 +42,24 @@ components:
   components:
   - type: ColumnPanel
     properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: tiny, spacing_above: none, col_widths: '{}', spacing_below: none,
-      background: '#ffffff'}
+      wrap_on: mobile, col_spacing: tiny, spacing_above: none, col_widths: '{"YLJQTP":20,"MIUHVH":5,"KPEDOW":35}',
+      spacing_below: none, background: '#ffffff'}
     name: card_2
     layout_properties: {grid_position: 'YDEQKA,KOIBBY', full_width_row: true, row_background: 'theme:Gray
         600'}
-    components: []
+    components:
+    - type: Image
+      properties: {}
+      name: image_5
+      layout_properties: {grid_position: 'UKXJKU,YLJQTP'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_4
+      layout_properties: {grid_position: 'UKXJKU,MIUHVH'}
+    - type: Label
+      properties: {}
+      name: label_4
+      layout_properties: {grid_position: 'UKXJKU,KPEDOW'}
   - type: ColumnPanel
     properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
       wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}',

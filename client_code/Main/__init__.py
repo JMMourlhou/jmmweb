@@ -54,8 +54,10 @@ class Main(MainTemplate):
   def acceuil_link_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Main(), full_width_row=True)
-
+    """self.content_panel.add_component(Main(), full_width_row=True)"""
+    open_form(self)
+    self.content_panel.add_component(Home(), full_width_row=True)
+      
   def mes_formations_link_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
