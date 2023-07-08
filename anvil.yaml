@@ -5,11 +5,11 @@ services:
   server_config: {}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
-  server_config: {}
+  server_config: {custom_smtp: false}
 startup: {type: form, module: Main}
-package_name: JMM_Web_Services
+package_name: JMM_Formation___Services_Web_Site
 allow_embedding: false
-name: JMM Web Services
+name: JMM Formation & Services Web Site
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {logo_img: 'asset:Services Web_large.png', description: JMM site web, title: JMM F & Services}
