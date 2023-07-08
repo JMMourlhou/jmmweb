@@ -549,7 +549,8 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
   border: 0;
   background-image: none;
   background-color: transparent;
-  color: %color:Primary 500%;
+  color: %color:Primary 500%; 
+  
   text-shadow: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -822,19 +823,16 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 
 @media screen and (max-width: 1000px) { /* only on phones*/
    .anvil-role-home-header {
-  background-image: linear-gradient(90deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/home-img0.jpg);
-  background-size: 150% auto; */
-/*  background-size: cover; */
-/*  background-attachment: fixed; */
+  background-image: linear-gradient(60deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/home-img0.jpg);
+  background-size: 165% auto; 
   min-height: 10em;
-
 }  
 }
 
 
 @media screen and (min-width: 1000px) { /* Tablets and above*/
   .anvil-role-home-header {
-  background-image: linear-gradient(90deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/home-img.jpg);
+  background-image: linear-gradient(90deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/home-img0.jpg);
 /*   background-size: 100% auto; */
   background-size: cover;
   background-attachment: fixed;

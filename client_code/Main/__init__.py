@@ -27,10 +27,6 @@ class Main(MainTemplate):
     self.content_panel.clear()
     self.content_panel.add_component(Home(), full_width_row=True)
 
-  def bottom_about_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.about_link_click()
-
   def bottom_contact_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.contact_link_click()
@@ -50,6 +46,12 @@ class Main(MainTemplate):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Mes_formations(), full_width_row=True)
+
+  def mon_cv_link_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Mon_CV(), full_width_row=True)
+
 
  
 
