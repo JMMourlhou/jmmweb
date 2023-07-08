@@ -8,7 +8,6 @@ from ..Home import Home
 from ..Mes_formations import Mes_formations
 from ..Contact import Contact
 from ..Pricing import Pricing
-from ..FAQ import FAQ
 from ..Mon_CV import Mon_CV
 
 class Main(MainTemplate):
@@ -22,11 +21,6 @@ class Main(MainTemplate):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Contact(), full_width_row=True)
-
-  def mon_cv_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.content_panel.clear()
-    self.content_panel.add_component(Mon_CV(), full_width_row=True)
 
   def home_link_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -46,15 +40,9 @@ class Main(MainTemplate):
     self.content_panel.clear()
     self.content_panel.add_component(Pricing(), full_width_row=True)
 
-  def faq_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.content_panel.clear()
-    self.content_panel.add_component(FAQ(), full_width_row=True)
-
   def acceuil_link_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
-    """self.content_panel.add_component(Main(), full_width_row=True)"""
     open_form(self)
     self.content_panel.add_component(Home(), full_width_row=True)
       
@@ -62,6 +50,9 @@ class Main(MainTemplate):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Mes_formations(), full_width_row=True)
+
+ 
+
 
 
 
