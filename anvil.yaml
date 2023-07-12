@@ -52,4 +52,7 @@ db_schema:
     - name: time
       admin_ui: {width: 200}
       type: datetime
+    - name: tel
+      admin_ui: {order: 0.5, width: 200}
+      type: string
 renamed: true

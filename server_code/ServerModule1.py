@@ -7,11 +7,15 @@ from datetime import datetime
 
 
 @anvil.server.callable
-def add_contact_info(name, email, topic, question, check):
+def add_contact_info(name,tel, email, topic, question, check):
   
-  if check == 1:  
-    app_tables.contact.add_row(name=name, email=email, topic=topic, question=question, time=datetime.now())
-    
-  anvil.email.send(from_name="Contact Form", 
+  if check == True:  
+    app_tables.contact.add_row(name=name, tel=tel, email=email, topic=topic, question=question, time=datetime.now())
+    sov = "A accepté d'être référencé."   
+  else:
+        sov = "N'a pas accepté d'être référencé."
+       
+  anvil.email.send(from_name="Contact/Site Web 'JMM Mpt secourisme'", 
                    subject="Nouveau contact Web",
-                   text=f"Nouveau contact Web de {name} ({email})\nSujet: {topic}\nCommentaire/Question: {question}")
+                   
+                   text=f"Nouveau contact Web de {name}\n {tel}\n ({email})\n Sujet: {topic}\n Msg: {question}\n {sov}")
