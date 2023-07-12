@@ -1,18 +1,19 @@
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
-  client_config: {}
+  client_config: {enable_v2: true}
   server_config: {}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {custom_smtp: false}
 startup: {type: form, module: Main}
-package_name: JMM_Formation___Services_Web_Site
+package_name: JMM_Mpt_secourisme
 allow_embedding: false
-name: JMM Formation & Services Web Site
+name: JMM Mpt secourisme
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {logo_img: 'asset:Services Web_large.png', description: JMM site web, title: JMM F & Services}
+metadata: {logo_img: 'asset:Services Web_large.png', description: JMM site web, title: 'JMarc.Mourlhou
+    Site '}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
