@@ -22,8 +22,8 @@ components:
     layout_properties: {grid_position: 'JQXBUF,GNHMJM', full_width_row: false}
   - type: ColumnPanel
     properties: {role: rounded-border, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"MQDMVQ":25}',
-      spacing_below: small, background: 'theme:White'}
+      wrap_on: mobile, col_spacing: tiny, spacing_above: small, col_widths: '{"MQDMVQ":25,"UEMOQH":17,"FDGWZX":27,"XQOFYB":16}',
+      spacing_below: none, background: 'theme:White'}
     name: card_6
     layout_properties: {grid_position: 'JQXBUF,MXBGRM', full_width_row: false}
     components:
@@ -43,28 +43,39 @@ components:
         icon: ''}
       name: button_5
       layout_properties: {grid_position: 'LYNLUG,JBBRLP'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_5
+      layout_properties: {grid_position: 'XTQSJS,UEMOQH', full_width_row: false}
     - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: white,
+      properties: {role: rounded-border, align: center, tooltip: '', border: '', foreground: white,
         visible: true, text: "Web Designer :\nJMM Web Services \njmarc@jmm-formation-et-services.fr",
         font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: 'theme:Primary 500', bold: false, underline: false,
         icon: ''}
       name: label_26
       layout_properties: {grid_position: 'XTQSJS,FDGWZX', full_width_row: false}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_1
+      layout_properties: {grid_position: 'XTQSJS,XQOFYB', full_width_row: false}
   - type: Spacer
     properties: {height: 26}
     name: spacer_2
     layout_properties: {grid_position: 'JQXBUF,TJIWNS', full_width_row: false}
   - type: Link
     properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Contact, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      visible: true, text: Contact, font_size: null, wrap_on: mobile, font: '', col_spacing: tiny,
+      spacing_above: none, icon_align: left, col_widths: '', spacing_below: none,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     name: link_1
     layout_properties: {grid_position: 'YCRSYE,HAWZUQ'}
     event_bindings: {click: bottom_contact_link_click}
   - type: Link
-    properties: {}
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+      spacing_above: none, icon_align: left, col_widths: '', spacing_below: none,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
     name: link_2
     layout_properties: {grid_position: 'YCRSYE,TJEVTD'}
 - type: FlowPanel

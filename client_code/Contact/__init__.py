@@ -19,13 +19,20 @@ class Contact(ContactTemplate):
     email = self.email_box.text
     topic = self.topic_drop.selected_value
     question = self.question_area.text
+    check = 0
+    """self.checkbox_assigned.checked = True"""
+    if self.check_box_1.checked == True:
+      alert("checked true") 
+      check = 1
     if name and email and topic and question:
-      anvil.server.call('add_contact_info', name, email, topic, question)
-      alert("Merci de vouloir me contacter !")
+      anvil.server.call('add_contact_info', name, email, topic, question, check)
+      
+      alert("Message envoyé, merci!")
       self.name_box.text = ""
       self.email_box.text = ""
       self.topic_drop.selected_value = None
       self.question_area.text = ""
+      """self.check_box_1 = False"""
     else:
       alert("Remplissez ce formulaire entierrement avant de l'envoyer !")
 

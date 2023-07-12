@@ -7,8 +7,11 @@ from datetime import datetime
 
 
 @anvil.server.callable
-def add_contact_info(name, email, topic, question):
-  app_tables.contact.add_row(name=name, email=email, topic=topic, question=question, time=datetime.now())
+def add_contact_info(name, email, topic, question, check):
+  
+  if check == 1:  
+    app_tables.contact.add_row(name=name, email=email, topic=topic, question=question, time=datetime.now())
+    
   anvil.email.send(from_name="Contact Form", 
                    subject="Nouveau contact Web",
                    text=f"Nouveau contact Web de {name} ({email})\nSujet: {topic}\nCommentaire/Question: {question}")
