@@ -6,8 +6,8 @@ container:
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 96, tooltip: '', border: '',
-    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-    source: _/theme/JMarc/Jm_small.jpg, spacing_below: small, background: '', horizontal_align: center}
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: none,
+    source: _/theme/JMarc/Jm_small.jpg, spacing_below: none, background: '', horizontal_align: center}
   name: image_1
   layout_properties: {grid_position: 'CSOFNP,UKMQZV'}
 - type: Spacer
@@ -16,14 +16,14 @@ components:
   layout_properties: {grid_position: 'CSOFNP,SLDJAN CSTSPD,CPVIYY'}
 - type: Label
   properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: Contactez moi !, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: true, background: '', bold: true,
+    visible: true, text: Contactez moi !, font_size: null, font: '', spacing_above: none,
+    icon_align: left, spacing_below: none, italic: true, background: '', bold: true,
     underline: false, icon: ''}
   name: label_1
   layout_properties: {grid_position: 'CSOFNP,SLDJAN YMENES,ZQKVDO'}
 - type: ColumnPanel
   properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{}',
     spacing_below: none, background: ''}
   name: card_1
   layout_properties: {grid_position: 'KKQDFN,PGRVHT', row_background: 'theme:Primary
