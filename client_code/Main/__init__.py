@@ -20,6 +20,7 @@ class Main(MainTemplate):
   def contact_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
+     
     self.content_panel.add_component(Contact(), full_width_row=True)
 
   def home_link_click(self, **event_args):
@@ -29,6 +30,7 @@ class Main(MainTemplate):
 
   def bottom_contact_link_click(self, **event_args):
     """This method is called when the link is clicked"""
+    open_form(self)
     self.contact_link_click()
 
   def pricing_link_click(self, **event_args):
