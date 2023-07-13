@@ -11,7 +11,9 @@ class Contact(ContactTemplate):
     self.init_components(**properties)
     #TODO: put items in designer
     self.topic_drop.items = ['Question', 'Besoins', 'Tarif', 'Site web', 'Autre']
-
+    self.name_box.foreground = "theme:white"
+    self.name_box.border = "4px solid yellow"
+      
   def submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     name = self.name_box.text
@@ -40,6 +42,11 @@ class Contact(ContactTemplate):
     self.card_1.clear()
     open_form('Main')
     #self.content_panel.add_component(Home(), full_width_row=True)
+
+  def name_box_pressed_enter(self, **event_args):
+      """This method is called when the user presses Enter in this text box"""
+      pass
+
 
 
 

@@ -2,7 +2,7 @@ container:
   type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"UKMQZV":20,"SLDJAN":40}',
-    spacing_below: none, background: ''}
+    spacing_below: none, background: 'theme:White'}
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 96, tooltip: '', border: '',
@@ -22,7 +22,7 @@ components:
   name: label_1
   layout_properties: {grid_position: 'CSOFNP,SLDJAN YMENES,ZQKVDO'}
 - type: ColumnPanel
-  properties: {role: start-header, tooltip: '', border: '', foreground: '', visible: true,
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
     spacing_below: none, background: ''}
   name: card_1
@@ -30,24 +30,25 @@ components:
       500'}
   components:
   - type: TextBox
-    properties: {role: rounded-border, align: left, hide_text: false, tooltip: '',
-      placeholder: Votre Nom / Entreprise, border: '', enabled: true, foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: none, type: text,
-      spacing_below: none, italic: true, background: '', bold: true, underline: false}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Votre Nom / Entreprise,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: none, type: text, spacing_below: none, italic: true,
+      background: '', bold: false, underline: false}
     name: name_box
     layout_properties: {grid_position: 'TYTZOX,DYFUOM', full_width_row: false, row_background: ''}
+    event_bindings: {pressed_enter: name_box_pressed_enter}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Votre tél,
       border: '', enabled: true, foreground: 'theme:White', visible: true, text: '',
       font_size: null, font: '', spacing_above: none, type: text, spacing_below: none,
-      italic: true, background: '', bold: true, underline: false}
+      italic: true, background: '', bold: false, underline: false}
     name: tel_box
     layout_properties: {grid_position: 'TSPBRO,WRAWCX'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Votre adresse Mail,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: none, type: text, spacing_below: none, italic: true,
-      background: '', bold: true, underline: false}
+      background: '', bold: false, underline: false}
     name: email_box
     layout_properties: {grid_position: 'MCMUJA,ITYVFH'}
   - type: DropDown
@@ -67,7 +68,7 @@ components:
       spacing_below: small
       italic: true
       background: ''
-      bold: true
+      bold: false
       underline: false
       include_placeholder: true
     name: topic_drop
@@ -76,22 +77,22 @@ components:
     properties: {role: null, align: left, height: 68.33027648925781, tooltip: '',
       placeholder: 'Entrez votre message ici ', border: '', enabled: true, foreground: '',
       visible: true, text: '', font_size: null, auto_expand: true, font: '', spacing_above: none,
-      spacing_below: none, italic: true, background: '', bold: true, underline: false}
+      spacing_below: none, italic: true, background: '', bold: false, underline: false}
     name: message_area
     layout_properties: {grid_position: 'HXVNNQ,CVAMVZ'}
   - type: CheckBox
     properties: {role: rounded-border, align: center, tooltip: '', border: '', enabled: true,
       foreground: 'theme:White', allow_indeterminate: false, visible: true, text: 'J''accepte
         que mon nom, tel et mail soient sauvegardés pour de futurs contacts', font_size: null,
-      font: '', spacing_above: small, spacing_below: none, italic: false, background: '#2d41d7',
-      bold: false, checked: false, underline: false}
+      font: '', spacing_above: small, spacing_below: none, italic: false, background: 'theme:Primary
+        500', bold: false, checked: false, underline: false}
     name: check_box_1
     layout_properties: {grid_position: 'CIHZTB,ULHFEK'}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Envoyer !, font_size: 16, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#2d41d7',
-      bold: true, underline: false, icon: ''}
+      icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+        500', bold: true, underline: false, icon: ''}
     name: submit_button
     layout_properties: {grid_position: 'HZKJUT,RPTOFG'}
     event_bindings: {click: submit_button_click}
