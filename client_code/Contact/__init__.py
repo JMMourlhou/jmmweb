@@ -31,11 +31,15 @@ class Contact(ContactTemplate):
       self.email_box.text = ""
       self.tel_box.text = ""
       self.topic_drop.selected_value = None
-      self.question_area.text = ""
+      self.message_area.text = ""
       self.check_box_1.ckecked = False
     else:
       alert("Remplissez ce formulaire entierrement avant de l'envoyer !")
 
+    #Return to acceuil  
+    self.card_1.clear()
+    open_form('Main')
+    #self.content_panel.add_component(Home(), full_width_row=True)
 
 
 
