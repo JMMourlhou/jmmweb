@@ -7,9 +7,9 @@ services:
   client_config: {}
   server_config: {custom_smtp: false}
 startup: {type: form, module: Main}
-package_name: JMM_Mpt_secourisme
+package_name: jm_mourlhou_sst_pse_psc
 allow_embedding: false
-name: JMM Mpt secourisme
+name: jm mourlhou sst pse psc
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {logo_img: 'asset:Services Web_large.png', description: JMM site web, title: 'JMarc.Mourlhou
@@ -49,7 +49,7 @@ db_schema:
     - name: question
       admin_ui: {width: 200}
       type: string
-    - name: time
+    - name: date_time
       admin_ui: {width: 200}
       type: datetime
     - name: tel
