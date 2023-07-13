@@ -7,11 +7,11 @@ from datetime import datetime
 from .french_zone import french_zone_time
 
 @anvil.server.callable
-def add_contact_info(name,tel, email, topic, question, check):
+def add_contact_info(name,tel, email, topic, message, check):
   
   if check == True:  
     time = french_zone_time()
-    app_tables.contact.add_row(name=name, tel=tel, email=email, topic=topic, question=question, date_time=time)
+    app_tables.contact.add_row(name=name, tel=tel, email=email, topic=topic, message=message, date_time=time)
     sov = "A accepté d'être référencé."   
   else:
         sov = "N'a pas accepté d'être référencé."
@@ -19,4 +19,4 @@ def add_contact_info(name,tel, email, topic, question, check):
   anvil.email.send(from_name="Contact/Site Web 'JMM Mpt secourisme'", 
                    subject="Nouveau contact Web",
                    
-                   text=f"Nouveau contact Web de {name}\n {tel}\n ({email})\n Sujet: {topic}\n Msg: {question}\n {sov}")
+                   text=f"Nouveau contact Web de {name}\n {tel}\n ({email})\n Sujet: {topic}\n Msg: {message}\n {sov}")

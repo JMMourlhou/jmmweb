@@ -46,7 +46,7 @@ db_schema:
     - name: topic
       admin_ui: {width: 200}
       type: string
-    - name: question
+    - name: message
       admin_ui: {width: 200}
       type: string
     - name: date_time

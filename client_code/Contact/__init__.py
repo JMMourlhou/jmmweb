@@ -17,14 +17,14 @@ class Contact(ContactTemplate):
     name = self.name_box.text
     email = self.email_box.text
     topic = self.topic_drop.selected_value
-    question = self.question_area.text
+    message = self.message_area.text
     tel = self.tel_box.text
     check = False
     """self.checkbox_assigned.checked = True"""
     if self.check_box_1.checked == True:
       check = True
-    if name and email and topic and question and tel:
-      anvil.server.call('add_contact_info', name, tel, email, topic, question, check)
+    if name and email and topic and message and tel:
+      anvil.server.call('add_contact_info', name, tel, email, topic, message, check)
       
       alert("Message envoyé, merci!")
       self.name_box.text = ""

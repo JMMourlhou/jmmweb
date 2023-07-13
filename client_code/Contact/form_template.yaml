@@ -67,7 +67,7 @@ components:
       placeholder: 'Entrez votre message ici ', border: '', enabled: true, foreground: '',
       visible: true, text: '', font_size: null, auto_expand: true, font: '', spacing_above: small,
       spacing_below: small, italic: false, background: '', bold: false, underline: false}
-    name: question_area
+    name: message_area
     layout_properties: {grid_position: 'HXVNNQ,CVAMVZ'}
   - type: Spacer
     properties: {height: 16}
