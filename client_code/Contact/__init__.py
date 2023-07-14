@@ -29,19 +29,15 @@ class Contact(ContactTemplate):
       anvil.server.call('add_contact_info', name, tel, email, topic, message, check)
       
       alert("Message envoyé, merci!")
-      self.name_box.text = ""
-      self.email_box.text = ""
-      self.tel_box.text = ""
-      self.topic_drop.selected_value = None
-      self.message_area.text = ""
-      self.check_box_1.ckecked = False
+      #Return to acceuil  
+      self.card_1.clear()
+      open_form('Main')
     else:
       alert("Remplissez ce formulaire entierrement avant de l'envoyer !")
-      if self.name_box.text = ""
-        
-    #Return to acceuil  
-    self.card_1.clear()
-    open_form('Main')
+      if not name: self.name_box.focus()
+      if not tel: self.tel_box.focus()
+      if not email: self.email_box.focus()
+      if not message: self.message_area.focus()
     #self.content_panel.add_component(Home(), full_width_row=True)
 
   def name_box_pressed_enter(self, **event_args):
