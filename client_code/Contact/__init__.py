@@ -37,7 +37,8 @@ class Contact(ContactTemplate):
       self.check_box_1.ckecked = False
     else:
       alert("Remplissez ce formulaire entierrement avant de l'envoyer !")
-
+      if self.name_box.text = ""
+        
     #Return to acceuil  
     self.card_1.clear()
     open_form('Main')
