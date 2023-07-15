@@ -77,17 +77,18 @@ components:
       visible: true, text: "Avec AM-Sport et la FNMNS, je forme les Premier Secours\
         \ niveaux 1 et 2 (PSE1, PSE2) pour les futures BPJEPS Aquatique et Motonautisme,\
         \ bien s\xfbr en Fran\xe7ais, mais \xe9galement en Anglais et Langue des Signes\
-        \ appliqu\xe9 au secourisme. Au CREPS et MHSC Montpellier, je forme les futurs\
-        \ encadrants sportifs au secourisme PSC1.  \nEn collaboration avec le service\
-        \ s\xe9curit\xe9 et pr\xe9vention du D\xe9partement du Gard, j\u2019ai adapt\xe9\
-        \ et form\xe9 le SST aux besoins de leurs employ\xe9s administratifs, ainsi\
-        \ qu\u2019\xe0 des contextes plus particuliers, li\xe9s aux services Maintenance\
-        \ B\xe2timents et BTP. Pour S\xe9curitas, Dyneff, IBM, P\xf4le emploi, La\
-        \ Soci\xe9t\xe9 G\xe9n\xe9rale, \u2026 j\u2019ai \xe9galement enrichi ma formation\
-        \ en m\u2019adaptant aux besoins sp\xe9cifiques des stagiaires et \xe0 leurs\
-        \ exp\xe9riences, tant en pr\xe9vention des risques que secourisme.\n", font_size: 16,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+        \ appliqu\xe9 au secourisme.\n\nAu CREPS et MHSC Montpellier et AM-Sport Carnon,\
+        \ j'ai form\xe9 de futurs encadrants sportifs au secourisme PSC1.  \n\nEn\
+        \ collaboration avec le service s\xe9curit\xe9 et pr\xe9vention du D\xe9partement\
+        \ du Gard, j\u2019ai adapt\xe9 et form\xe9 le SST aux besoins de leurs employ\xe9\
+        s administratifs, ainsi qu\u2019\xe0 des contextes plus particuliers, li\xe9\
+        s aux services Maintenance B\xe2timents et BTP. Pour S\xe9curitas, Dyneff,\
+        \ IBM, P\xf4le emploi, La Soci\xe9t\xe9 G\xe9n\xe9rale, \u2026 j\u2019ai \xe9\
+        galement enrichi ma formation en m\u2019adaptant aux besoins sp\xe9cifiques\
+        \ des stagiaires et \xe0 leurs exp\xe9riences, tant en pr\xe9vention des risques\
+        \ que secourisme.\n", font_size: 16, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
     name: label_3
     layout_properties: {grid_position: 'IAZSRR,EYECOB'}
 is_package: true
