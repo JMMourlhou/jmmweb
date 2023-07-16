@@ -7,9 +7,9 @@ components:
 - type: ColumnPanel
   properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"VCINBD":27,"BTRUHL":27}',
-    spacing_below: none, background: ''}
+    spacing_below: none, background: 'theme:White'}
   name: card_1
-  layout_properties: {grid_position: 'UTXDOJ,EFORFK', full_width_row: true}
+  layout_properties: {grid_position: 'UTXDOJ,DYRBKK', full_width_row: true}
   components:
   - type: Label
     properties: {role: rounded-border, align: center, tooltip: '', border: '', foreground: 'theme:White',
@@ -35,29 +35,18 @@ components:
   - type: ColumnPanel
     properties: {col_widths: '{}'}
     name: column_panel_1
-    layout_properties: {grid_position: 'RZRLXU,BTRUHL XIXTAF,BGGSGH'}
+    layout_properties: {grid_position: 'RZRLXU,BTRUHL'}
     components:
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Depuis 2014, j''exerce en tant que formateur indépendant
-          en secourisme depuis 2014, en micro-entreprise.
+    - type: RichText
+      properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+        foreground: '', visible: true, font_size: 16, content: 'Depuis _**2014**_,
+          j''exerce en tant que formateur en secourisme, en micro-entreprise.
 
           Je travaille en très bonne entente avec plusieurs organismes de formation,
-          qui apprécient ma pédagogie, autonomie et capacité d’adaptation.', font_size: 16,
-        font: '', spacing_above: none, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_2
-      layout_properties: {grid_position: 'EMNKRT,QWMENE'}
-  - type: RichText
-    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-      foreground: '', visible: true, font_size: null, content: 'Depuis 2014, j''exerce
-        en tant que formateur indépendant en secourisme depuis 2014, en micro-entreprise.\n
-
-        Je travaille en très bonne entente avec plusieurs organismes de formation,
-        qui apprécient ma pédagogie, autonomie et capacité d’adaptation.', font: '',
-      spacing_above: small, spacing_below: small, data: null, background: '', format: restricted_html}
-    name: rich_text_1
-    layout_properties: {grid_position: 'RZRLXU,BTRUHL SSJYBP,UZTMNX'}
+          qui apprécient ma pédagogie, autonomie et capacité d’adaptation.', font: '',
+        spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+      name: rich_text_1
+      layout_properties: {grid_position: 'LOVAJA,ATFNBY'}
 - type: ColumnPanel
   properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
@@ -79,20 +68,20 @@ components:
       spacing_below: none, background: '', horizontal_align: center}
     name: image_1
     layout_properties: {grid_position: 'OKMCJY,UYTGNW'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: "J'encadre le SST pour des organismes de formation tel\
-        \ que VERITAS, DALKIA, OCSA, C2F, Protect'Up.\nJe m'adapte aux besoins sp\xe9\
-        cifiques de secteurs aussi vari\xe9s que l'administratif, la maintenance en\
-        \ b\xe2timents, le BTP ou l'aide \xe0 la personne. \n\nAvec AM-Sport et la\
-        \ FNMNS, je forme les Premiers Secours niveaux 1 et 2 (PSE1, PSE2) pour les\
-        \ futures BPJEPS Aquatique et Motonautisme, bien s\xfbr en Fran\xe7ais, mais\
-        \ \xe9galement en Anglais et Langue des Signes appliqu\xe9 au secourisme.\n\
-        \nAu CREPS, le MUC Montpellier et AM-Sport Carnon, je forme le PSC1. Les stagiaires\
-        \ seront de futurs encadrants pour des associations sportives.", font_size: 16,
-      font: '', spacing_above: none, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
-    name: label_3
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: 16, content: "J'encadre le **SST**\
+        \ pour des organismes de formation tel que VERITAS, DALKIA, OCSA, C2F, Protect'Up.\n\
+        Je m'adapte aux besoins sp\xe9cifiques de secteurs aussi vari\xe9s que l'administratif,\
+        \ la maintenance en b\xe2timents, le BTP ou l'aide \xe0 la personne. \n\n\
+        Avec AM-Sport et la FNMNS, je forme les Premiers Secours niveaux 1 et 2 (**PSE1,\
+        \ PSE2**) pour les futures BPJEPS Aquatique et Motonautisme, bien s\xfbr en\
+        \ Fran\xe7ais, mais \xe9galement en Anglais et Langue des Signes appliqu\xe9\
+        \ au secourisme.\n\nAu CREPS, le MUC Montpellier et AM-Sport Carnon, je forme\
+        \ le **PSC1**. Les stagiaires seront de futurs encadrants pour des associations\
+        \ sportives.", font: '', spacing_above: small, spacing_below: small, data: null,
+      background: '#cdeaf9', format: markdown}
+    name: rich_text_2
     layout_properties: {grid_position: 'OKMCJY,RHHBHE'}
 - type: ColumnPanel
   properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
@@ -115,23 +104,24 @@ components:
       background: '', horizontal_align: center}
     name: image_2
     layout_properties: {grid_position: 'GAWQPV,ZPYAHF'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: "\xc0 l\u2019international, avant 2014, j\u2019ai eu la\
-        \ joie de former dans d\u2019autres domaines ; \nApr\xe8s une formation d\u2019\
-        un an aux USA en 2001, j\u2019ai, entre autres, de 2002 \xe0 2013 au Cameroun,\
-        \ particip\xe9 au montage de centres de formation en ASL, American Sign Language,\
-        \ et donc \xe0 la formation des enseignants locaux en ASL.  \n\nExp\xe9rience\
-        \ humaine et technique inoubliable, qui  me sert encore aujourd\u2019hui dans\
-        \ les domaines des langues; Langue Anglaise,  et langue des Signes. \nPlus\
-        \ important encore, dans la capacit\xe9 d\u2019adaptation et des relations\
-        \ humaines.\n\nAuparavant, en France et DOM, j\u2019exer\xe7ais en tant qu\u2019\
-        Analyste Programmeur sous WinDev et formateur en informatique Excel, Word.\
-        \ Cette connaissance m\u2019aide dans les domaines de conception de supports\
-        \ p\xe9dagogique PowerPoint et bien s\xfbr pour la gestion de ma micro entreprise.\
-        \ \n", font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: label_6
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: 16, content: "\xc0 l\u2019international,\
+        \ avant 2014, j\u2019ai eu la joie de former dans d\u2019autres domaines ;\
+        \ \nApr\xe8s une formation d\u2019un an aux USA en 2001, j\u2019ai, entre\
+        \ autres, de 2002 \xe0 2013 au Cameroun, particip\xe9 au montage de centres\
+        \ de formation en ASL, **Langue des signes Am\xe9ricaine**, et donc \xe0 la\
+        \ formation des enseignants locaux en ASL.  \n\nExp\xe9rience humaine et technique\
+        \ inoubliable, qui  me sert encore aujourd\u2019hui dans les domaines des\
+        \ langues; **Langue Anglaise** (lue, parl\xe9e, \xe9crite couramment),  et\
+        \ langue des Signes. \nPlus important encore, dans la capacit\xe9 d\u2019\
+        adaptation et des relations humaines.\n\nAuparavant, en France et DOM, j\u2019\
+        exer\xe7ais en tant qu\u2019**Analyste Programmeur** sous WinDev et **formateur\
+        \ en informatique Excel, Word**. Cette connaissance m\u2019aide dans les domaines\
+        \ de conception de supports p\xe9dagogique PowerPoint et bien s\xfbr pour\
+        \ la gestion de ma micro entreprise. \n", font: '', spacing_above: small,
+      spacing_below: small, data: null, background: '', format: markdown}
+    name: rich_text_3
     layout_properties: {grid_position: 'GAWQPV,AKHOLZ'}
   - type: ColumnPanel
     properties: {col_widths: '{}'}
@@ -163,7 +153,7 @@ components:
         Passionné d''informatique, j''ai créé moi même ce site. (Full stack, sous  Python
         et Anvil, pour les connaisseurs ).
 
-        J''ai d''ailleurs débuté une antenne Web développement à mon entreprise.
+        J''ai d''ailleurs rajouté une antenne Web développement à mon entreprise.
 
         ', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
