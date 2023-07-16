@@ -35,7 +35,7 @@ components:
   - type: ColumnPanel
     properties: {col_widths: '{}'}
     name: column_panel_1
-    layout_properties: {grid_position: 'RZRLXU,BTRUHL'}
+    layout_properties: {grid_position: 'RZRLXU,BTRUHL XIXTAF,BGGSGH'}
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -48,6 +48,16 @@ components:
         background: '', bold: false, underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'EMNKRT,QWMENE'}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: null, content: 'Depuis 2014, j''exerce
+        en tant que formateur indépendant en secourisme depuis 2014, en micro-entreprise.\n
+
+        Je travaille en très bonne entente avec plusieurs organismes de formation,
+        qui apprécient ma pédagogie, autonomie et capacité d’adaptation.', font: '',
+      spacing_above: small, spacing_below: small, data: null, background: '', format: restricted_html}
+    name: rich_text_1
+    layout_properties: {grid_position: 'RZRLXU,BTRUHL SSJYBP,UZTMNX'}
 - type: ColumnPanel
   properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
