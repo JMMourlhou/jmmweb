@@ -74,13 +74,13 @@ components:
         \ pour des organismes de formation tel que VERITAS, DALKIA, OCSA, C2F, Protect'Up.\n\
         Je m'adapte aux besoins sp\xe9cifiques de secteurs aussi vari\xe9s que l'administratif,\
         \ la maintenance en b\xe2timents, le BTP ou l'aide \xe0 la personne. \n\n\
-        Avec AM-Sport et la FNMNS, je forme les Premiers Secours niveaux 1 et 2 (**PSE1,\
+        Avec AMSport et la FNMNS, je forme les Premiers Secours niveaux 1 et 2 (**PSE1,\
         \ PSE2**) pour les futures BPJEPS Aquatique et Motonautisme, bien s\xfbr en\
         \ Fran\xe7ais, mais \xe9galement en Anglais et Langue des Signes appliqu\xe9\
-        \ au secourisme.\n\nAu CREPS, le MUC Montpellier et AM-Sport Carnon, je forme\
-        \ le **PSC1**. Les stagiaires seront de futurs encadrants pour des associations\
-        \ sportives.", font: '', spacing_above: small, spacing_below: small, data: null,
-      background: '#cdeaf9', format: markdown}
+        \ au secourisme.\n\nAu CREPS, le MUC Montpellier et AMSport Carnon, je forme\
+        \ le **PSC1**. Les stagiaires sont de futurs encadrants pour des associations\
+        \ sportives ou des citoyens voulant se former.", font: '', spacing_above: small,
+      spacing_below: small, data: null, background: '', format: markdown}
     name: rich_text_2
     layout_properties: {grid_position: 'OKMCJY,RHHBHE'}
 - type: ColumnPanel
@@ -119,8 +119,8 @@ components:
         exer\xe7ais en tant qu\u2019**Analyste Programmeur** sous WinDev et **formateur\
         \ en informatique Excel, Word**. Cette connaissance m\u2019aide dans les domaines\
         \ de conception de supports p\xe9dagogique PowerPoint et bien s\xfbr pour\
-        \ la gestion de ma micro entreprise. \n", font: '', spacing_above: small,
-      spacing_below: small, data: null, background: '', format: markdown}
+        \ la gestion de ma micro entreprise. ", font: '', spacing_above: small, spacing_below: small,
+      data: null, background: '', format: markdown}
     name: rich_text_3
     layout_properties: {grid_position: 'GAWQPV,AKHOLZ'}
   - type: ColumnPanel
