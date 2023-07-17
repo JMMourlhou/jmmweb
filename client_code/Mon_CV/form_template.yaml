@@ -74,12 +74,12 @@ components:
         \ pour des organismes de formation tel que VERITAS, DALKIA, OCSA, C2F, Protect'Up.\n\
         Je m'adapte aux besoins sp\xe9cifiques de secteurs aussi vari\xe9s que l'administratif,\
         \ la maintenance en b\xe2timents, le BTP ou l'aide \xe0 la personne. \n\n\
-        Avec AMSport et la FNMNS, je forme les Premiers Secours niveaux 1 et 2 (**PSE1,\
-        \ PSE2**) pour les futures BPJEPS Aquatique et Motonautisme, bien s\xfbr en\
-        \ Fran\xe7ais, mais \xe9galement en Anglais et Langue des Signes appliqu\xe9\
-        \ au secourisme.\n\nAu CREPS, le MUC Montpellier et AMSport Carnon, je forme\
-        \ le **PSC1**. Les stagiaires sont de futurs encadrants pour des associations\
-        \ sportives ou des citoyens voulant se former.", font: '', spacing_above: small,
+        Avec AMSport Carnon et la FNMNS, je forme les Premiers Secours niveaux 1 et\
+        \ 2 (**PSE1, PSE2**) pour les futures BPJEPS Aquatique et Motonautisme, bien\
+        \ s\xfbr en Fran\xe7ais, mais \xe9galement en Anglais et Langue des Signes\
+        \ appliqu\xe9 au secourisme.\n\nAu CREPS, le MUC Montpellier et AMSport Carnon,\
+        \ je forme le **PSC1**. Les stagiaires sont de futurs encadrants pour des\
+        \ associations sportives ou des citoyens voulant se former.", font: '', spacing_above: small,
       spacing_below: small, data: null, background: '', format: markdown}
     name: rich_text_2
     layout_properties: {grid_position: 'OKMCJY,RHHBHE'}
@@ -106,18 +106,18 @@ components:
     layout_properties: {grid_position: 'GAWQPV,ZPYAHF'}
   - type: RichText
     properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-      foreground: '', visible: true, font_size: 16, content: "\xc0 l\u2019international,\
-        \ avant 2014, j\u2019ai eu la joie de former dans d\u2019autres domaines ;\
-        \ \nApr\xe8s une formation d\u2019un an aux USA en 2001, j\u2019ai, entre\
-        \ autres, de 2002 \xe0 2013 au Cameroun, particip\xe9 au montage de centres\
-        \ de formation en ASL, **Langue des signes Am\xe9ricaine**, et donc \xe0 la\
-        \ formation des enseignants locaux en ASL.  \n\nExp\xe9rience humaine et technique\
-        \ inoubliable, qui  me sert encore aujourd\u2019hui dans les domaines des\
-        \ langues; **Langue Anglaise** (lue, parl\xe9e, \xe9crite couramment),  et\
-        \ langue des Signes. \nPlus important encore, dans la capacit\xe9 d\u2019\
-        adaptation et des relations humaines.\n\nAuparavant, en France et DOM, j\u2019\
-        exer\xe7ais en tant qu\u2019**Analyste Programmeur** sous WinDev et **formateur\
-        \ en informatique Excel, Word**. Cette connaissance m\u2019aide dans les domaines\
+      foreground: '', visible: true, font_size: 16, content: "Avant 2014, j\u2019\
+        ai eu la joie de former dans d\u2019autres domaines ; \nApr\xe8s une formation\
+        \ d\u2019un an aux USA en 2001, j\u2019ai, pendant 13 ans, au Cameroun, particip\xe9\
+        \ au montage de centres de formation en ASL, **Langue des signes Am\xe9ricaine**,\
+        \ et \xe0 la formation des enseignants locaux en ASL.  \n\nCette exp\xe9rience\
+        \ humaine et technique si enrichissante, me sert encore aujourd\u2019hui dans\
+        \ les domaines de la formation des langues; **Langue Anglaise** (lue, parl\xe9\
+        e, \xe9crite couramment),  et langue des Signes. \nPlus important encore,\
+        \ elle m'a donn\xe9 une bonne capacit\xe9 d\u2019adaptation et une aisance\
+        \ pour la relation humaine.\nAvant 2000, en France et DOM, j\u2019exer\xe7\
+        ais en tant qu\u2019**Analyste Programmeur** sous WinDev et **formateur en\
+        \ informatique Excel, Word**. Cette connaissance m\u2019aide dans les domaines\
         \ de conception de supports p\xe9dagogique PowerPoint et bien s\xfbr pour\
         \ la gestion de ma micro entreprise. ", font: '', spacing_above: small, spacing_below: small,
       data: null, background: '', format: markdown}
@@ -141,22 +141,22 @@ components:
       source: _/theme/JMarc/Jmarc%203.jpg, spacing_below: small, background: '', horizontal_align: center}
     name: image_3
     layout_properties: {grid_position: 'QZVKBR,ARSMHO'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Je pratique le trail depuis toujours, ce qui contribue
-        au dynamisme de mes formations.
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: '', visible: true, font_size: 16, content: 'Je pratique **le trail**
+        depuis toujours, ce qui contribue au dynamisme de mes formations.
 
 
-        J''aime l''histoire ancienne,  les musées et la lecture.
+        J''aime **l''histoire ancienne,  les musées et la lecture**.
 
 
-        Passionné d''informatique, j''ai créé moi même ce site. (Full stack, sous  Python
-        et Anvil, pour les connaisseurs ).
+        Passionné d''informatique, j''ai **créé moi même ce site internet**. (Full
+        stack, sous  Python et Anvil, pour les connaisseurs ).
 
-        J''ai d''ailleurs rajouté une antenne Web développement à mon entreprise.
+        J''ai d''ailleurs rajouté un service **développement web** à mon entreprise.
 
-        ', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: label_8
+        ', font: '', spacing_above: small, spacing_below: none, data: null, background: '',
+      format: markdown}
+    name: rich_text_4
     layout_properties: {grid_position: 'QZVKBR,SLGTNX'}
 is_package: true

@@ -10,6 +10,7 @@ from ..Contact import Contact
 from ..Pricing import Pricing
 from ..Mon_CV import Mon_CV
 
+
 class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -52,7 +53,14 @@ class Main(MainTemplate):
   def mon_cv_link_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
+    open_form(self)  
     self.content_panel.add_component(Mon_CV(), full_width_row=True)
+
+  def test_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Form1(), full_width_row=True)
+
 
 
  

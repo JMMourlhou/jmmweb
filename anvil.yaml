@@ -10,8 +10,12 @@ startup: {type: form, module: Main}
 package_name: JMM_Formation
 allow_embedding: false
 name: jmm-formation-et-services
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
+runtime_options:
+  version: 2
+  client_version: '3'
+  server_version: python3-sandbox
+  server_spec: null
+  server_spec_disabled: {requirements: '', base: python310-minimal}
 metadata: {logo_img: 'asset:Logo F S small.png', description: JMM site web, title: 'JMarc.Mourlhou
     Site '}
 startup_form: null
