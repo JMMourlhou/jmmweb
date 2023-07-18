@@ -17,11 +17,11 @@ class Main(MainTemplate):
     self.init_components(**properties)
     self.content_panel.add_component(Home(), full_width_row=True)
       
-    bt = Label(align="center", text="Essai", bold=False, foreground="red", background="#FF000000", role="raised", tag="" )
+    bt = Label(align="center", text="Essai", bold=False, foreground="red", background="##FF000000", role="raised", tag="")
     self.column_panel_1.add_component(bt)
-    bt.enabled = True
+    bt.enable = True
     bt.role = "raised"
-    bt.raise_event()
+    #bt.set_event_handler('click',x-self.contact_link_click)
       
   def contact_link_click(self, **event_args):
     """This method is called when the link is clicked"""
