@@ -158,7 +158,3 @@ components:
     name: button_3
     layout_properties: {grid_position: 'JKRRQB,YUCYHZ'}
     event_bindings: {click: contact_link_click}
-  - type: Spacer
-    properties: {height: 90}
-    name: spacer_6
-    layout_properties: {grid_position: 'FNKESJ,HAEXNZ'}
