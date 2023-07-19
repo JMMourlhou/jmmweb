@@ -16,18 +16,26 @@ class Main(MainTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.content_panel.add_component(Home(), full_width_row=True)
-      
-    bt = Label(align="center", text="Essai", bold=False, foreground="red", background="##FF000000", role="raised", tag="")
+    
+    """ -------------------------    Add dynamicly button bt (contact) and space ----------------------------------"""
+    bt = Button(align="center", text="Contact dynamic", bold=False, foreground="white", background="##FF000000", enabled=True, role="raised", tag="")
     self.column_panel_1.add_component(bt)
-    bt.enable = True
-    bt.role = "raised"
-    #bt.set_event_handler('click',x-self.contact_link_click)
       
-  def contact_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    # Creation of space below the last button  
+    window_heigth = window.innerHeight
+    print(window_heigth)
+    space = Spacer(height=100, visible=True)
+    self.column_panel_1.add_component(space)
+      
+    bt.set_event_handler('click',self.bt_click)
+          
+  def bt_click(self, **event_args):
+    """This method is called when the bt button is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Contact(), full_width_row=True)
 
+    """ ---------------------------------  END --------------------------------------------------"""
+    
   def home_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
