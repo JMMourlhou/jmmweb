@@ -22,8 +22,8 @@ class Main(MainTemplate):
     self.column_panel_1.add_component(bt)
       
     # Creation of space below the last button  
-    window_heigth = window.innerHeight
-    print(window_heigth)
+    #window_heigth = window.innerHeight
+    #print(window_heigth)
     space = Spacer(height=100, visible=True)
     self.column_panel_1.add_component(space)
       
