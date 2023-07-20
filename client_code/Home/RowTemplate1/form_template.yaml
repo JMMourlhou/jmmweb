@@ -7,12 +7,12 @@ components:
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
     icon: ''}
   name: label_1
   layout_properties: {column: WRSVQH}
   data_bindings:
-  - {property: text, code: 'self.item[''level'']'}
+  - {property: text, code: 'self.produits[prestation]'}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -21,7 +21,7 @@ components:
   name: label_2
   layout_properties: {column: JJJXPT}
   data_bindings:
-  - {property: text, code: 'self.item[''half-sesh'']'}
+  - {property: text, code: 'self.produits[''tarif-1-jour'']'}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -30,5 +30,5 @@ components:
   name: label_3
   layout_properties: {column: OGOGUA}
   data_bindings:
-  - {property: text, code: 'self.item[''full-sesh'']'}
+  - {property: text, code: 'self.produits[''tarif-1/2-jour'']'}
 is_package: true

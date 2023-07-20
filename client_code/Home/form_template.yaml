@@ -51,16 +51,16 @@ components:
         600'}
     components:
     - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Secondary
           500', visible: true, text: Bienvenue sur mon site !, font_size: 20, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: true, underline: false, icon: ''}
       name: label_5
       layout_properties: {grid_position: 'BBLUVV,XBNNFN'}
     - type: Label
-      properties: {role: text, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-          700', visible: true, text: ' Jean-Marc Mourlhou', font_size: null, font: '',
-        spacing_above: none, icon_align: left_edge, spacing_below: none, italic: false,
+      properties: {role: text, align: center, tooltip: '', border: '', foreground: 'theme:Secondary
+          500', visible: true, text: ' Jean-Marc Mourlhou', font_size: null, font: '',
+        spacing_above: none, icon_align: left_edge, spacing_below: none, italic: true,
         background: '', bold: false, underline: false, icon: ''}
       name: label_1
       layout_properties: {grid_position: 'YWPBUM,IYAJYF'}
@@ -111,7 +111,7 @@ components:
       name: label_9
       layout_properties: {grid_position: 'BKJBVW,HYABEJ', full_width_row: true, row_background: ''}
     - type: Image
-      properties: {role: null, vertical_align: center, height: 34, tooltip: '', border: '',
+      properties: {role: null, vertical_align: center, height: 41, tooltip: '', border: '',
         foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
         source: _/theme/Logos/AMS.JPG, spacing_below: small, background: '', horizontal_align: center}
       name: image_1
@@ -122,7 +122,7 @@ components:
       layout_properties: {grid_position: 'IJYXXJ,ZVWUZE'}
       components:
       - type: Image
-        properties: {role: null, vertical_align: center, height: 35, tooltip: '',
+        properties: {role: null, vertical_align: center, height: 44, tooltip: '',
           border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
           spacing_above: small, source: _/theme/Logos/c2f.png, spacing_below: small,
           background: '', horizontal_align: center}
@@ -163,7 +163,7 @@ components:
     - type: Image
       properties: {role: null, vertical_align: center, height: 46.568809509277344,
         tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        spacing_above: small, source: _/theme/Logos/Sotel.jpg, spacing_below: small,
+        spacing_above: small, source: _/theme/Logos/Sotel.jpg, spacing_below: none,
         background: '', horizontal_align: center}
       name: image_4
       layout_properties: {grid_position: 'IJYXXJ,XSDNTF'}

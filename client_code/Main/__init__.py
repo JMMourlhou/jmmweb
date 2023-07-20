@@ -7,7 +7,7 @@ from anvil.tables import app_tables
 from ..Home import Home
 from ..Mes_formations import Mes_formations
 from ..Contact import Contact
-from ..Pricing import Pricing
+from ..Produits import Produits
 from ..Mon_CV import Mon_CV
 
 
@@ -49,7 +49,7 @@ class Main(MainTemplate):
   def pricing_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Pricing(), full_width_row=True)
+    self.content_panel.add_component(Produits(), full_width_row=True)
 
   def acceuil_link_click(self, **event_args):
     """This method is called when the button is clicked"""
