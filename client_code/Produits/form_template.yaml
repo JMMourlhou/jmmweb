@@ -79,11 +79,10 @@ components:
           name: label_24
           layout_properties: {column: WRSVQH}
       - type: RepeatingPanel
-        properties: {role: top-border, tooltip: '', border: '12', foreground: '',
-          items: null, visible: true, spacing_above: none, spacing_below: none, item_template: Home.RowTemplate1,
+        properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
+          visible: true, spacing_above: small, spacing_below: small, item_template: Produits.ItemTemplate2,
           background: ''}
         name: repeating_panel_1
-        layout_properties: {}
-        data_bindings: []
+        layout_properties: {grid_position: 'ZFPLLK,POEAIC', slot: footer, pinned: true}
       data_bindings: []
 is_package: true
