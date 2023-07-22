@@ -1,40 +1,46 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"IGPNRJ":17,"CNGFGU":43}'}
+  properties: {col_widths: '{"YKEUSY":3,"AVSOVY":57}'}
 components:
-- type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"XMDTXF":7,"XIKXJK":8,"MDYVTI":18}',
-    spacing_below: small, background: ''}
-  name: column_panel_1
-  layout_properties: {grid_position: 'IYJWNV,IGPNRJ', full_width_row: true}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'BRCGZR,YKEUSY'}
+- type: FlowPanel
+  properties: {}
+  name: flow_panel_1
+  layout_properties: {grid_position: 'BRCGZR,AVSOVY'}
   components:
   - type: Label
     properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
       icon: ''}
     name: label_1
     layout_properties: {grid_position: 'HVCDKG,XMDTXF'}
     data_bindings: []
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {width: 38}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+    properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: label_2
     layout_properties: {grid_position: 'HVCDKG,XIKXJK'}
     data_bindings: []
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_3
+    layout_properties: {width: 31}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+    properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: label_3
     layout_properties: {grid_position: 'HVCDKG,MDYVTI'}
     data_bindings: []
-- type: Spacer
-  properties: {height: 32}
-  name: spacer_1
-  layout_properties: {grid_position: 'IYJWNV,CNGFGU'}
 is_package: true
