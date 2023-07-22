@@ -11,6 +11,6 @@ class ItemTemplate2(ItemTemplate2Template):
         self.init_components(**properties)
         
         # Any code you write here will run before the form opens.
-        self.label_1.text = self.item['prestation']
-        self.label_2.text = self.item['tarif-1-jour']
-        self.label_3.text = self.item['tarif-1/2-jour']
+        self.text_box_1.text = self.item['prestation']
+        self.text_box_2.text = self.item['tarif-1-jour']
+        self.text_box_3.text = self.item['tarif-1/2-jour']

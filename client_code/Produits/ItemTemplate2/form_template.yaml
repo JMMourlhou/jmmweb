@@ -1,46 +1,22 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"YKEUSY":3,"AVSOVY":57}'}
+  properties: {col_widths: '{"AVSOVY":65}'}
 components:
-- type: Spacer
-  properties: {height: 32}
-  name: spacer_1
-  layout_properties: {grid_position: 'BRCGZR,YKEUSY'}
 - type: FlowPanel
   properties: {}
   name: flow_panel_1
   layout_properties: {grid_position: 'BRCGZR,AVSOVY'}
   components:
-  - type: Label
-    properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: true, underline: false,
-      icon: ''}
-    name: label_1
-    layout_properties: {grid_position: 'HVCDKG,XMDTXF'}
-    data_bindings: []
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_2
-    layout_properties: {width: 38}
-  - type: Label
-    properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_2
-    layout_properties: {grid_position: 'HVCDKG,XIKXJK'}
-    data_bindings: []
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_3
-    layout_properties: {width: 31}
-  - type: Label
-    properties: {role: text, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_3
-    layout_properties: {grid_position: 'HVCDKG,MDYVTI'}
-    data_bindings: []
+  - type: TextBox
+    properties: {}
+    name: text_box_1
+    layout_properties: {grid_position: 'BRCGZR,CYUCIH', width: 81}
+  - type: TextBox
+    properties: {}
+    name: text_box_2
+    layout_properties: {width: 95}
+  - type: TextBox
+    properties: {}
+    name: text_box_3
+    layout_properties: {width: 94}
 is_package: true
