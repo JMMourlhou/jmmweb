@@ -16,7 +16,7 @@ components:
   components:
   - type: ColumnPanel
     properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"UZJVCC":40}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}',
       spacing_below: none, background: 'theme:Neutral'}
     name: card_5
     layout_properties: {grid_position: 'ALQSCF,DDHZHX', full_width_row: true}
@@ -28,82 +28,56 @@ components:
           500', bold: true, underline: false, icon: ''}
       name: label_20
       layout_properties: {grid_position: 'BIIZAY,NQSQNQ'}
-    - type: ColumnPanel
-      properties: {col_widths: '{"YZVMYN":8,"STFDOI":8,"EQAHPR":44}'}
-      name: column_panel_1
-      layout_properties: {grid_position: 'ZALREK,AJOTWK'}
-      components:
-      - type: TextBox
-        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
-          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false}
-        name: text_box_1
-        layout_properties: {grid_position: 'WTLCFM,YZVMYN'}
-      - type: TextBox
-        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
-          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false}
-        name: text_box_2
-        layout_properties: {grid_position: 'WTLCFM,STFDOI'}
-      - type: TextBox
-        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
-          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false}
-        name: text_box_3
-        layout_properties: {grid_position: 'WTLCFM,EQAHPR'}
     - type: DataGrid
       properties:
         role: null
         columns:
-        - {id: WRSVQH, title: type of session, data_key: level, width: '', expand: false}
-        - {id: JJJXPT, title: 30-minute session, data_key: half-sesh, expand: false,
-          width: ''}
-        - {id: OGOGUA, title: 60-minute session, data_key: full-sesh, width: '', expand: false}
+        - {id: OQVLXE, title: Prestation, data_key: prestation, $$hashKey: 'object:50470'}
+        - {id: IQKOCL, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:50472'}
+        - {id: RYNECF, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:50473'}
+        auto_header: true
+        tooltip: ''
+        border: ''
+        foreground: ''
+        rows_per_page: 20
+        visible: true
+        wrap_on: never
+        show_page_controls: true
+        spacing_above: small
+        spacing_below: small
+        background: ''
+      name: data_grid_2
+      layout_properties: {grid_position: 'JVNXLF,XKPUWZ'}
+      components:
+      - type: RepeatingPanel
+        properties: {spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1}
+        name: repeating_panel_2
+        layout_properties: {}
+    - type: DataGrid
+      properties:
+        role: null
+        columns:
+        - {id: BNVFLE, title: Prestation, data_key: prestation, $$hashKey: 'object:28830'}
+        - {id: DQWOAM, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:28832'}
+        - {id: YWXSOT, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:28833'}
         auto_header: false
         tooltip: ''
         border: ''
         foreground: ''
         rows_per_page: 20
         visible: true
+        wrap_on: never
         show_page_controls: false
         spacing_above: small
         spacing_below: small
         background: ''
       name: data_grid_1
-      layout_properties: {grid_position: 'IASELP,UZJVCC'}
+      layout_properties: {grid_position: 'IASELP,BCUYQP'}
       components:
-      - type: DataRowPanel
-        properties: {role: null, align: center, tooltip: '', border: '2', foreground: '',
-          auto_display_data: true, visible: true, item: null, font_size: null, font: '',
-          spacing_above: none, spacing_below: small, italic: false, background: '',
-          bold: false, underline: false}
-        name: data_row_panel_1
-        layout_properties: {pinned: true}
-        components:
-        - type: Label
-          properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-              500', visible: true, text: Journée, font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: none, italic: false, background: '',
-            bold: true, underline: false, icon: ''}
-          name: label_1
-          layout_properties: {column: JJJXPT}
-        - type: Label
-          properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-              500', visible: true, text: 1/2 journée, font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: none, italic: false, background: '',
-            bold: true, underline: false, icon: ''}
-          name: label_23
-          layout_properties: {column: OGOGUA}
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Primary
-              500', visible: true, text: Prestation, font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: none, italic: false, background: '',
-            bold: true, underline: false, icon: ''}
-          name: label_24
-          layout_properties: {column: WRSVQH}
+      - type: FlowPanel
+        properties: {}
+        name: flow_panel_1
+        layout_properties: {}
       - type: RepeatingPanel
         properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
           visible: true, spacing_above: small, spacing_below: small, item_template: Produits.ItemTemplate2,

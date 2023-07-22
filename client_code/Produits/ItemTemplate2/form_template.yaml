@@ -17,6 +17,10 @@ components:
       italic: false, background: '', bold: true, underline: false}
     name: text_box_1
     layout_properties: {grid_position: 'BRCGZR,CYUCIH', width: 81}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {width: 4}
   - type: TextBox
     properties: {role: top-border, align: left, hide_text: false, tooltip: '', placeholder: '',
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
