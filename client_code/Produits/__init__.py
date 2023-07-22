@@ -14,3 +14,4 @@ class Produits(ProduitsTemplate):
         self.repeating_panel_1.items = app_tables.produits.search()
 
         # Any code you write here will run when the form opens.
+        
