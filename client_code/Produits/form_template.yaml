@@ -28,6 +28,32 @@ components:
           500', bold: true, underline: false, icon: ''}
       name: label_20
       layout_properties: {grid_position: 'BIIZAY,NQSQNQ'}
+    - type: ColumnPanel
+      properties: {col_widths: '{"YZVMYN":8,"STFDOI":8,"EQAHPR":44}'}
+      name: column_panel_1
+      layout_properties: {grid_position: 'ZALREK,AJOTWK'}
+      components:
+      - type: TextBox
+        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
+          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+          background: '', bold: false, underline: false}
+        name: text_box_1
+        layout_properties: {grid_position: 'WTLCFM,YZVMYN'}
+      - type: TextBox
+        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
+          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+          background: '', bold: false, underline: false}
+        name: text_box_2
+        layout_properties: {grid_position: 'WTLCFM,STFDOI'}
+      - type: TextBox
+        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+          border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
+          font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+          background: '', bold: false, underline: false}
+        name: text_box_3
+        layout_properties: {grid_position: 'WTLCFM,EQAHPR'}
     - type: DataGrid
       properties:
         role: null
@@ -52,7 +78,7 @@ components:
       - type: DataRowPanel
         properties: {role: null, align: center, tooltip: '', border: '2', foreground: '',
           auto_display_data: true, visible: true, item: null, font_size: null, font: '',
-          spacing_above: none, spacing_below: none, italic: false, background: '',
+          spacing_above: none, spacing_below: small, italic: false, background: '',
           bold: false, underline: false}
         name: data_row_panel_1
         layout_properties: {pinned: true}

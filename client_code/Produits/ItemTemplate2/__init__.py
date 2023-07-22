@@ -13,6 +13,6 @@ class ItemTemplate2(ItemTemplate2Template):
         # Any code you write here will run before the form opens.
         self.text_box_1.border = "0px"
         self.text_box_1.text = self.item['prestation']
-        self.text_box_1.border = "0px"
+        self.text_box_1.border = "0px white"
         self.text_box_2.text = self.item['tarif-1-jour']
         self.text_box_3.text = self.item['tarif-1/2-jour']
