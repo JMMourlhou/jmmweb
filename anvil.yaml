@@ -59,10 +59,10 @@ db_schema:
       admin_ui: {order: 2, width: 200}
       type: bool
     - name: tarif-1-jour
-      admin_ui: {order: 3, width: 200}
-      type: number
+      admin_ui: {order: 4, width: 200}
+      type: string
     - name: tarif-1/2-jour
       admin_ui: {order: 4, width: 200}
-      type: number
+      type: string
     title: Produits
 renamed: true

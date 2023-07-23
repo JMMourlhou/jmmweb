@@ -46,43 +46,13 @@ components:
         spacing_above: small
         spacing_below: small
         background: ''
-      name: data_grid_2
+      name: data_grid_1
       layout_properties: {grid_position: 'JVNXLF,XKPUWZ'}
       components:
       - type: RepeatingPanel
-        properties: {spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1}
-        name: repeating_panel_2
-        layout_properties: {}
-    - type: DataGrid
-      properties:
-        role: null
-        columns:
-        - {id: BNVFLE, title: Prestation, data_key: prestation, $$hashKey: 'object:28830'}
-        - {id: DQWOAM, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:28832'}
-        - {id: YWXSOT, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:28833'}
-        auto_header: false
-        tooltip: ''
-        border: ''
-        foreground: ''
-        rows_per_page: 20
-        visible: true
-        wrap_on: never
-        show_page_controls: false
-        spacing_above: small
-        spacing_below: small
-        background: ''
-      name: data_grid_1
-      layout_properties: {grid_position: 'IASELP,BCUYQP'}
-      components:
-      - type: FlowPanel
-        properties: {}
-        name: flow_panel_1
-        layout_properties: {}
-      - type: RepeatingPanel
-        properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-          visible: true, spacing_above: small, spacing_below: small, item_template: Produits.ItemTemplate2,
+        properties: {role: null, tooltip: '', border: 0px, foreground: '', items: null,
+          visible: true, spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1,
           background: ''}
         name: repeating_panel_1
-        layout_properties: {grid_position: 'ZFPLLK,POEAIC', pinned: true}
-      data_bindings: []
+        layout_properties: {}
 is_package: true
