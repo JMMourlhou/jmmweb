@@ -6,7 +6,7 @@ container:
 components:
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
+    border: 5px, enabled: false, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: true,
     background: '', bold: true, underline: false}
   name: text_box_1

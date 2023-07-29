@@ -10,17 +10,37 @@ class Produits(ProduitsTemplate):
     def __init__(self, condition="", **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-        liste_prestation = app_tables.produits.search()
-        """for row in liste_prestations:
-            if row["code"]==1:
-                self.button_1.text = row['prestation']
-            if produit["code"]==2:
-                self.button_2.text = row['prestation']
-            if produit["code"]==3:
-                self.button_3.text = row['prestation']
-        """
-        self.button_1.text = liste
-    
+        dico_prestation = app_tables.produits.search()    # tte la table produits lue
+        
+        if dico_prestation[0]['visible'] == True:
+            self.button_1.text = dico_prestation[0]['prestation']+"    V"
+        else:
+            self.button_1.visible = False
+        
+        if dico_prestation[1]['visible'] == True:
+            self.button_2.text = dico_prestation[1]['prestation']+"    V"
+        else:
+            self.button_2.visible = False
+             
+        if dico_prestation[2]['visible'] == True:
+            self.button_3.text = dico_prestation[2]['prestation']+"    V"
+        else:
+            self.button_3.visible = False
+            
+        if dico_prestation[3]['visible'] == True:
+            self.button_4.text = dico_prestation[3]['prestation']+"    V"
+        else:
+            self.button_4.visible = False
+            
+        if dico_prestation[4]['visible'] == True:
+            self.button_5.text = dico_prestation[4]['prestation']+"    V"
+        else:
+            self.button_5.visible = False
+             
+        if dico_prestation[5]['visible'] == True:
+            self.button_6.text = dico_prestation[5]['prestation']+"    V"
+        else:
+            self.button_6.visible = False
         # selects the prestations starting with "SST"
         # condition="SST%"
         # self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
@@ -36,15 +56,30 @@ class Produits(ProduitsTemplate):
         
     def code1_click(self, **event_args):
         """This method is called when the button is clicked"""
-        self.affiche_prix("SST-I%")
+        self.affiche_prix("SST%")
 
     def code2_click(self, **event_args):
         """This method is called when the button is clicked"""
-        self.affiche_prix("SST-F%")
+        self.affiche_prix("SST%")
 
     def code3_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.affiche_prix("PSC%")
+
+    def code4_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.affiche_prix("PSE%")
+
+    def code5_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.affiche_prix("PSE%")
+
+    def code6_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.affiche_prix("Ang%")
+
+
+
 
 
 
