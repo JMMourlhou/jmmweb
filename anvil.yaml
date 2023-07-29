@@ -65,4 +65,19 @@ db_schema:
       admin_ui: {order: 4, width: 200}
       type: string
     title: Produits
+  images:
+    client: search
+    server: full
+    columns:
+    - name: presta
+      admin_ui: {order: 0, width: 200}
+      type: link_multiple
+      target: images
+    - name: lien
+      admin_ui: {order: 1, width: 200}
+      type: simpleObject
+    - name: commentaire
+      admin_ui: {order: 2, width: 200}
+      type: string
+    title: Images
 renamed: true
