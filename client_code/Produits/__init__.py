@@ -11,14 +11,16 @@ class Produits(ProduitsTemplate):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         liste_prestation = app_tables.produits.search()
-        for row in liste_prestations:
+        """for row in liste_prestations:
             if row["code"]==1:
                 self.button_1.text = row['prestation']
             if produit["code"]==2:
                 self.button_2.text = row['prestation']
             if produit["code"]==3:
                 self.button_3.text = row['prestation']
-            
+        """
+        self.button_1.text = liste
+    
         # selects the prestations starting with "SST"
         # condition="SST%"
         # self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
