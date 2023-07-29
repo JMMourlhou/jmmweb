@@ -1,8 +1,7 @@
-container:
-  type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
-    background: ''}
+properties: []
+is_package: true
+events: []
+custom_component: true
 components:
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
@@ -21,38 +20,60 @@ components:
     name: card_5
     layout_properties: {grid_position: 'ALQSCF,DDHZHX', full_width_row: true}
     components:
-    - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: White,
-        visible: true, text: 'Mes prix :', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-          500', bold: true, underline: false, icon: ''}
-      name: label_20
-      layout_properties: {grid_position: 'BIIZAY,NQSQNQ'}
-    - type: DataGrid
-      properties:
-        role: null
-        columns:
-        - {id: OQVLXE, title: Prestation, data_key: prestation, $$hashKey: 'object:50470'}
-        - {id: IQKOCL, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:50472'}
-        - {id: RYNECF, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:50473'}
-        auto_header: true
-        tooltip: ''
-        border: ''
-        foreground: ''
-        rows_per_page: 20
-        visible: true
-        wrap_on: never
-        show_page_controls: true
-        spacing_above: small
-        spacing_below: small
-        background: ''
-      name: data_grid_1
-      layout_properties: {grid_position: 'JVNXLF,XKPUWZ'}
+    - type: ColumnPanel
+      properties: {col_widths: '{}'}
+      name: column_panel_2
+      layout_properties: {grid_position: 'KIQQDB,NCUBBJ'}
       components:
-      - type: RepeatingPanel
-        properties: {role: null, tooltip: '', border: 0px, foreground: '', items: null,
-          visible: true, spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1,
-          background: ''}
-        name: repeating_panel_1
-        layout_properties: {}
-is_package: true
+      - type: Button
+        properties: {text: button_1}
+        name: button_1
+        layout_properties: {grid_position: 'MYLCFJ,WOBIWT'}
+      - type: Image
+        properties: {}
+        name: image_1
+        layout_properties: {grid_position: 'BZEDKN,ACBCQQ'}
+    - type: ColumnPanel
+      properties: {col_widths: '{}'}
+      name: column_panel_1
+      layout_properties: {grid_position: 'IOKYSE,AVCSIT'}
+      components:
+      - type: Label
+        properties: {role: subheading, align: center, tooltip: '', border: '', foreground: White,
+          visible: true, text: 'Mes prix :', font_size: null, font: '', spacing_above: small,
+          icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
+            500', bold: true, underline: false, icon: ''}
+        name: label_20
+        layout_properties: {grid_position: 'IEMAZM,KTWJDQ'}
+      - type: DataGrid
+        properties:
+          role: null
+          columns:
+          - {id: OQVLXE, title: Prestation, data_key: prestation, $$hashKey: 'object:50470'}
+          - {id: IQKOCL, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:50472'}
+          - {id: RYNECF, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:50473'}
+          auto_header: true
+          tooltip: ''
+          border: ''
+          foreground: ''
+          rows_per_page: 20
+          visible: true
+          wrap_on: never
+          show_page_controls: true
+          spacing_above: small
+          spacing_below: small
+          background: ''
+        name: data_grid_1
+        layout_properties: {grid_position: 'BKKTRH,IZNCLH'}
+        components:
+        - type: RepeatingPanel
+          properties: {role: null, tooltip: '', border: 0px, foreground: '', items: null,
+            visible: true, spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1,
+            background: ''}
+          name: repeating_panel_1
+          layout_properties: {}
+container:
+  type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
+    background: ''}
