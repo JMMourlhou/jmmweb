@@ -5,6 +5,8 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+global liste_prestation
+liste_prestation = app_tables.produits.search()
 
 
 class Produits(ProduitsTemplate):
@@ -21,17 +23,22 @@ class Produits(ProduitsTemplate):
                 self.button_3.text = produit['prestation']
             
         # selects the prestations starting with "SST"
-        condition="SST%"
-        self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
+        # condition="SST%"
+        # self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
         
         # Any code you write here will run when the form opens.
 
     
     def affiche_prix(self, condition):
+        global liste_prestation
+        for row in liste_prestation:
+            print(row["prestation"], row["tarif-1-jour"])
         # selects the prestations starting with "SST"
         # ex condition="SST%"
-        self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
-    
+        #self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
+        self.repeating_panel_1.items = liste_prestation.search(prestation=q.ilike(condition))
+        self.data_grid_1.visible = True
+        
     def code1_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.affiche_prix("SST-I%")
