@@ -18,9 +18,9 @@ components:
     layout_properties: {grid_position: 'KPOLRI,UIYPTE'}
   - type: Label
     properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Formation Premiers Secours, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: medium, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      visible: true, text: Formation Secourisme, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: medium, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'CRKAMI,ZTLCPG'}
   - type: Label
@@ -51,14 +51,14 @@ components:
         600'}
     components:
     - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Secondary
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
           500', visible: true, text: Bienvenue sur mon site !, font_size: 20, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: true, underline: false, icon: ''}
       name: label_5
       layout_properties: {grid_position: 'BBLUVV,XBNNFN'}
     - type: Label
-      properties: {role: text, align: center, tooltip: '', border: '', foreground: 'theme:Secondary
+      properties: {role: text, align: center, tooltip: '', border: '', foreground: 'theme:Primary
           500', visible: true, text: ' Jean-Marc Mourlhou', font_size: null, font: '',
         spacing_above: none, icon_align: left_edge, spacing_below: none, italic: true,
         background: '', bold: false, underline: false, icon: ''}
@@ -88,12 +88,12 @@ components:
         name: image_9
         layout_properties: {grid_position: 'QKNYSA,MUZIRW'}
     - type: Label
-      properties: {role: text, align: center, tooltip: '', border: '2', foreground: 'theme:Primary
-          700', visible: true, text: "Formateur en secourisme depuis 2014.\n Je travaille\
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
+          500', visible: true, text: "Formateur en secourisme depuis 2014.\n Je travaille\
           \ en tr\xe8s bonne entente avec de nombreux organismes de formation. \n\
           Ils appr\xe9cient ma p\xe9dagogie, autonomie et capacit\xe9 d\u2019adaptation.",
         font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
+        italic: false, background: '', bold: true, underline: false, icon: ''}
       name: label_4
       layout_properties: {grid_position: 'ALNRJU,KZOQNQ'}
   - type: ColumnPanel

@@ -801,7 +801,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 */
 
 .anvil-role-start-header {
-  background-image: linear-gradient(180deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/start-img.jpg);
+  background-image: linear-gradient(10deg, %color:Primary 500% 0%, #5396BC00 100%), url(_/theme/start-img.jpg);
 /*   background-size: 100% auto; */
   background-size: cover;
   background-attachment: fixed;
@@ -823,7 +823,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 
 @media screen and (max-width: 1000px) { /* only on phones*/
    .anvil-role-home-header {
-  background-image: linear-gradient(60deg, %color:Primary 500% 0%, #5396BC00 150%), url(_/theme/home-img0.jpg);
+  background-image: linear-gradient(80deg, %color:Primary 500% 0%, #5396BC00 120%), url(_/theme/home-img0.jpg);
   background-size: 165% auto; 
   min-height: 10em;
 }  
