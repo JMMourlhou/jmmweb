@@ -1,7 +1,8 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {tooltip: '', background: 'theme:background bleu foncé', foreground: '',
+    border: '', visible: true, role: null, html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
   properties: {role: start-header, tooltip: '', border: '', foreground: '', visible: true,
@@ -11,9 +12,9 @@ components:
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
-    properties: {role: start-header, tooltip: '', border: '', foreground: '', visible: true,
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
       wrap_on: mobile, col_spacing: tiny, spacing_above: none, col_widths: '', spacing_below: none,
-      background: ''}
+      background: 'theme:background bleu foncé'}
     name: content_panel
     layout_properties: {grid_position: 'UDYRYM,GZDDHG', full_width_row: true}
   - type: ColumnPanel
@@ -33,7 +34,8 @@ components:
         spacing_below: none, italic: false, background: '#0c2d55', bold: true, underline: false,
         icon: ''}
       name: label_23
-      layout_properties: {grid_position: 'TYEMCK,MQDMVQ', row_background: '', full_width_row: true}
+      layout_properties: {grid_position: 'TYEMCK,MQDMVQ', row_background: 'theme:background
+          bleu foncé', full_width_row: true}
     - type: RichText
       properties: {role: null, align: center, tooltip: '', enable_slots: false, border: '',
         foreground: 'theme:White', visible: true, font_size: 14, content: "----\n\
@@ -41,7 +43,8 @@ components:
           ---", font: '', spacing_above: none, spacing_below: small, data: null, background: '#0c2d55',
         format: markdown}
       name: rich_text_1
-      layout_properties: {grid_position: 'DFWJXE,VMOSXQ', row_background: '#0c2d55'}
+      layout_properties: {grid_position: 'DFWJXE,VMOSXQ', row_background: 'theme:background
+          bleu foncé'}
       components:
       - type: FlowPanel
         properties: {role: null, spacing: large, align: center, tooltip: '', border: '',
