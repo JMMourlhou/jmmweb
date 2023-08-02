@@ -18,12 +18,11 @@ class Main(MainTemplate):
     self.content_panel.add_component(Home(), full_width_row=True)
     
     """ -------------------------    Add dynamicly button bt (contact) and space ----------------------------------"""
-    bt = Button(align="center", text="Contact dynamic", bold=False, foreground="white", background="##FF000000", enabled=True, role="raised", tag="")
+    bt = Button(align="center", text="Contact", bold=False, foreground="white", background="##FF000000", enabled=True, role="raised", tag="")
     self.column_panel_1.add_component(bt)
       
     # Creation of space below the last button  
-    #window_heigth = window.innerHeight
-    #print(window_heigth)
+    
     space = Spacer(height=100, visible=True)
     self.column_panel_1.add_component(space)
       

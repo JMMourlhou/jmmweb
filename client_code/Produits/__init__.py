@@ -4,14 +4,16 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-
+global dico_prestation
+dico_prestation = app_tables.produits.search() 
 
 class Produits(ProduitsTemplate):
     def __init__(self, condition="", **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-        dico_prestation = app_tables.produits.search()    # tte la table produits lue
+        #dico_prestation = app_tables.produits.search()    # tte la table produits lue
         
+        global dico_prestation
         if dico_prestation[0]['visible'] == True:
             self.button_1.text = dico_prestation[0]['prestation']+"    V"
         else:
@@ -56,6 +58,17 @@ class Produits(ProduitsTemplate):
         
     def code1_click(self, **event_args):
         """This method is called when the button is clicked"""
+        global dico_prestation
+        self.label_en_tete.text = dico_prestation[0]['prestation']   
+        self.label_en_tete.visible = True
+        self.column_panel_bt_01.visible = True
+        self.label_mes_tarifs.visible = True
+        """self.column_panel_bt_02.visible = False
+        self.column_panel_bt_03.visible = False
+        self.column_panel_bt_04.visible = False
+        self.column_panel_bt_05.visible = False
+        self.column_panel_bt_06.visible = False
+        """
         self.affiche_prix("SST%")
 
     def code2_click(self, **event_args):
