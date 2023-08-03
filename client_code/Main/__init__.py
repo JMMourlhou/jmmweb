@@ -45,7 +45,7 @@ class Main(MainTemplate):
     open_form(self)
     self.contact_link_click()
 
-  def pricing_link_click(self, **event_args):
+  def products_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Produits(), full_width_row=True)
@@ -59,7 +59,7 @@ class Main(MainTemplate):
   def mes_formations_link_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Mes_formations(), full_width_row=True)
+    self.content_panel.add_component(Produits(), full_width_row=True)
 
   def mon_cv_link_click(self, **event_args):
     """This method is called when the button is clicked"""

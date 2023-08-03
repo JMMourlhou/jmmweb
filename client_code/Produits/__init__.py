@@ -56,24 +56,38 @@ class Produits(ProduitsTemplate):
         self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
         self.data_grid_1.visible = True
         
-    def code1_click(self, **event_args):
+    def code1_click(self, **event_args):     #SST i
         """This method is called when the button is clicked"""
         global dico_prestation
         self.label_en_tete.text = dico_prestation[0]['prestation']   
         self.label_en_tete.visible = True
-        self.column_panel_bt_01.visible = True
         self.label_mes_tarifs.visible = True
-        """self.column_panel_bt_02.visible = False
-        self.column_panel_bt_03.visible = False
+        
+        self.column_panel_bt_01.visible = True
+        self.column_panel_bt_02.visible = False
+        """self.column_panel_bt_03.visible = False
         self.column_panel_bt_04.visible = False
         self.column_panel_bt_05.visible = False
         self.column_panel_bt_06.visible = False
         """
-        self.affiche_prix("SST%")
+        self.affiche_prix("SST-i%")
 
-    def code2_click(self, **event_args):
+    def code2_click(self, **event_args):              #MAC SST
         """This method is called when the button is clicked"""
-        self.affiche_prix("SST%")
+        global dico_prestation
+        self.label_en_tete.text = dico_prestation[1]['prestation']   
+        self.label_en_tete.visible = True
+        self.label_mes_tarifs.visible = True
+        
+        self.column_panel_bt_01.visible = False
+        self.column_panel_bt_02.visible = True
+        """self.column_panel_bt_03.visible = False
+        self.column_panel_bt_04.visible = False
+        self.column_panel_bt_05.visible = False
+        self.column_panel_bt_06.visible = False
+        """
+        self.affiche_prix("SST-M%")
+        
 
     def code3_click(self, **event_args):
         """This method is called when the button is clicked"""

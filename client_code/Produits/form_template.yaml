@@ -41,49 +41,49 @@ components:
       components:
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_1, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_1,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_1
         layout_properties: {grid_position: 'FGEJGQ,KYZPOP'}
         event_bindings: {click: code1_click}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_2, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_2,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_2
         layout_properties: {grid_position: 'DNYMFD,DFRIBY'}
         event_bindings: {click: code2_click}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_3, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_3,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_3
         layout_properties: {grid_position: 'FGEJGQ,MPXEDK'}
         event_bindings: {click: code3_click}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_4, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_4,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_4
         layout_properties: {grid_position: 'SYMDVB,ZKTTKB'}
         event_bindings: {click: code4_click}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_5, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_5,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_5
         layout_properties: {grid_position: 'DNYMFD,RYDQSB'}
         event_bindings: {click: code5_click}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: '', visible: true, text: button_6, font_size: null, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          foreground: 'theme:background bleu foncé', visible: true, text: button_6,
+          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: false, underline: false, icon: ''}
         name: button_6
         layout_properties: {grid_position: 'DNYMFD,ACIZQI'}
         event_bindings: {click: code6_click}
@@ -95,32 +95,104 @@ components:
       name: label_en_tete
       layout_properties: {grid_position: 'OPIRRB,BCJXDP'}
     - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"HKMCXN":30,"WVNQCS":30}',
+        spacing_below: small, background: 'theme:Primary 500'}
+      name: column_panel_bt_01
+      layout_properties: {grid_position: 'CTPEJX,VYPSNY'}
+      components:
+      - type: ColumnPanel
+        properties: {col_widths: '{}'}
+        name: column_panel_1
+        layout_properties: {grid_position: 'HYONXF,HKMCXN'}
+        components:
+        - type: RichText
+          properties: {role: top-border, align: left, tooltip: '', enable_slots: true,
+            border: '', foreground: 'theme:White', visible: true, font_size: 14, content: "**Stages\
+              \ SST initial**\n\nJe forme le **S**auveteur **S**ecouriste du **T**ravail\
+              \ (SST). \nStage de 14 heures, souvent sur 2 jours, parfois sur 4 matins\
+              \ par exemple.\n\nUne fois revenu dans son entreprise, l'employ\xe9\
+              \ SST jouera d'abord un r\xf4le d'**acteur de la pr\xe9vention**.\n\
+              Sur cette image, les stagiaires rep\xe8rent en \xe9quipes, diff\xe9\
+              rentes **situations dangereuses**.\nIls devront ensuite les commenter\
+              \ et proposer des solutions.", font: '', spacing_above: none, spacing_below: small,
+            data: null, background: '', format: markdown}
+          name: rich_text_1
+          layout_properties: {grid_position: 'GTBYFW,GMZFLY'}
+          components: []
+      - type: Image
+        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+          border: '', foreground: '', visible: true, display_mode: zoom_to_fill, spacing_above: small,
+          source: _/theme/SST%20Etude%20sit%20dangereuses.jpg, spacing_below: small,
+          background: '', horizontal_align: center}
+        name: image_1
+        layout_properties: {grid_position: 'HYONXF,WVNQCS'}
+      - type: RichText
+        properties: {role: rounded-border, align: left, tooltip: '', enable_slots: true,
+          border: '', foreground: 'theme:White', visible: true, font_size: 14, content: 'Le
+            stagiaire apprendra ensuite à porter secours à un collègue atteint d''un
+            malaise ou d''un trauma par exemple.
+
+            Ici le stagiaire a mis la victime en PLS et la surveille.
+
+            Le plan d''intervention, ici au mur, aide le stagiaire à acquérir la logique
+            de l''intervention d''un secouriste.  ', font: '', spacing_above: small,
+          spacing_below: small, data: null, background: '', format: markdown}
+        name: rich_text_2
+        layout_properties: {grid_position: 'YJPFHR,MOHBGL'}
+        components: []
+      - type: ColumnPanel
+        properties: {col_widths: '{}'}
+        name: column_panel_3
+        layout_properties: {grid_position: 'YJPFHR,WNVLJL'}
+        components:
+        - type: Image
+          properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+            border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
+            source: _/theme/SST%20Pls%20et%20surveillance.jpg, spacing_below: none,
+            background: '', horizontal_align: center}
+          name: image_2
+          layout_properties: {grid_position: 'ACTPYG,GOAAZU'}
+    - type: ColumnPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', visible: false,
         wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
         spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_01
-      layout_properties: {grid_position: 'WPVNYT,MTSBGA'}
+      name: column_panel_bt_02
+      layout_properties: {grid_position: 'SJRVCL,NGZMOU'}
       components:
-      - type: RichText
-        properties: {role: rounded-border, align: left, tooltip: '', enable_slots: true,
-          border: '', foreground: 'theme:White', visible: true, font_size: 14, content: "**Stages\
-            \ SST initial**\n\nJe forme le **S**auveteur **S**ecouriste du **T**ravail\
-            \ (SST). \nIl sera d'abord un acteur de la pr\xe9vention dans son entreprise.\n\
-            Sur cette image, les stagiaires rep\xe8rent en \xe9quipe diff\xe9rentes\
-            \ situations dangereuses.\nIls devront ensuite les commenter et proposer\
-            \ des solutions.\nIl portera secours \xe0 tout salari\xe9 victime d\u2019\
-            un malaise ou d\u2019un accident du travail. ", font: '', spacing_above: small,
-          spacing_below: small, data: null, background: '', format: markdown}
-        name: rich_text_1
-        layout_properties: {grid_position: 'SKVCAJ,XLTPMM'}
-        components: []
-      - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-          spacing_above: small, source: _/theme/etude%20risques.jpg, spacing_below: small,
-          background: '', horizontal_align: center}
-        name: image_1
-        layout_properties: {grid_position: 'SKVCAJ,KWRUAI'}
+      - type: ColumnPanel
+        properties: {col_widths: '{"HAUXXO":30,"YWLXJP":30}'}
+        name: column_panel_4
+        layout_properties: {grid_position: 'TYQTCB,CCWHTX'}
+        components:
+        - type: Image
+          properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+            border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
+            source: _/theme/SST%20d%C3%A9sobstruction.jpg, spacing_below: small, background: '',
+            horizontal_align: center}
+          name: image_3
+          layout_properties: {grid_position: 'BZHLNT,HAUXXO'}
+        - type: RichText
+          properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+            foreground: 'theme:White', visible: true, font_size: 14, content: 'Stage
+              MAC SST
+
+              Je recycle le **S**auveteur **S**ecouriste du **T**ravail (SST). Ce
+              stage s''effectue tous les 2 ans.
+
+              Le sauveteur SST peurra ainsi  **M**aintenir et **A**cquérir de nouvelles
+              **C**onnaissances (MAC), en fonction des points nouveaux  du référentiel
+              SST et de nouveaux besoins spécifiques de son activité.
+
+
+              Stage de 7 heures, souvent sur 1 jour, parfois sur 2 matins par exemple.
+
+
+              Ici, un SST révise la désobstruction d''un nourrisson. ', font: '',
+            spacing_above: small, spacing_below: small, data: null, background: '',
+            format: markdown}
+          name: rich_text_3
+          layout_properties: {grid_position: 'BZHLNT,YWLXJP'}
     - type: Label
       properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
         visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
