@@ -190,3 +190,4 @@ color_scheme:
   - {name: old_primary 500, color: '#5396BC'}
   - {name: old_Secondary 500, color: '#009688'}
   - {name: background bleu foncé, color: '#0c2d55'}
+  - {name: '', color: '#FF0000'}

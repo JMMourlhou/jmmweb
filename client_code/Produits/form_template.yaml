@@ -15,10 +15,10 @@ components:
   components:
   - type: ColumnPanel
     properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"NGZMOU":57}',
       spacing_below: none, background: 'theme:Neutral'}
     name: card_5
-    layout_properties: {grid_position: 'ALQSCF,DDHZHX', full_width_row: true}
+    layout_properties: {grid_position: 'ALQSCF,WGEVKN', full_width_row: true}
     components:
     - type: ColumnPanel
       properties: {col_widths: '{}'}
@@ -39,6 +39,13 @@ components:
       name: flow_panel_2
       layout_properties: {grid_position: 'FGEJGQ,XGRDBW'}
       components:
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: '#FF0000', visible: true, text: Click -->, font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '', bold: true, underline: false, icon: ''}
+        name: button_7
+        layout_properties: {grid_position: 'FGEJGQ,HYPHPC'}
       - type: Button
         properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:background bleu foncé', visible: true, text: button_1,
@@ -154,45 +161,68 @@ components:
           name: image_2
           layout_properties: {grid_position: 'ACTPYG,GOAAZU'}
     - type: ColumnPanel
-      properties: {role: null, tooltip: '', border: '', foreground: '', visible: false,
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
         wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
         spacing_below: small, background: 'theme:Primary 500'}
       name: column_panel_bt_02
       layout_properties: {grid_position: 'SJRVCL,NGZMOU'}
       components:
-      - type: ColumnPanel
-        properties: {col_widths: '{"HAUXXO":30,"YWLXJP":30}'}
-        name: column_panel_4
-        layout_properties: {grid_position: 'TYQTCB,CCWHTX'}
-        components:
-        - type: Image
-          properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-            border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-            source: _/theme/SST%20d%C3%A9sobstruction.jpg, spacing_below: small, background: '',
-            horizontal_align: center}
-          name: image_3
-          layout_properties: {grid_position: 'BZHLNT,HAUXXO'}
-        - type: RichText
-          properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-            foreground: 'theme:White', visible: true, font_size: 14, content: 'Stage
-              MAC SST
-
-              Je recycle le **S**auveteur **S**ecouriste du **T**ravail (SST). Ce
-              stage s''effectue tous les 2 ans.
-
-              Le sauveteur SST peurra ainsi  **M**aintenir et **A**cquérir de nouvelles
-              **C**onnaissances (MAC), en fonction des points nouveaux  du référentiel
-              SST et de nouveaux besoins spécifiques de son activité.
+      - type: RichText
+        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
+            MAC SST**
 
 
-              Stage de 7 heures, souvent sur 1 jour, parfois sur 2 matins par exemple.
+            Je recycle le **S**auveteur **S**ecouriste du **T**ravail (SST). Ce stage
+            s''effectue tous les 2 ans.
+
+            Le sauveteur SST peurra ainsi  **M**aintenir et **A**cquérir de nouvelles
+            **C**onnaissances (MAC), en fonction des points nouveaux  du référentiel
+            SST et de nouveaux besoins spécifiques de son activité.
 
 
-              Ici, un SST révise la désobstruction d''un nourrisson. ', font: '',
-            spacing_above: small, spacing_below: small, data: null, background: '',
-            format: markdown}
-          name: rich_text_3
-          layout_properties: {grid_position: 'BZHLNT,YWLXJP'}
+            Stage de 7 heures, souvent sur 1 jour, parfois sur 2 matins par exemple.
+
+
+            Ici, un SST révise la désobstruction d''un nourrisson. ', font: '', spacing_above: small,
+          spacing_below: small, data: null, background: '', format: markdown}
+        name: rich_text_3
+        layout_properties: {grid_position: 'LGQGIJ,CISIHW'}
+      - type: Image
+        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
+          source: _/theme/SST%20d%C3%A9sobstruction.jpg, spacing_below: small, background: '',
+          horizontal_align: center}
+        name: image_3
+        layout_properties: {grid_position: 'LGQGIJ,PEMZXD'}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: 'theme:Primary 500'}
+      name: column_panel_bt_03
+      layout_properties: {grid_position: 'CTZUYQ,MTAQGK'}
+      components:
+      - type: RichText
+        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
+            PSC1**
+
+
+            Je forme le stage **P**révention et **S**ecours **C**iviques de niveau
+            **1**
+
+            La Formation PSC1 permet à toute personne d''acquérir les compétences
+            nécessaires à l''exécution d''une action citoyenne d''assistance à personne
+            en réalisant les gestes élémentaires de secours.', font: '', spacing_above: small,
+          spacing_below: small, data: null, background: '', format: markdown}
+        name: rich_text_4
+        layout_properties: {grid_position: 'TJWIUJ,EISWNK'}
+      - type: Image
+        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
+          source: _/theme/PSC1%20RCP.jpg, spacing_below: small, background: '', horizontal_align: center}
+        name: image_4
+        layout_properties: {grid_position: 'TJWIUJ,BSWGAN'}
     - type: Label
       properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
         visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
