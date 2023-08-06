@@ -15,32 +15,32 @@ class Produits(ProduitsTemplate):
         
         global dico_prestation
         if dico_prestation[0]['visible'] == True:
-            self.button_1.text = dico_prestation[0]['prestation']+"    V"
+            self.button_1.text = dico_prestation[0]['prestation']
         else:
             self.button_1.visible = False
         
         if dico_prestation[1]['visible'] == True:
-            self.button_2.text = dico_prestation[1]['prestation']+"    V"
+            self.button_2.text = dico_prestation[1]['prestation']
         else:
             self.button_2.visible = False
              
         if dico_prestation[2]['visible'] == True:
-            self.button_3.text = dico_prestation[2]['prestation']+"    V"
+            self.button_3.text = dico_prestation[2]['prestation']
         else:
             self.button_3.visible = False
             
         if dico_prestation[3]['visible'] == True:
-            self.button_4.text = dico_prestation[3]['prestation']+"    V"
+            self.button_4.text = dico_prestation[3]['prestation']
         else:
             self.button_4.visible = False
             
         if dico_prestation[4]['visible'] == True:
-            self.button_5.text = dico_prestation[4]['prestation']+"    V"
+            self.button_5.text = dico_prestation[4]['prestation']
         else:
             self.button_5.visible = False
              
         if dico_prestation[5]['visible'] == True:
-            self.button_6.text = dico_prestation[5]['prestation']+"    V"
+            self.button_6.text = dico_prestation[5]['prestation']
         else:
             self.button_6.visible = False
         # selects the prestations starting with "SST"
