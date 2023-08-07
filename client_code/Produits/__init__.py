@@ -66,8 +66,8 @@ class Produits(ProduitsTemplate):
         self.column_panel_bt_01.visible = True
         self.column_panel_bt_02.visible = False
         self.column_panel_bt_03.visible = False
-        """self.column_panel_bt_04.visible = False
-        self.column_panel_bt_05.visible = False
+        self.column_panel_bt_04.visible = False
+        """self.column_panel_bt_05.visible = False
         self.column_panel_bt_06.visible = False
         """
         self.affiche_prix("SST-i%")
@@ -82,8 +82,8 @@ class Produits(ProduitsTemplate):
         self.column_panel_bt_01.visible = False
         self.column_panel_bt_02.visible = True
         self.column_panel_bt_03.visible = False
-        """self.column_panel_bt_04.visible = False
-        self.column_panel_bt_05.visible = False
+        self.column_panel_bt_04.visible = False
+        """self.column_panel_bt_05.visible = False
         self.column_panel_bt_06.visible = False
         """
         self.affiche_prix("SST-M%")
@@ -99,14 +99,26 @@ class Produits(ProduitsTemplate):
         self.column_panel_bt_01.visible = False
         self.column_panel_bt_02.visible = False
         self.column_panel_bt_03.visible = True
-        """self.column_panel_bt_04.visible = False
-        self.column_panel_bt_05.visible = False
+        self.column_panel_bt_04.visible = False
+        """self.column_panel_bt_05.visible = False
         self.column_panel_bt_06.visible = False
         """
-        self.affiche_prix("PSC%")
+        self.affiche_prix("PSE1%")
 
     def code4_click(self, **event_args):
         """This method is called when the button is clicked"""
+        global dico_prestation
+        self.label_en_tete.text = dico_prestation[3]['prestation']   
+        self.label_en_tete.visible = True
+        self.label_mes_tarifs.visible = True
+        
+        self.column_panel_bt_01.visible = False
+        self.column_panel_bt_02.visible = False
+        self.column_panel_bt_03.visible = False
+        self.column_panel_bt_04.visible = True
+        """self.column_panel_bt_05.visible = False
+        self.column_panel_bt_06.visible = False
+        """
         self.affiche_prix("PSE%")
 
     def code5_click(self, **event_args):

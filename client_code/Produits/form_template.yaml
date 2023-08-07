@@ -154,10 +154,10 @@ components:
         layout_properties: {grid_position: 'YJPFHR,WNVLJL'}
         components:
         - type: Image
-          properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-            border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-            source: _/theme/SST%20Pls%20et%20surveillance.jpg, spacing_below: none,
-            background: '', horizontal_align: center}
+          properties: {role: null, vertical_align: center, height: 336, tooltip: '',
+            border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+            spacing_above: small, source: _/theme/SST%20Pls%20et%20surveillance.jpg,
+            spacing_below: none, background: '', horizontal_align: center}
           name: image_2
           layout_properties: {grid_position: 'ACTPYG,GOAAZU'}
     - type: ColumnPanel
@@ -208,13 +208,14 @@ components:
             PSC1**
 
 
-            Je forme le stage **P**révention et **S**ecours **C**iviques de niveau
+            J''encadre le stage **P**révention et **S**ecours **C**iviques de niveau
             **1**
 
-            La Formation PSC1 permet à toute personne d''acquérir les compétences
-            nécessaires à l''exécution d''une action citoyenne d''assistance à personne
-            en réalisant les gestes élémentaires de secours.', font: '', spacing_above: small,
-          spacing_below: small, data: null, background: '', format: markdown}
+            La Formation PSC1, de 7 ou 8 heures, permet à toute personne d''acquérir
+            les compétences nécessaires à l''exécution d''une action citoyenne d''assistance
+            à personne en réalisant les gestes élémentaires de secours.', font: '',
+          spacing_above: small, spacing_below: small, data: null, background: '',
+          format: markdown}
         name: rich_text_4
         layout_properties: {grid_position: 'TJWIUJ,EISWNK'}
       - type: Image
@@ -223,6 +224,31 @@ components:
           source: _/theme/PSC1%20RCP.jpg, spacing_below: small, background: '', horizontal_align: center}
         name: image_4
         layout_properties: {grid_position: 'TJWIUJ,BSWGAN'}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: 'theme:Primary 500'}
+      name: column_panel_bt_04
+      layout_properties: {grid_position: 'BMCVHR,WDFQEH'}
+      components:
+      - type: RichText
+        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
+            PSE1**
+
+
+            J''encadre le stage **P**remiers et **S**ecours en **E**quipe de niveau
+            **1**', font: '', spacing_above: small, spacing_below: small, data: null,
+          background: '', format: markdown}
+        name: rich_text_5
+        layout_properties: {grid_position: 'WDGROV,HCAZBI'}
+      - type: Image
+        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+          border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+          spacing_above: small, source: _/theme/home-img0.jpg, spacing_below: small,
+          background: '', horizontal_align: center}
+        name: image_5
+        layout_properties: {grid_position: 'WDGROV,TFCJFD'}
     - type: Label
       properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
         visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
