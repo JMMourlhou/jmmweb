@@ -142,8 +142,12 @@ components:
 
             Ici le stagiaire a mis la victime en PLS et la surveille.
 
-            Le plan d''intervention, ici au mur, aide le stagiaire à acquérir la logique
-            de l''intervention d''un secouriste.  ', font: '', spacing_above: small,
+            Chaque stage est différent. J''aime relever le défi de s''adapter aux
+            besoins spécifiques des stagiaires, en fonction de leurs secteurs d''activité.
+
+
+            Le plan d''intervention, ici au mur, aidera le stagiaire à acquérir la
+            logique de l''intervention d''un secouriste.  ', font: '', spacing_above: small,
           spacing_below: small, data: null, background: '', format: markdown}
         name: rich_text_2
         layout_properties: {grid_position: 'YJPFHR,MOHBGL'}
@@ -212,9 +216,9 @@ components:
             **1**
 
             La Formation PSC1, de 7 ou 8 heures, permet à toute personne d''acquérir
-            les compétences nécessaires à l''exécution d''une action citoyenne d''assistance
-            à personne en réalisant les gestes élémentaires de secours.', font: '',
-          spacing_above: small, spacing_below: small, data: null, background: '',
+            les compétences nécessaires pour porter secours à une victime en réalisant
+            les bons gestes élémentaires et une alerte efficace aux services de secours.',
+          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
           format: markdown}
         name: rich_text_4
         layout_properties: {grid_position: 'TJWIUJ,EISWNK'}
@@ -233,17 +237,24 @@ components:
       components:
       - type: RichText
         properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
-            PSE1**
-
-
-            J''encadre le stage **P**remiers et **S**ecours en **E**quipe de niveau
-            **1**', font: '', spacing_above: small, spacing_below: small, data: null,
-          background: '', format: markdown}
+          foreground: 'theme:White', visible: true, font_size: 14, content: "**Stage\
+            \ PSE1**\n\nJ'encadre r\xe9guli\xe8rement  le stage **P**remiers et **S**ecours\
+            \ en **E**quipe de niveau **1**.\nIl s'adresse aux stagiaires surveillants\
+            \ aquatiques (BNSSA) et futurs ma\xeetres-nageurs (BPAAN).  \nDe 38h minimum,\
+            \ il permet de faire le premier pas dans le secourisme en \xe9quipe, au\
+            \ bord d'une piscine par exemple.\nComme nous le voyons sur l'image, le\
+            \ stagiaire utilise maintenant des techniques et du mat\xe9riel plus pouss\xe9\
+            s. \nIci, dans le cas d'une simulation d'arr\xeat cardiaque, il devra\
+            \ utiliser l'oxyg\xe8ne, le masque \xe0 insufflation, l'aspirateur \xe0\
+            \ mucosit\xe9, et les canules de Guedel.\n\nCes stages PSE1 et 2 me permettent\
+            \ d'\xeatre bien plus efficace sur les stages SST ou PSC1, o\xf9 les stagiaires\
+            \ posent souvent de nombreuses questions tr\xe8s pertinentes !     \n",
+          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+          format: markdown}
         name: rich_text_5
         layout_properties: {grid_position: 'WDGROV,HCAZBI'}
       - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+        properties: {role: null, vertical_align: center, height: 277, tooltip: '',
           border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
           spacing_above: small, source: _/theme/home-img0.jpg, spacing_below: small,
           background: '', horizontal_align: center}
