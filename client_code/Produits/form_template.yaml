@@ -249,6 +249,30 @@ components:
           background: '', horizontal_align: center}
         name: image_5
         layout_properties: {grid_position: 'WDGROV,TFCJFD'}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: 'theme:Primary 500'}
+      name: column_panel_bt_05
+      layout_properties: {grid_position: 'NVTVOV,OLILIM'}
+      components:
+      - type: RichText
+        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
+            PSE2**
+
+
+            J''encadre le stage **P**remiers et **S**ecours en **E**quipe de niveau
+            **2**', font: '', spacing_above: small, spacing_below: small, data: null,
+          background: '', format: markdown}
+        name: rich_text_6
+        layout_properties: {grid_position: 'ZBURWS,ALMVSI'}
+      - type: Image
+        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
+          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
+          source: _/theme/brancardage.jpg, spacing_below: small, background: '', horizontal_align: center}
+        name: image_6
+        layout_properties: {grid_position: 'ZBURWS,HCPDZK'}
     - type: Label
       properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
         visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
