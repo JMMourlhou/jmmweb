@@ -18,7 +18,7 @@ components:
       wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"NGZMOU":57}',
       spacing_below: none, background: 'theme:Neutral'}
     name: card_5
-    layout_properties: {grid_position: 'ALQSCF,WGEVKN', full_width_row: true}
+    layout_properties: {grid_position: 'ALQSCF,KDKEKF', full_width_row: true}
     components:
     - type: ColumnPanel
       properties: {col_widths: '{}'}
@@ -283,7 +283,7 @@ components:
           border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
           source: _/theme/brancardage.jpg, spacing_below: small, background: '', horizontal_align: center}
         name: image_6
-        layout_properties: {grid_position: 'ZBURWS,HCPDZK'}
+        layout_properties: {grid_position: 'ZBURWS,HWOXVI'}
     - type: Label
       properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
         visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
