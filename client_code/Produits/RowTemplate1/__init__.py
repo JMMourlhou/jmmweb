@@ -17,6 +17,16 @@ class RowTemplate1(RowTemplate1Template):
         self.text_box_2.text = self.item['tarif-1-jour']
         self.text_box_3.text = self.item['tarif-1/2-jour']
 
+    def text_box_2_pressed_enter(self, **event_args):
+        """This method is called when the user presses Enter in this text box"""
+        pass
+
+    def text_box_3_pressed_enter(self, **event_args):
+        """This method is called when the user presses Enter in this text box"""
+        pass
+
+
+
     
 
 

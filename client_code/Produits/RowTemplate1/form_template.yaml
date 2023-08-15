@@ -19,7 +19,7 @@ components:
     background: '', bold: false, underline: false}
   name: text_box_2
   layout_properties: {column: IQKOCL}
-  event_bindings: {}
+  event_bindings: {pressed_enter: text_box_2_pressed_enter}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: false, foreground: '', visible: true, text: '', font_size: null,
@@ -27,4 +27,5 @@ components:
     background: '', bold: false, underline: false}
   name: text_box_3
   layout_properties: {column: RYNECF}
+  event_bindings: {pressed_enter: text_box_3_pressed_enter}
 is_package: true
