@@ -6,13 +6,13 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 global dico_prestation
 dico_prestation = app_tables.produits.search() 
-global timer
-timer = 1
+
 
 class Produits(ProduitsTemplate):
     def __init__(self, condition="", **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
+        self.timer = 1
         #dico_prestation = app_tables.produits.search()    # tte la table produits lue
         
         global dico_prestation
@@ -149,30 +149,30 @@ class Produits(ProduitsTemplate):
 
     def timer_1_tick(self, **event_args):
         """This method is called Every [0,5] seconds. Does not trigger if [interval] is 0."""
-        global timer
-        if timer == 7:
-            print("reset")
-            timer == 1
-        if timer == 1:
+       
+        if self.timer == 1:
             self.button_1.foreground = "red"
             self.button_6.foreground = "theme:background bleu foncé"
-        if timer == 2:
+        if self.timer == 2:
             self.button_2.foreground = "red"
             self.button_1.foreground = "theme:background bleu foncé"
-        if timer == 3:
+        if self.timer == 3:
             self.button_3.foreground = "red"
             self.button_2.foreground = "theme:background bleu foncé"
-        if timer == 4:
+        if self.timer == 4:
             self.button_4.foreground = "red"
             self.button_3.foreground = "theme:background bleu foncé"
-        if timer == 5:
+        if self.timer == 5:
             self.button_5.foreground = "red"
             self.button_4.foreground = "theme:background bleu foncé"
-        if timer == 6:
+        if self.timer == 6:
             self.button_6.foreground = "red"
             self.button_5.foreground = "theme:background bleu foncé"
-        timer += 1
-        print(timer)
+        self.timer += 1
+        if self.timer == 7:
+            print("reset")
+            self.timer = 1
+        print(self.timer)
 
 
 
