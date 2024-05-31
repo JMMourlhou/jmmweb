@@ -5,7 +5,8 @@ services:
   server_config: {}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
-  server_config: {custom_smtp: false}
+  server_config: {custom_smtp: false, smtp_encryption: starttls, smtp_host: '', smtp_port: 587,
+    smtp_user: Jmarc, smtp_password: dNaY8vrw0VrX1cQBugqWnjOTCeFHHSA58jLmCF7FPrNWqml7cTBiRTF3qdo28+x1VV8YEXuxP+UxvrFyYnAb5kVJV9x4uHRIQsT4y4auLNnKZ6djPofyNO1SFQkroUuEt+wVRCsQY4knwoDOmXZwXWf6yMPxEDFZBBYDgdstor6TYEbFc9WfRh8ClYA=}
 startup: {type: form, module: Main}
 package_name: JMM_Formation
 allow_embedding: false
