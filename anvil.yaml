@@ -17,8 +17,7 @@ runtime_options:
   server_version: python3-sandbox
   server_spec: null
   server_spec_disabled: {requirements: '', base: python310-minimal}
-metadata: {logo_img: 'asset:Logo F S small.png', description: JMM site web, title: 'JMarc.Mourlhou
-    Site '}
+metadata: {logo_img: 'asset:Logo F S small.png', description: JMM Web Services, title: JMM Web Services}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}

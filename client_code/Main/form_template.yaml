@@ -39,7 +39,7 @@ components:
     - type: RichText
       properties: {role: null, align: center, tooltip: '', enable_slots: false, border: '',
         foreground: 'theme:White', visible: true, font_size: 14, content: "----\n\
-          **Web Designer :** \nJMM Web Services \njmarc@jmm-formation-et-services.fr\n\
+          **Web Designer :** \nJMM Web Services \nhttps://jmarc@jmm-formation-et-services.fr\n\
           ---", font: '', spacing_above: none, spacing_below: small, data: null, background: '#0c2d55',
         format: markdown}
       name: rich_text_1

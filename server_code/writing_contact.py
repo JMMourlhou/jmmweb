@@ -9,7 +9,7 @@ from .french_zone import french_zone_time
 @anvil.server.callable
 def add_contact_info(name,tel, email, topic, message, check):
   
-  if check == True:  
+  if check is True:  
     time = french_zone_time()
     app_tables.contact.add_row(name=name, tel=tel, email=email, topic=topic, message=message, date_time=time)
     sov = "A accepté d'être référencé."   
