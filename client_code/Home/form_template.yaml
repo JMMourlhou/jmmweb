@@ -1,170 +1,147 @@
-container:
-  type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
-    background: ''}
 components:
-- type: ColumnPanel
-  properties: {role: home-header, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: never, col_spacing: medium, spacing_above: none, col_widths: '{"ZTLCPG":45}',
-    spacing_below: none, background: ''}
-  name: card_1
-  layout_properties: {grid_position: 'CRKCZC,KYISDW', full_width_row: true}
-  components:
-  - type: Spacer
-    properties: {visible: true, spacing_above: small, spacing_below: small, height: '190',
-      tooltip: ''}
+- components:
+  - layout_properties: {grid_position: 'KPOLRI,UIYPTE'}
     name: spacer_1
-    layout_properties: {grid_position: 'KPOLRI,UIYPTE'}
-  - type: Label
-    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Formation Secourisme, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: medium, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+    properties: {height: '190', spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+    type: Spacer
+  - layout_properties: {grid_position: 'CRKAMI,ZTLCPG'}
     name: label_2
-    layout_properties: {grid_position: 'CRKAMI,ZTLCPG'}
-  - type: Label
-    properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
-      visible: true, text: 'SST, PSC1, PSE1, PSE2
-
-        Anglais du secourisme', font_size: 18, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: medium, text: Formation Secourisme, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'EWQZNX,ADVRHZ'}
     name: label_3
-    layout_properties: {grid_position: 'EWQZNX,ADVRHZ'}
-- type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
-    background: ''}
-  name: content_panel
+    properties:
+      align: center
+      background: ''
+      bold: false
+      border: ''
+      font: ''
+      font_size: 18
+      foreground: theme:White
+      icon: ''
+      icon_align: left
+      italic: false
+      role: subheading
+      spacing_above: small
+      spacing_below: small
+      text: |-
+        SST, PSC1, PSE1, PSE2
+        Anglais du secourisme
+      tooltip: ''
+      underline: false
+      visible: true
+    type: Label
+  layout_properties: {full_width_row: true, grid_position: 'CRKCZC,KYISDW'}
+  name: card_1
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{"ZTLCPG":45}', foreground: '', role: home-header, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: never}
+  type: ColumnPanel
+- components:
+  - components:
+    - layout_properties: {grid_position: 'BBLUVV,XBNNFN'}
+      name: label_5
+      properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 20, foreground: 'theme:Primary 500', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Bienvenue sur mon site !, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'YWPBUM,IYAJYF'}
+      name: label_1
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:Primary 500', icon: '', icon_align: left_edge, italic: true, role: text, spacing_above: none, spacing_below: none, text: ' Jean-Marc Mourlhou', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'YWPBUM,CBBNKL'}
+      name: spacer_2
+      properties: {height: 13}
+      type: Spacer
+    - layout_properties: {grid_position: 'UKXJKU,YLJQTP'}
+      name: image_5
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 183, horizontal_align: center, role: null, source: _/theme/JMarc/Jm_small.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    - components:
+      - layout_properties: {grid_position: 'QKNYSA,MUZIRW'}
+        name: image_9
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 174, horizontal_align: center, role: null, source: _/theme/JMarc/jm%20en%20tr%C3%A9pied.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: top, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'UKXJKU,JMPPDP'}
+      name: column_panel_1
+      properties: {col_widths: '{}'}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'ALNRJU,KZOQNQ'}
+      name: label_4
+      properties:
+        align: center
+        background: ''
+        bold: true
+        border: ''
+        font: ''
+        font_size: null
+        foreground: theme:Primary 500
+        icon: ''
+        icon_align: left
+        italic: false
+        role: null
+        spacing_above: none
+        spacing_below: small
+        text: "Formateur en secourisme depuis 2014.\n Je travaille en très bonne entente avec de nombreux organismes de formation. \nIls apprécient ma pédagogie, autonomie et capacité d’adaptation."
+        tooltip: ''
+        underline: false
+        visible: true
+      type: Label
+    layout_properties: {full_width_row: true, grid_position: 'YDEQKA,KOIBBY', row_background: 'theme:Gray 600'}
+    name: card_2
+    properties: {background: '#ffffff', border: '', col_spacing: tiny, col_widths: '{"YLJQTP":22,"IYAJYF":24,"CBBNKL":36,"JMPPDP":32}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {full_width_row: true, grid_position: 'BKJBVW,HYABEJ', row_background: ''}
+      name: label_9
+      properties: {align: center, background: 'theme:Primary 500', bold: true, border: '', font: '', font_size: 18, foreground: 'theme:White', icon: '', icon_align: left, italic: true, role: subheading, spacing_above: none, spacing_below: none, text: 'Des O.F. qui me font confiance:', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IJYXXJ,QLMTRC'}
+      name: image_1
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 41, horizontal_align: center, role: null, source: _/theme/Logos/AMS.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    - components:
+      - layout_properties: {grid_position: 'LDWKWV,PWTFJA'}
+        name: image_2
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 44, horizontal_align: center, role: null, source: _/theme/Logos/c2f.png, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'IJYXXJ,ZVWUZE'}
+      name: column_panel_3
+      properties: {col_widths: '{}'}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'IJYXXJ,GQJVQK'}
+      name: image_7
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 39, horizontal_align: center, role: null, source: _/theme/Logos/Muc.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    - components:
+      - layout_properties: {grid_position: 'GYPTJD,QPZUON'}
+        name: image_3
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 88, horizontal_align: center, role: null, source: _/theme/Logos/fnmns.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'IJYXXJ,AWDUHK'}
+      name: column_panel_2
+      properties: {col_widths: '{}'}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'IJYXXJ,PANAZM'}
+      name: image_6
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 93, horizontal_align: center, role: null, source: _/theme/Logos/Logo%20V%C3%A9ritas.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    - layout_properties: {grid_position: 'IJYXXJ,ZOKNDR'}
+      name: image_8
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 49.752288818359375, horizontal_align: center, role: null, source: _/theme/Logos/Dalkia.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    - layout_properties: {grid_position: 'IJYXXJ,XSDNTF'}
+      name: image_4
+      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 46.568809509277344, horizontal_align: center, role: null, source: _/theme/Logos/Sotel.jpg, spacing_above: small, spacing_below: none, tooltip: '', vertical_align: center, visible: true}
+      type: Image
+    layout_properties: {full_width_row: true, grid_position: 'LJPHVG,PERRUJ', row_background: ''}
+    name: card_3
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"ZVWUZE":11,"GQJVQK":9,"AWDUHK":9,"PANAZM":9,"QLMTRC":8,"ZOKNDR":7,"XSDNTF":7}', foreground: '', role: card, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
   layout_properties:
     col_widths: {}
-    grid_position: QBPVWN,FDJDAK
     full_width_row: true
-  components:
-  - type: ColumnPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: tiny, spacing_above: none, col_widths: '{"YLJQTP":22,"IYAJYF":24,"CBBNKL":36,"JMPPDP":32}',
-      spacing_below: none, background: '#ffffff'}
-    name: card_2
-    layout_properties: {grid_position: 'YDEQKA,KOIBBY', full_width_row: true, row_background: 'theme:Gray
-        600'}
-    components:
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-          500', visible: true, text: Bienvenue sur mon site !, font_size: 20, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
-      name: label_5
-      layout_properties: {grid_position: 'BBLUVV,XBNNFN'}
-    - type: Label
-      properties: {role: text, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-          500', visible: true, text: ' Jean-Marc Mourlhou', font_size: null, font: '',
-        spacing_above: none, icon_align: left_edge, spacing_below: none, italic: true,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_1
-      layout_properties: {grid_position: 'YWPBUM,IYAJYF'}
-    - type: Spacer
-      properties: {height: 13}
-      name: spacer_2
-      layout_properties: {grid_position: 'YWPBUM,CBBNKL'}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 183, tooltip: '', border: '',
-        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-        source: _/theme/JMarc/Jm_small.jpg, spacing_below: small, background: '',
-        horizontal_align: center}
-      name: image_5
-      layout_properties: {grid_position: 'UKXJKU,YLJQTP'}
-    - type: ColumnPanel
-      properties: {col_widths: '{}'}
-      name: column_panel_1
-      layout_properties: {grid_position: 'UKXJKU,JMPPDP'}
-      components:
-      - type: Image
-        properties: {role: null, vertical_align: top, height: 174, tooltip: '', border: '',
-          foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-          source: _/theme/JMarc/jm%20en%20tr%C3%A9pied.jpg, spacing_below: small,
-          background: '', horizontal_align: center}
-        name: image_9
-        layout_properties: {grid_position: 'QKNYSA,MUZIRW'}
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-          500', visible: true, text: "Formateur en secourisme depuis 2014.\n Je travaille\
-          \ en tr\xe8s bonne entente avec de nombreux organismes de formation. \n\
-          Ils appr\xe9cient ma p\xe9dagogie, autonomie et capacit\xe9 d\u2019adaptation.",
-        font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: true, underline: false, icon: ''}
-      name: label_4
-      layout_properties: {grid_position: 'ALNRJU,KZOQNQ'}
-  - type: ColumnPanel
-    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"ZVWUZE":11,"GQJVQK":9,"AWDUHK":9,"PANAZM":9,"QLMTRC":8,"ZOKNDR":7,"XSDNTF":7}',
-      spacing_below: none, background: ''}
-    name: card_3
-    layout_properties: {grid_position: 'LJPHVG,PERRUJ', full_width_row: true, row_background: ''}
-    components:
-    - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: 'Des O.F. qui me font confiance:', font_size: 18, font: '',
-        spacing_above: none, icon_align: left, spacing_below: none, italic: true,
-        background: 'theme:Primary 500', bold: true, underline: false, icon: ''}
-      name: label_9
-      layout_properties: {grid_position: 'BKJBVW,HYABEJ', full_width_row: true, row_background: ''}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 41, tooltip: '', border: '',
-        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-        source: _/theme/Logos/AMS.JPG, spacing_below: small, background: '', horizontal_align: center}
-      name: image_1
-      layout_properties: {grid_position: 'IJYXXJ,QLMTRC'}
-    - type: ColumnPanel
-      properties: {col_widths: '{}'}
-      name: column_panel_3
-      layout_properties: {grid_position: 'IJYXXJ,ZVWUZE'}
-      components:
-      - type: Image
-        properties: {role: null, vertical_align: center, height: 44, tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-          spacing_above: small, source: _/theme/Logos/c2f.png, spacing_below: small,
-          background: '', horizontal_align: center}
-        name: image_2
-        layout_properties: {grid_position: 'LDWKWV,PWTFJA'}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 39, tooltip: '', border: '',
-        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-        source: _/theme/Logos/Muc.JPG, spacing_below: small, background: '', horizontal_align: center}
-      name: image_7
-      layout_properties: {grid_position: 'IJYXXJ,GQJVQK'}
-    - type: ColumnPanel
-      properties: {col_widths: '{}'}
-      name: column_panel_2
-      layout_properties: {grid_position: 'IJYXXJ,AWDUHK'}
-      components:
-      - type: Image
-        properties: {role: null, vertical_align: center, height: 88, tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-          spacing_above: small, source: _/theme/Logos/fnmns.JPG, spacing_below: small,
-          background: '', horizontal_align: center}
-        name: image_3
-        layout_properties: {grid_position: 'GYPTJD,QPZUON'}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 93, tooltip: '', border: '',
-        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-        source: _/theme/Logos/Logo%20V%C3%A9ritas.JPG, spacing_below: small, background: '',
-        horizontal_align: center}
-      name: image_6
-      layout_properties: {grid_position: 'IJYXXJ,PANAZM'}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 49.752288818359375,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        spacing_above: small, source: _/theme/Logos/Dalkia.jpg, spacing_below: small,
-        background: '', horizontal_align: center}
-      name: image_8
-      layout_properties: {grid_position: 'IJYXXJ,ZOKNDR'}
-    - type: Image
-      properties: {role: null, vertical_align: center, height: 46.568809509277344,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        spacing_above: small, source: _/theme/Logos/Sotel.jpg, spacing_below: none,
-        background: '', horizontal_align: center}
-      name: image_4
-      layout_properties: {grid_position: 'IJYXXJ,XSDNTF'}
+    grid_position: QBPVWN,FDJDAK
+  name: content_panel
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+container:
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
 is_package: true

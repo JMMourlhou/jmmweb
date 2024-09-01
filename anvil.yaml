@@ -1,83 +1,81 @@
-dependencies: []
-services:
-- source: /runtime/services/tables.yml
-  client_config: {enable_v2: true}
-  server_config: {}
-- source: /runtime/services/anvil/email.yml
-  client_config: {}
-  server_config: {custom_smtp: false, smtp_encryption: starttls, smtp_host: '', smtp_port: 587,
-    smtp_user: Jmarc, smtp_password: dNaY8vrw0VrX1cQBugqWnjOTCeFHHSA58jLmCF7FPrNWqml7cTBiRTF3qdo28+x1VV8YEXuxP+UxvrFyYnAb5kVJV9x4uHRIQsT4y4auLNnKZ6djPofyNO1SFQkroUuEt+wVRCsQY4knwoDOmXZwXWf6yMPxEDFZBBYDgdstor6TYEbFc9WfRh8ClYA=}
-startup: {type: form, module: Main}
-package_name: JMM_Formation
 allow_embedding: false
-name: jmm-formation-et-services
-runtime_options:
-  version: 2
-  client_version: '3'
-  server_version: python3-sandbox
-  server_spec: null
-  server_spec_disabled: {requirements: '', base: python310-minimal}
-metadata: {logo_img: 'asset:Logo F S small.png', description: JMM Web Services, title: JMM Web Services}
-startup_form: null
-native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
-    rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 db_schema:
   contact:
-    title: Contact
     client: none
-    server: full
     columns:
-    - name: name
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: name
       type: string
-    - name: email
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: email
       type: string
-    - name: topic
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: topic
       type: string
-    - name: message
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: message
       type: string
-    - name: date_time
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: date_time
       type: datetime
-    - name: tel
-      admin_ui: {order: 0.5, width: 200}
+    - admin_ui: {order: 0.5, width: 200}
+      name: tel
       type: string
-  produits:
-    client: search
     server: full
-    columns:
-    - name: code
-      admin_ui: {order: 0, width: 200}
-      type: number
-    - name: prestation
-      admin_ui: {order: 1, width: 200}
-      type: string
-    - name: visible
-      admin_ui: {order: 2, width: 200}
-      type: bool
-    - name: tarif-1-jour
-      admin_ui: {order: 4, width: 200}
-      type: string
-    - name: tarif-1/2-jour
-      admin_ui: {order: 4, width: 200}
-      type: string
-    title: Produits
+    title: Contact
   images:
     client: none
-    server: full
     columns:
-    - name: presta
-      admin_ui: {order: 0, width: 200}
-      type: link_multiple
+    - admin_ui: {order: 0, width: 200}
+      name: presta
       target: produits
-    - name: commentaire
-      admin_ui: {order: 2, width: 200}
+      type: link_multiple
+    - admin_ui: {order: 2, width: 200}
+      name: commentaire
       type: string
-    - name: lien
-      admin_ui: {order: 2, width: 200}
+    - admin_ui: {order: 2, width: 200}
+      name: lien
       type: media
+    server: full
     title: Images
+  produits:
+    client: search
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: code
+      type: number
+    - admin_ui: {order: 1, width: 200}
+      name: prestation
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: visible
+      type: bool
+    - admin_ui: {order: 4, width: 200}
+      name: tarif-1-jour
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: tarif-1/2-jour
+      type: string
+    server: full
+    title: Produits
+dependencies: []
+metadata: {description: JMM Web Services, logo_img: 'asset:Logo F S small.png', title: JMM Web Services}
+name: jmm-formation-et-services
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
+package_name: JMM_Formation
 renamed: true
+runtime_options:
+  client_version: '3'
+  server_spec: null
+  server_spec_disabled: {base: python310-minimal, requirements: ''}
+  server_version: python3-sandbox
+  version: 2
+services:
+- client_config: {enable_v2: true}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {custom_smtp: true, smtp_encryption: starttls, smtp_host: smtp.gmail.com, smtp_password: H/l8CfHDtMQtzcYB+73jvIiTTWtFkQnjUnqy5BYkEwdUayWCTf+bz5rrzIOY5/GH6Ovt5EDFWgD8vSHlXaq022dMLYdoemrzleSCpee8myGsXR8OMzlYVTrDBcB33VJnfrHsVaN5IjbrSQ0NF0sJudcV4FkOnuBxM9KfA6sl3ApIFTGG, smtp_port: 587, smtp_user: jmarc@jmm-formation-et-services.fr}
+  source: /runtime/services/anvil/email.yml
+startup: {module: Main, type: form}
+startup_form: null

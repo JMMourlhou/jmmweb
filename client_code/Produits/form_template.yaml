@@ -1,322 +1,284 @@
-properties: []
-is_package: true
-events: []
-custom_component: false
 components:
-- type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
-    background: ''}
-  name: content_panel
-  layout_properties:
-    col_widths: {}
-    grid_position: QBPVWN,FDJDAK
-    full_width_row: true
-  components:
-  - type: ColumnPanel
-    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{"NGZMOU":57}',
-      spacing_below: none, background: 'theme:Neutral'}
-    name: card_5
-    layout_properties: {grid_position: 'ALQSCF,IMUCLP', full_width_row: true}
-    components:
-    - type: ColumnPanel
-      properties: {col_widths: '{}'}
-      name: column_panel_2
-      layout_properties: {grid_position: 'LDDQKG,EHGDIS'}
-      components:
-      - type: Label
-        properties: {role: subheading, align: center, tooltip: '', border: '', foreground: White,
-          visible: true, text: 'Mes formations :', font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: 'theme:background
-            bleu foncé', bold: true, underline: false, icon: ''}
+- components:
+  - components:
+    - components:
+      - layout_properties: {grid_position: 'XHVIKI,EKDQJJ'}
         name: label_20
-        layout_properties: {grid_position: 'XHVIKI,EKDQJJ'}
-    - type: FlowPanel
-      properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-        foreground: '', visible: true, spacing_above: small, spacing_below: small,
-        background: ''}
-      name: flow_panel_2
-      layout_properties: {grid_position: 'FGEJGQ,XGRDBW'}
-      components:
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_1,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_1
+        properties: {align: center, background: 'theme:background bleu foncé', bold: true, border: '', font: '', font_size: null, foreground: White, icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Mes formations :', tooltip: '', underline: false, visible: true}
+        type: Label
+      layout_properties: {grid_position: 'LDDQKG,EHGDIS'}
+      name: column_panel_2
+      properties: {col_widths: '{}'}
+      type: ColumnPanel
+    - components:
+      - event_bindings: {click: code1_click}
         layout_properties: {grid_position: 'FGEJGQ,KYZPOP'}
-        event_bindings: {click: code1_click}
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_2,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_2
+        name: button_1
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_1, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: code2_click}
         layout_properties: {grid_position: 'DNYMFD,DFRIBY'}
-        event_bindings: {click: code2_click}
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_3,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_3
+        name: button_2
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_2, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: code3_click}
         layout_properties: {grid_position: 'FGEJGQ,MPXEDK'}
-        event_bindings: {click: code3_click}
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_4,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_4
+        name: button_3
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_3, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: code4_click}
         layout_properties: {grid_position: 'SYMDVB,ZKTTKB'}
-        event_bindings: {click: code4_click}
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_5,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_5
+        name: button_4
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_4, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: code5_click}
         layout_properties: {grid_position: 'DNYMFD,RYDQSB'}
-        event_bindings: {click: code5_click}
-      - type: Button
-        properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
-          foreground: 'theme:background bleu foncé', visible: true, text: button_6,
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: true, underline: false, icon: ''}
-        name: button_6
+        name: button_5
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_5, tooltip: '', underline: false, visible: true}
+        type: Button
+      - event_bindings: {click: code6_click}
         layout_properties: {grid_position: 'DNYMFD,ACIZQI'}
-        event_bindings: {click: code6_click}
-    - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: false, text: '', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: none, italic: true, background: 'theme:Primary
-          500', bold: false, underline: false, icon: ''}
+        name: button_6
+        properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:background bleu foncé', icon: '', icon_align: left, italic: false, role: raised, spacing_above: small, spacing_below: small, text: button_6, tooltip: '', underline: false, visible: true}
+        type: Button
+      layout_properties: {grid_position: 'FGEJGQ,XGRDBW'}
+      name: flow_panel_2
+      properties: {align: center, background: '', border: '', foreground: '', role: null, spacing: medium, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+      type: FlowPanel
+    - layout_properties: {grid_position: 'OPIRRB,BCJXDP'}
       name: label_en_tete
-      layout_properties: {grid_position: 'OPIRRB,BCJXDP'}
-    - type: ColumnPanel
-      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"HKMCXN":30,"WVNQCS":30}',
-        spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_01
-      layout_properties: {grid_position: 'CTPEJX,AMWJYO'}
-      components:
-      - type: ColumnPanel
-        properties: {col_widths: '{}'}
-        name: column_panel_1
-        layout_properties: {grid_position: 'HYONXF,HKMCXN'}
-        components:
-        - type: RichText
-          properties: {role: top-border, align: left, tooltip: '', enable_slots: true,
-            border: '', foreground: 'theme:White', visible: true, font_size: 14, content: "**Stages\
-              \ SST initial**\n\nJe forme le **S**auveteur **S**ecouriste du **T**ravail\
-              \ (SST). \nStage de 14 heures, souvent sur 2 jours, parfois sur 4 matins\
-              \ par exemple.\n\nUne fois revenu dans son entreprise, l'employ\xe9\
-              \ SST jouera d'abord un r\xf4le d'**acteur de la pr\xe9vention**.\n\
-              Sur cette image, les stagiaires rep\xe8rent en \xe9quipes, diff\xe9\
-              rentes **situations dangereuses**.\nIls devront ensuite les commenter\
-              \ et proposer des solutions.", font: '', spacing_above: none, spacing_below: small,
-            data: null, background: '', format: markdown}
-          name: rich_text_1
+      properties: {align: center, background: 'theme:Primary 500', bold: false, border: '', font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: true, role: subheading, spacing_above: small, spacing_below: none, text: '', tooltip: '', underline: false, visible: false}
+      type: Label
+    - components:
+      - components:
+        - components: []
           layout_properties: {grid_position: 'GTBYFW,GMZFLY'}
-          components: []
-      - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: zoom_to_fill, spacing_above: small,
-          source: _/theme/SST%20Etude%20sit%20dangereuses.jpg, spacing_below: small,
-          background: '', horizontal_align: center}
-        name: image_1
-        layout_properties: {grid_position: 'HYONXF,WVNQCS'}
-      - type: RichText
-        properties: {role: rounded-border, align: left, tooltip: '', enable_slots: true,
-          border: '', foreground: 'theme:White', visible: true, font_size: 14, content: 'Le
-            stagiaire apprendra ensuite à porter secours à un collègue atteint d''un
-            malaise ou d''un trauma par exemple.
-
-            Ici le stagiaire a mis la victime en PLS et la surveille.
-
-            Chaque stage est différent. J''aime relever le défi de s''adapter aux
-            besoins spécifiques des stagiaires, en fonction de leurs secteurs d''activité.
-
-
-            Le plan d''intervention, ici au mur, aidera le stagiaire à acquérir la
-            logique de l''intervention d''un secouriste.  ', font: '', spacing_above: small,
-          spacing_below: small, data: null, background: '', format: markdown}
-        name: rich_text_2
-        layout_properties: {grid_position: 'YJPFHR,MOHBGL'}
-        components: []
-      - type: ColumnPanel
+          name: rich_text_1
+          properties:
+            align: left
+            background: ''
+            border: ''
+            content: "**Stages SST initial**\n\nJe forme le **S**auveteur **S**ecouriste du **T**ravail (SST). \nStage de 14 heures, souvent sur 2 jours, parfois sur 4 matins par exemple.\n\nUne fois revenu dans son entreprise, l'employé SST jouera d'abord un rôle d'**acteur de la prévention**.\nSur cette image, les stagiaires repèrent en équipes, différentes **situations dangereuses**.\nIls devront ensuite les commenter et proposer des solutions."
+            data: null
+            enable_slots: true
+            font: ''
+            font_size: 14
+            foreground: theme:White
+            format: markdown
+            role: top-border
+            spacing_above: none
+            spacing_below: small
+            tooltip: ''
+            visible: true
+          type: RichText
+        layout_properties: {grid_position: 'HYONXF,HKMCXN'}
+        name: column_panel_1
         properties: {col_widths: '{}'}
-        name: column_panel_3
-        layout_properties: {grid_position: 'YJPFHR,WNVLJL'}
-        components:
-        - type: Image
-          properties: {role: null, vertical_align: center, height: 336, tooltip: '',
-            border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-            spacing_above: small, source: _/theme/SST%20Pls%20et%20surveillance.jpg,
-            spacing_below: none, background: '', horizontal_align: center}
+        type: ColumnPanel
+      - layout_properties: {grid_position: 'HYONXF,WVNQCS'}
+        name: image_1
+        properties: {background: '', border: '', display_mode: zoom_to_fill, foreground: '', height: '200', horizontal_align: center, role: null, source: _/theme/SST%20Etude%20sit%20dangereuses.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      - components: []
+        layout_properties: {grid_position: 'YJPFHR,MOHBGL'}
+        name: rich_text_2
+        properties:
+          align: left
+          background: ''
+          border: ''
+          content: "Le stagiaire apprendra ensuite à porter secours à un collègue atteint d'un malaise ou d'un trauma par exemple.\nIci le stagiaire a mis la victime en PLS et la surveille.\nChaque stage est différent. J'aime relever le défi de s'adapter aux besoins spécifiques des stagiaires, en fonction de leurs secteurs d'activité.\n\nLe plan d'intervention, ici au mur, aidera le stagiaire à acquérir la logique de l'intervention d'un secouriste.  "
+          data: null
+          enable_slots: true
+          font: ''
+          font_size: 14
+          foreground: theme:White
+          format: markdown
+          role: rounded-border
+          spacing_above: small
+          spacing_below: small
+          tooltip: ''
+          visible: true
+        type: RichText
+      - components:
+        - layout_properties: {grid_position: 'ACTPYG,GOAAZU'}
           name: image_2
-          layout_properties: {grid_position: 'ACTPYG,GOAAZU'}
-    - type: ColumnPanel
-      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-        spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_02
-      layout_properties: {grid_position: 'SJRVCL,NGZMOU'}
-      components:
-      - type: RichText
-        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
-            MAC SST**
-
-
-            Je recycle le **S**auveteur **S**ecouriste du **T**ravail (SST). Ce stage
-            s''effectue tous les 2 ans.
-
-            Le sauveteur SST peurra ainsi  **M**aintenir et **A**cquérir de nouvelles
-            **C**onnaissances (MAC), en fonction des points nouveaux  du référentiel
-            SST et de nouveaux besoins spécifiques de son activité.
-
-
-            Stage de 7 heures, souvent sur 1 jour, parfois sur 2 matins par exemple.
-
-
-            Ici, un SST révise la désobstruction d''un nourrisson. ', font: '', spacing_above: small,
-          spacing_below: small, data: null, background: '', format: markdown}
+          properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 336, horizontal_align: center, role: null, source: _/theme/SST%20Pls%20et%20surveillance.jpg, spacing_above: small, spacing_below: none, tooltip: '', vertical_align: center, visible: true}
+          type: Image
+        layout_properties: {grid_position: 'YJPFHR,WNVLJL'}
+        name: column_panel_3
+        properties: {col_widths: '{}'}
+        type: ColumnPanel
+      layout_properties: {grid_position: 'CTPEJX,AMWJYO'}
+      name: column_panel_bt_01
+      properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{"HKMCXN":30,"WVNQCS":30}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+      type: ColumnPanel
+    - components:
+      - layout_properties: {grid_position: 'LGQGIJ,CISIHW'}
         name: rich_text_3
-        layout_properties: {grid_position: 'LGQGIJ,CISIHW'}
-      - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-          source: _/theme/SST%20d%C3%A9sobstruction.jpg, spacing_below: small, background: '',
-          horizontal_align: center}
+        properties:
+          align: left
+          background: ''
+          border: ''
+          content: "**Stage MAC SST**\n\nJe recycle le **S**auveteur **S**ecouriste du **T**ravail (SST). Ce stage s'effectue tous les 2 ans.\nLe sauveteur SST peurra ainsi  **M**aintenir et **A**cquérir de nouvelles **C**onnaissances (MAC), en fonction des points nouveaux  du référentiel SST et de nouveaux besoins spécifiques de son activité.\n\nStage de 7 heures, souvent sur 1 jour, parfois sur 2 matins par exemple.\n\nIci, un SST révise la désobstruction d'un nourrisson. "
+          data: null
+          enable_slots: true
+          font: ''
+          font_size: 14
+          foreground: theme:White
+          format: markdown
+          role: null
+          spacing_above: small
+          spacing_below: small
+          tooltip: ''
+          visible: true
+        type: RichText
+      - layout_properties: {grid_position: 'LGQGIJ,PEMZXD'}
         name: image_3
-        layout_properties: {grid_position: 'LGQGIJ,PEMZXD'}
-    - type: ColumnPanel
-      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-        spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_03
-      layout_properties: {grid_position: 'CTZUYQ,MTAQGK'}
-      components:
-      - type: RichText
-        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
-            PSC1**
-
-
-            J''encadre le stage **P**révention et **S**ecours **C**iviques de niveau
-            **1**
-
-            La Formation PSC1, de 7 ou 8 heures, permet à toute personne d''acquérir
-            les compétences nécessaires pour porter secours à une victime en réalisant
-            les bons gestes élémentaires et une alerte efficace aux services de secours.',
-          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
-          format: markdown}
+        properties: {background: '', border: '', display_mode: fill_width, foreground: '', height: '200', horizontal_align: center, role: null, source: _/theme/SST%20d%C3%A9sobstruction.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'SJRVCL,NGZMOU'}
+      name: column_panel_bt_02
+      properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+      type: ColumnPanel
+    - components:
+      - layout_properties: {grid_position: 'TJWIUJ,EISWNK'}
         name: rich_text_4
-        layout_properties: {grid_position: 'TJWIUJ,EISWNK'}
-      - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-          source: _/theme/PSC1%20RCP.jpg, spacing_below: small, background: '', horizontal_align: center}
+        properties:
+          align: left
+          background: ''
+          border: ''
+          content: |-
+            **Stage PSC1**
+
+            J'encadre le stage **P**révention et **S**ecours **C**iviques de niveau **1**
+            La Formation PSC1, de 7 ou 8 heures, permet à toute personne d'acquérir les compétences nécessaires pour porter secours à une victime en réalisant les bons gestes élémentaires et une alerte efficace aux services de secours.
+          data: null
+          enable_slots: true
+          font: ''
+          font_size: 14
+          foreground: theme:White
+          format: markdown
+          role: null
+          spacing_above: small
+          spacing_below: small
+          tooltip: ''
+          visible: true
+        type: RichText
+      - layout_properties: {grid_position: 'TJWIUJ,BSWGAN'}
         name: image_4
-        layout_properties: {grid_position: 'TJWIUJ,BSWGAN'}
-    - type: ColumnPanel
-      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-        spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_04
-      layout_properties: {grid_position: 'BMCVHR,WDFQEH'}
-      components:
-      - type: RichText
-        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-          foreground: 'theme:White', visible: true, font_size: 14, content: "**Stage\
-            \ PSE1**\n\nJ'encadre r\xe9guli\xe8rement  le stage **P**remiers et **S**ecours\
-            \ en **E**quipe de niveau **1**.\nIl s'adresse aux stagiaires surveillants\
-            \ aquatiques (BNSSA) et futurs ma\xeetres-nageurs (BPAAN).  \nDe 38h minimum,\
-            \ il permet de faire le premier pas dans le secourisme en \xe9quipe, au\
-            \ bord d'une piscine par exemple.\nComme nous le voyons sur l'image, le\
-            \ stagiaire utilise maintenant des techniques et du mat\xe9riel plus pouss\xe9\
-            s. \nIci, dans le cas d'une simulation d'arr\xeat cardiaque, il devra\
-            \ utiliser l'oxyg\xe8ne, le masque \xe0 insufflation, l'aspirateur \xe0\
-            \ mucosit\xe9, et les canules de Guedel.\n\nCes stages PSE1 et 2 me permettent\
-            \ d'\xeatre bien plus efficace sur les stages SST ou PSC1, o\xf9 les stagiaires\
-            \ posent souvent de nombreuses questions tr\xe8s pertinentes !     \n",
-          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
-          format: markdown}
+        properties: {background: '', border: '', display_mode: fill_width, foreground: '', height: '200', horizontal_align: center, role: null, source: _/theme/PSC1%20RCP.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'CTZUYQ,MTAQGK'}
+      name: column_panel_bt_03
+      properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+      type: ColumnPanel
+    - components:
+      - layout_properties: {grid_position: 'WDGROV,HCAZBI'}
         name: rich_text_5
-        layout_properties: {grid_position: 'WDGROV,HCAZBI'}
-      - type: Image
-        properties: {role: null, vertical_align: center, height: 277, tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-          spacing_above: small, source: _/theme/home-img0.jpg, spacing_below: small,
-          background: '', horizontal_align: center}
+        properties:
+          align: left
+          background: ''
+          border: ''
+          content: "**Stage PSE1**\n\nJ'encadre régulièrement  le stage **P**remiers et **S**ecours en **E**quipe de niveau **1**.\nIl s'adresse aux stagiaires surveillants aquatiques (BNSSA) et futurs maîtres-nageurs (BPAAN).  \nDe 38h minimum, il permet de faire le premier pas dans le secourisme en équipe, au bord d'une piscine par exemple.\nComme nous le voyons sur l'image, le stagiaire utilise maintenant des techniques et du matériel plus poussés. \nIci, dans le cas d'une simulation d'arrêt cardiaque, il devra utiliser l'oxygène, le masque à insufflation, l'aspirateur à mucosité, et les canules de Guedel.\n\nCes stages PSE1 et 2 me permettent d'être bien plus efficace sur les stages SST ou PSC1, où les stagiaires posent souvent de nombreuses questions très pertinentes !     \n"
+          data: null
+          enable_slots: true
+          font: ''
+          font_size: 14
+          foreground: theme:White
+          format: markdown
+          role: null
+          spacing_above: small
+          spacing_below: small
+          tooltip: ''
+          visible: true
+        type: RichText
+      - layout_properties: {grid_position: 'WDGROV,TFCJFD'}
         name: image_5
-        layout_properties: {grid_position: 'WDGROV,TFCJFD'}
-    - type: ColumnPanel
-      properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
-        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-        spacing_below: small, background: 'theme:Primary 500'}
-      name: column_panel_bt_05
-      layout_properties: {grid_position: 'NVTVOV,OLILIM'}
-      components:
-      - type: RichText
-        properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-          foreground: 'theme:White', visible: true, font_size: 14, content: '**Stage
-            PSE2**
-
-
-            J''encadre le stage **P**remiers et **S**ecours en **E**quipe de niveau
-            **2**', font: '', spacing_above: small, spacing_below: small, data: null,
-          background: '', format: markdown}
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 277, horizontal_align: center, role: null, source: _/theme/home-img0.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'BMCVHR,WDFQEH'}
+      name: column_panel_bt_04
+      properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+      type: ColumnPanel
+    - components:
+      - layout_properties: {grid_position: 'ZBURWS,ALMVSI'}
         name: rich_text_6
-        layout_properties: {grid_position: 'ZBURWS,ALMVSI'}
-      - type: Image
-        properties: {role: null, vertical_align: center, height: '200', tooltip: '',
-          border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-          source: _/theme/brancardage.jpg, spacing_below: small, background: '', horizontal_align: center}
+        properties:
+          align: left
+          background: ''
+          border: ''
+          content: |-
+            **Stage PSE2**
+
+            J'encadre le stage **P**remiers et **S**ecours en **E**quipe de niveau **2**
+          data: null
+          enable_slots: true
+          font: ''
+          font_size: 14
+          foreground: theme:White
+          format: markdown
+          role: null
+          spacing_above: small
+          spacing_below: small
+          tooltip: ''
+          visible: true
+        type: RichText
+      - layout_properties: {grid_position: 'ZBURWS,HWOXVI'}
         name: image_6
-        layout_properties: {grid_position: 'ZBURWS,HWOXVI'}
-    - type: Label
-      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: false, text: 'Mes tarifs :', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-          500', bold: false, underline: false, icon: ''}
+        properties: {background: '', border: '', display_mode: fill_width, foreground: '', height: '200', horizontal_align: center, role: null, source: _/theme/brancardage.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'NVTVOV,OLILIM'}
+      name: column_panel_bt_05
+      properties: {background: 'theme:Primary 500', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: false, wrap_on: mobile}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'KOJIWK,XMCIFU'}
       name: label_mes_tarifs
-      layout_properties: {grid_position: 'KOJIWK,XMCIFU'}
-    - type: DataGrid
+      properties: {align: center, background: 'theme:Primary 500', bold: false, border: '', font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: subheading, spacing_above: small, spacing_below: small, text: 'Mes tarifs :', tooltip: '', underline: false, visible: false}
+      type: Label
+    - components:
+      - layout_properties: {}
+        name: repeating_panel_1
+        properties: {background: '', border: '', foreground: '', item_template: Produits.RowTemplate1, items: null, role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true}
+        type: RepeatingPanel
+      layout_properties: {grid_position: 'YPVCTP,UZTMTV'}
+      name: data_grid_1
       properties:
-        role: rounded-border
-        columns:
-        - {id: OQVLXE, title: Prestation, data_key: prestation, $$hashKey: 'object:50470'}
-        - {id: IQKOCL, title: Tarif-1-jour, data_key: tarif-1-jour, $$hashKey: 'object:50472'}
-        - {id: RYNECF, title: Tarif-1/2-jour, data_key: tarif-1/2-jour, $$hashKey: 'object:50473'}
         auto_header: true
-        tooltip: ''
+        background: ''
         border: ''
+        columns:
+        - {$$hashKey: 'object:50470', data_key: prestation, id: OQVLXE, title: Prestation}
+        - {$$hashKey: 'object:50472', data_key: tarif-1-jour, id: IQKOCL, title: Tarif-1-jour}
+        - {$$hashKey: 'object:50473', data_key: tarif-1/2-jour, id: RYNECF, title: Tarif-1/2-jour}
         foreground: ''
+        role: rounded-border
         rows_per_page: 20
-        visible: false
-        wrap_on: never
         show_page_controls: true
         spacing_above: small
         spacing_below: small
-        background: ''
-      name: data_grid_1
-      layout_properties: {grid_position: 'YPVCTP,UZTMTV'}
-      components:
-      - type: RepeatingPanel
-        properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-          visible: true, spacing_above: none, spacing_below: none, item_template: Produits.RowTemplate1,
-          background: ''}
-        name: repeating_panel_1
-        layout_properties: {}
-- type: Timer
-  properties: {interval: 0.3}
-  name: timer_1
-  event_bindings: {tick: timer_1_tick}
-container:
+        tooltip: ''
+        visible: false
+        wrap_on: never
+      type: DataGrid
+    layout_properties: {full_width_row: true, grid_position: 'ALQSCF,IMUCLP'}
+    name: card_5
+    properties: {background: 'theme:Neutral', border: '', col_spacing: medium, col_widths: '{"NGZMOU":57}', foreground: '', role: card, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  layout_properties:
+    col_widths: {}
+    full_width_row: true
+    grid_position: QBPVWN,FDJDAK
+  name: content_panel
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: none,
-    background: ''}
+- event_bindings: {tick: timer_1_tick}
+  name: timer_1
+  properties: {interval: 0.3}
+  type: Timer
+container:
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+custom_component: false
+events: []
+is_package: true
+properties: []
