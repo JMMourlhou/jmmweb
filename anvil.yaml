@@ -75,7 +75,7 @@ services:
   server_config: {}
   source: /runtime/services/tables.yml
 - client_config: {}
-  server_config: {custom_smtp: true, smtp_encryption: starttls, smtp_host: smtp.gmail.com, smtp_password: H/l8CfHDtMQtzcYB+73jvIiTTWtFkQnjUnqy5BYkEwdUayWCTf+bz5rrzIOY5/GH6Ovt5EDFWgD8vSHlXaq022dMLYdoemrzleSCpee8myGsXR8OMzlYVTrDBcB33VJnfrHsVaN5IjbrSQ0NF0sJudcV4FkOnuBxM9KfA6sl3ApIFTGG, smtp_port: 587, smtp_user: jmarc@jmm-formation-et-services.fr}
+  server_config: {custom_smtp: true, smtp_encryption: starttls, smtp_host: smtp.gmail.com, smtp_password: aUIT5PH/3gRVXZ57evDyUVzu8feRzbaOceyODVqArTsBsjIQ9XLz6/zUM/6JITLRvleN3nZLKU7dU0HAnZhwgkjQQbHGWMuoqECBv7yoCsrSGTQJfmGBkJKa9G8MKRsI1LnK265JsFSjCVlIwX86GCH9p/Nj6P4XQ5JFeGEoJTzrrlX0, smtp_port: 587, smtp_user: jmarc@jmm-formation-et-services.fr}
   source: /runtime/services/anvil/email.yml
 startup: {module: Main, type: form}
 startup_form: null
