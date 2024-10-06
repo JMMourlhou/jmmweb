@@ -14,7 +14,6 @@ from ..Mon_CV import Mon_CV
 class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    
     self.init_components(**properties)
     self.content_panel.add_component(Home(), full_width_row=True)
 
