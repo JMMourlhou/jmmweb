@@ -59,7 +59,7 @@ db_schema:
     server: full
     title: Produits
 dependencies: []
-metadata: {description: JMM Web Services, logo_img: 'asset:Logo F S small.png', title: JMM Web Services}
+metadata: {description: JMM Web Services, logo_img: 'asset:Logo F S small.png', title: JM Mourlhou Web Services}
 name: jmmweb
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 package_name: JMM_Formation

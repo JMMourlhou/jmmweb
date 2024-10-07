@@ -126,8 +126,9 @@ components:
 
         J'aime **l'histoire ancienne,  les musées et la lecture**.
 
-        Passionné d'informatique, j'ai **créé moi même ce site internet**. (Full stack, sous  Python et Anvil, pour les connaisseurs ).
-        J'ai d'ailleurs rajouté un service **développement web** à mon entreprise.
+        Passionné d'informatique, j'ai **créé moi même ce site internet**. Pour les connaisseurs, Full Stack, sous  Python et platforme Anvil. Cette application web est stockée sur mon  serveur personnel, un Raspberry Pi5.
+
+        J'ai rajouté un service **développement web** à mon entreprise.
       data: null
       enable_slots: true
       font: ''
