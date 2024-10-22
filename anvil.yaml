@@ -50,11 +50,11 @@ db_schema:
     - admin_ui: {order: 2, width: 200}
       name: visible
       type: bool
-    - admin_ui: {order: 4, width: 200}
-      name: tarif-1-jour
+    - admin_ui: {order: 3, width: 200}
+      name: tarif_1_jour
       type: string
     - admin_ui: {order: 4, width: 200}
-      name: tarif-1/2-jour
+      name: tarif_1demi_jour
       type: string
     server: full
     title: Produits
