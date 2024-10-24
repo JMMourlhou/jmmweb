@@ -4,37 +4,37 @@ components:
     name: spacer_1
     properties: {height: 32}
     type: Spacer
-  - event_bindings: {change: text_box_2_change, pressed_enter: text_box_code_pressed_enter}
-    layout_properties: {width: 61.95390148925782}
+  - event_bindings: {change: text_box_2_change}
+    layout_properties: {width: 41.28131328125}
     name: text_box_code
-    properties: {background: 'theme:Primary', foreground: 'theme:On Tertiary', role: outlined, text: Code}
+    properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', role: outlined, text: Code}
     type: TextBox
-  - event_bindings: {change: text_box_1_change, pressed_enter: text_box_prestation_pressed_enter}
+  - event_bindings: {change: text_box_1_change}
     layout_properties: {expand: true, width: null}
     name: text_box_prestation
-    properties: {align: center, background: 'theme:Primary', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', hide_text: false, italic: false, placeholder: Prestation, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+    properties: {align: center, background: 'theme:background bleu foncé', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: 'theme:White', hide_text: false, italic: false, placeholder: Prestation, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
     type: TextBox
   - layout_properties: {width: 74.27348779296875}
     name: text_box_tarif_1j
-    properties: {placeholder: Prix 1 j}
+    properties: {background: 'theme:background bleu foncé', font: '', font_size: 12, foreground: 'theme:White', placeholder: Prix 1 j}
     type: TextBox
   - layout_properties: {width: 74.89783134765625}
     name: text_box_tarif_1demi_j
-    properties: {placeholder: Prix 1/2}
+    properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', placeholder: Prix 1/2}
     type: TextBox
   - layout_properties: {}
     name: check_box_visible
-    properties: {text: Visu}
+    properties: {background: 'theme:background bleu foncé', font_size: 12, text: Visu}
     type: CheckBox
   - event_bindings: {click: button_modif_click}
     layout_properties: {}
     name: button_modif
-    properties: {background: 'theme:background bleu fonc', enabled: true, foreground: 'theme:Primary 700', text: Modif, visible: true}
+    properties: {background: 'theme:', enabled: true, font_size: 12, foreground: 'theme:White', text: Modif, visible: false}
     type: Button
   - event_bindings: {click: button_annuler_click}
     layout_properties: {grid_position: 'PJIZXA,HIXLGT'}
     name: button_annuler
-    properties: {align: center, background: 'theme:Primary', bold: false, border: '', enabled: true, font: '', font_size: 21, foreground: 'theme:Primary 700', icon: 'fa:minus-square', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: none, text: '', tooltip: '', underline: false, visible: true}
+    properties: {align: center, background: 'theme:', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: 'theme:White', icon: 'fa:minus-square', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: none, text: '', tooltip: '', underline: false, visible: true}
     type: Button
   - layout_properties: {grid_position: 'ZTYXXQ,WCMWOO'}
     name: spacer_4

@@ -10,7 +10,7 @@ class ItemTemplate1(ItemTemplate1Template):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-        self.f = get_open_form()   # récupération de la forme mère pour revenir ds la forme appelante
+        self.f = get_open_form()   # récupération de la forme mère pour appeler la forme appelante
 
         # Any code you write here will run before the form opens.
         self.text_box_code.text = self.item['code']
