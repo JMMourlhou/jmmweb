@@ -93,7 +93,8 @@ components:
   properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 15, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: none, text: JMM Formations, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
   type: Link
 - components:
-  - layout_properties: {grid_position: 'EGWLLU,QSXIRZ'}
+  - event_bindings: {mouse_down: image_1_mouse_down}
+    layout_properties: {grid_position: 'EGWLLU,QSXIRZ'}
     name: image_1
     properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 181.67889404296875, horizontal_align: center, role: null, source: _/theme/Logo%20F%20S%20small_transparent.png, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
     type: Image

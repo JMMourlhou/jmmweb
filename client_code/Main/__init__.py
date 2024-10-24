@@ -8,6 +8,7 @@ from ..Home import Home
 from ..Mes_formations import Mes_formations
 from ..Contact import Contact
 from ..Produits import Produits
+from ..Produits_maj import Produits_maj
 from ..Mon_CV import Mon_CV
 
 
@@ -72,6 +73,11 @@ class Main(MainTemplate):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Form1(), full_width_row=True)
+
+  def image_1_mouse_down(self, x, y, button, keys, **event_args):
+      """This method is called when a mouse button is pressed on this component"""
+      self.content_panel.clear()
+      self.content_panel.add_component(Produits_maj(), full_width_row=True)
 
 
 
