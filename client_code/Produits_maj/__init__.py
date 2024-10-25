@@ -10,8 +10,9 @@ class Produits_maj(Produits_majTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-
         # Any code you write here will run before the form opens.
+
+        # lecture table Produits
         self.list_produits = app_tables.produits.search(tables.order_by("code", ascending=True))
         self.repeating_panel_1.items = self.list_produits
 
@@ -23,6 +24,10 @@ class Produits_maj(Produits_majTemplate):
 
     def focus(self, **event_args):
         self.text_box_prestation.focus()
+
+    def text_box_code_change(self, **event_args):
+        """This method is called when the text in this text box is edited"""
+        self.text_box_prestation_pressed_enter()
 
     def text_box_prestation_pressed_enter(self, **event_args):
         """This method is called when the user presses Enter in this text box"""
@@ -70,3 +75,17 @@ class Produits_maj(Produits_majTemplate):
                                     self.text_box_tarif_1demi_j.text,
                                     self.check_box_visible.checked
                              )
+            # Réaffichage 
+            self.affichage()
+
+    def affichage(self):
+        self.list_produits = app_tables.produits.search(tables.order_by("code", ascending=True))
+        self.repeating_panel_1.items = self.list_produits
+        self.column_panel_add.visible = False
+        self.repeating_panel_1.visible = True
+
+    def button_retour_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        open_form('Main')
+
+

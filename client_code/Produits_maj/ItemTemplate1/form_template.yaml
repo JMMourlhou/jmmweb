@@ -9,20 +9,23 @@ components:
     name: text_box_code
     properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', role: outlined, text: Code}
     type: TextBox
-  - event_bindings: {change: text_box_1_change}
+  - event_bindings: {change: text_box_prestation_change}
     layout_properties: {expand: true, width: null}
     name: text_box_prestation
-    properties: {align: center, background: 'theme:background bleu foncé', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: 'theme:White', hide_text: false, italic: false, placeholder: Prestation, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+    properties: {align: left, background: 'theme:background bleu foncé', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: 'theme:White', hide_text: false, italic: false, placeholder: Prestation, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
     type: TextBox
-  - layout_properties: {width: 74.27348779296875}
+  - event_bindings: {change: text_box_tarif_1j_change}
+    layout_properties: {width: 74.27348779296875}
     name: text_box_tarif_1j
     properties: {background: 'theme:background bleu foncé', font: '', font_size: 12, foreground: 'theme:White', placeholder: Prix 1 j}
     type: TextBox
-  - layout_properties: {width: 74.89783134765625}
+  - event_bindings: {change: text_box_tarif_1demi_j_change}
+    layout_properties: {width: 74.89783134765625}
     name: text_box_tarif_1demi_j
     properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', placeholder: Prix 1/2}
     type: TextBox
-  - layout_properties: {}
+  - event_bindings: {change: check_box_visible_change}
+    layout_properties: {}
     name: check_box_visible
     properties: {background: 'theme:background bleu foncé', font_size: 12, text: Visu}
     type: CheckBox

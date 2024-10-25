@@ -10,7 +10,7 @@ class ItemTemplate1(ItemTemplate1Template):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-        self.f = get_open_form()   # récupération de la forme mère pour appeler la forme appelante
+ 
 
         # Any code you write here will run before the form opens.
         self.text_box_code.text = self.item['code']
@@ -24,19 +24,41 @@ class ItemTemplate1(ItemTemplate1Template):
         r=alert("Voulez-vous détruire ce produit ?", dismissible=False ,buttons=[("oui",True),("non",False)])
         if r :   # Oui  
             anvil.server.call("destruction",self.item)
-            self.f.content_panel.clear()
-            self.f.content_panel.add_component(self.f, full_width_row=True)
+        self.f = get_open_form()   # récupération de la forme mère pour appeler la forme appelante
+        self.f.affichage()
 
     def button_modif_click(self, **event_args):
         """This method is called when the button is clicked"""
-        pass
+        r=alert("Voulez-vous modifier ce produit ?", dismissible=False ,buttons=[("oui",True),("non",False)])
+        if r :   # Oui
+            anvil.server.call("modif",
+                                    self.item,
+                                    self.text_box_code.text,
+                                    self.text_box_prestation.text,
+                                    self.text_box_tarif_1j.text,
+                                    self.text_box_tarif_1demi_j.text,
+                                    self.check_box_visible.checked
+                             )
+            # Réaffichage 
+            self.f = get_open_form()   # récupération de la forme mère pour appeler la forme appelante
+            self.f.affichage()
 
-    def text_box_prestation_pressed_enter(self, **event_args):
-        """This method is called when the user presses Enter in this text box"""
-        pass
+    def text_box_tarif_1j_change(self, **event_args):
+        """This method is called when the text in this text box is edited"""
+        self.text_box_prestation_change()
 
-    def text_box_code_pressed_enter(self, **event_args):
-        """This method is called when the user presses Enter in this text box"""
-        pass
+    def text_box_tarif_1demi_j_change(self, **event_args):
+        """This method is called when the text in this text box is edited"""
+        self.text_box_prestation_change()
+
+    def check_box_visible_change(self, **event_args):
+        """This method is called when this checkbox is checked or unchecked"""
+        self.text_box_prestation_change()
+
+    def text_box_prestation_change(self, **event_args):
+        """This method is called when the text in this text box is edited"""
+        self.button_modif.visible = True
+
+    
 
     

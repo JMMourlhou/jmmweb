@@ -70,6 +70,10 @@ runtime_options:
   server_spec_disabled: {base: python310-minimal, requirements: ''}
   server_version: python3-full
   version: 2
+secrets:
+  pass_word:
+    type: secret
+    value: {TKG7FZR3ZP7CNQYJ: kLGRo+wHF2ppNesaQik/VWZZ6LJmx0uQjos+CMcHJXHV2z5GtO05rwbIkewlSmtJ/D9vOFlc+7QebA9mI4MR7Qmhq6BNoeVSmQk/8ufepPY1LKG79bpW2jIZaKihfO0rZJN0veBrE2tk/Q==}
 services:
 - client_config: {enable_v2: true}
   server_config: {}
@@ -77,6 +81,9 @@ services:
 - client_config: {}
   server_config: {custom_smtp: false, smtp_encryption: starttls, smtp_host: smtp.gmail.com, smtp_password: aUIT5PH/3gRVXZ57evDyUVzu8feRzbaOceyODVqArTsBsjIQ9XLz6/zUM/6JITLRvleN3nZLKU7dU0HAnZhwgkjQQbHGWMuoqECBv7yoCsrSGTQJfmGBkJKa9G8MKRsI1LnK265JsFSjCVlIwX86GCH9p/Nj6P4XQ5JFeGEoJTzrrlX0, smtp_port: 587, smtp_user: jmarc@jmm-formation-et-services.fr}
   source: /runtime/services/anvil/email.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
 startup: {module: Main, type: form}
 startup_form: null
 uplink_visible: true

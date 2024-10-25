@@ -1,10 +1,15 @@
 components:
 - components:
   - components:
-    - event_bindings: {click: creation_stage_click}
+    - event_bindings: {}
       layout_properties: {grid_position: 'KXRLRL,TLJUDT'}
       name: creation_stage
       properties: {align: center, background: 'theme:background bleu foncé', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: rounded-border, spacing_above: small, spacing_below: small, text: MAJ table Produits, tooltip: '', underline: false, visible: true}
+      type: Button
+    - event_bindings: {click: button_retour_click}
+      layout_properties: {grid_position: 'YKLHLW,UIQZQV'}
+      name: button_retour
+      properties: {background: 'theme:', foreground: 'theme:White', text: Retour}
       type: Button
     layout_properties: {grid_position: 'EYKYXA,FXGIUU'}
     name: column_panel_2
@@ -14,7 +19,7 @@ components:
     - event_bindings: {click: button_new_click}
       layout_properties: {grid_position: 'BLZCNK,CPPPEN'}
       name: button_new
-      properties: {background: 'theme:', foreground: 'theme:White', text: Nouveau Produit}
+      properties: {background: 'theme:Primary 700', foreground: 'theme:White', text: Nouveau Produit}
       type: Button
     layout_properties: {grid_position: 'AXDNTI,WPUHNH'}
     name: column_panel_1
@@ -26,12 +31,12 @@ components:
         name: spacer_1
         properties: {height: 32}
         type: Spacer
-      - event_bindings: {change: text_box_2_change, pressed_enter: text_box_code_pressed_enter}
+      - event_bindings: {change: text_box_code_change}
         layout_properties: {width: 41.28131328125}
         name: text_box_code
         properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', role: outlined, text: Code}
         type: TextBox
-      - event_bindings: {change: text_box_prestation_pressed_enter}
+      - event_bindings: {change: text_box_prestation_pressed_enter, pressed_enter: text_box_prestation_pressed_enter}
         layout_properties: {expand: true, width: null}
         name: text_box_prestation
         properties: {align: center, background: 'theme:background bleu foncé', bold: false, border: '', enabled: true, font: '', font_size: 12, foreground: 'theme:White', hide_text: false, italic: false, placeholder: Prestation, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
@@ -67,7 +72,7 @@ components:
         type: Spacer
       layout_properties: {grid_position: 'LPBSWP,NOKJZH'}
       name: flow_panel_1
-      properties: {align: center, background: 'theme:Primary', border: '', foreground: '', role: null, spacing: medium, spacing_above: none, spacing_below: none, tooltip: '', vertical_align: middle, visible: true}
+      properties: {align: center, background: 'theme:Primary 700', border: '', foreground: '', role: null, spacing: medium, spacing_above: none, spacing_below: none, tooltip: '', vertical_align: middle, visible: true}
       type: FlowPanel
     event_bindings: {show: focus}
     layout_properties: {grid_position: 'IYRQGB,SKLZLP'}

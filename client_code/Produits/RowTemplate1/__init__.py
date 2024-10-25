@@ -14,8 +14,8 @@ class RowTemplate1(RowTemplate1Template):
         self.text_box_1.border = "5px"
         self.text_box_1.text = self.item['prestation']
         #self.text_box_1.border = "0px white"
-        self.text_box_2.text = self.item['tarif-1-jour']
-        self.text_box_3.text = self.item['tarif-1/2-jour']
+        self.text_box_2.text = self.item['tarif_1_jour']
+        self.text_box_3.text = self.item['tarif_1demi_jour']
 
     def text_box_2_pressed_enter(self, **event_args):
         """This method is called when the user presses Enter in this text box"""

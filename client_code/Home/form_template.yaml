@@ -92,38 +92,48 @@ components:
       name: label_9
       properties: {align: center, background: 'theme:Primary 500', bold: true, border: '', font: '', font_size: 18, foreground: 'theme:White', icon: '', icon_align: left, italic: true, role: subheading, spacing_above: none, spacing_below: none, text: 'Des O.F. qui me font confiance:', tooltip: '', underline: false, visible: true}
       type: Label
-    - layout_properties: {grid_position: 'IJYXXJ,QLMTRC'}
-      name: image_1
-      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 41, horizontal_align: center, role: null, source: _/theme/Logos/AMS.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
-      type: Image
     - components:
-      - layout_properties: {grid_position: 'LDWKWV,PWTFJA'}
+      - layout_properties: {grid_position: 'ANKGWY,RDZEYC'}
+        name: image_1
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 41, horizontal_align: center, role: null, source: _/theme/Logos/AMS.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      - layout_properties: {grid_position: 'ANKGWY,KBIZMY'}
         name: image_2
         properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 44, horizontal_align: center, role: null, source: _/theme/Logos/c2f.png, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
         type: Image
-      layout_properties: {grid_position: 'IJYXXJ,ZVWUZE'}
-      name: column_panel_3
-      properties: {col_widths: '{}'}
+      layout_properties: {grid_position: 'IJYXXJ,KIXOOY'}
+      name: column_panel_2
+      properties: {wrap_on: never}
       type: ColumnPanel
-    - layout_properties: {grid_position: 'IJYXXJ,GQJVQK'}
-      name: image_7
-      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 39, horizontal_align: center, role: null, source: _/theme/Logos/Muc.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
-      type: Image
-    - layout_properties: {grid_position: 'IJYXXJ,PANAZM'}
-      name: image_6
-      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 93, horizontal_align: center, role: null, source: _/theme/Logos/Logo%20V%C3%A9ritas.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
-      type: Image
-    - layout_properties: {grid_position: 'IJYXXJ,ZOKNDR'}
-      name: image_8
-      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 49.752288818359375, horizontal_align: center, role: null, source: _/theme/Logos/Dalkia.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
-      type: Image
-    - layout_properties: {grid_position: 'IJYXXJ,XSDNTF'}
-      name: image_4
-      properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 46.568809509277344, horizontal_align: center, role: null, source: _/theme/Logos/Sotel.jpg, spacing_above: small, spacing_below: none, tooltip: '', vertical_align: center, visible: true}
-      type: Image
+    - components:
+      - layout_properties: {grid_position: 'KARISB,TWZGJN'}
+        name: image_6
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 93, horizontal_align: center, role: null, source: _/theme/Logos/Logo%20V%C3%A9ritas.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      - layout_properties: {grid_position: 'KARISB,WLYMBP'}
+        name: image_7
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 49.7305908203125, horizontal_align: center, role: null, source: _/theme/Logos/Muc.JPG, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'IJYXXJ,APJFIG'}
+      name: column_panel_3
+      properties: {wrap_on: never}
+      type: ColumnPanel
+    - components:
+      - layout_properties: {grid_position: 'NHBATT,PVSUPW'}
+        name: image_8
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 49.752288818359375, horizontal_align: center, role: null, source: _/theme/Logos/Dalkia.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      - layout_properties: {grid_position: 'NHBATT,HICUSH'}
+        name: image_4
+        properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 46.568809509277344, horizontal_align: center, role: null, source: _/theme/Logos/Sotel.jpg, spacing_above: small, spacing_below: none, tooltip: '', vertical_align: center, visible: true}
+        type: Image
+      layout_properties: {grid_position: 'IJYXXJ,BHBGKV'}
+      name: column_panel_4
+      properties: {wrap_on: never}
+      type: ColumnPanel
     layout_properties: {full_width_row: true, grid_position: 'LJPHVG,PERRUJ', row_background: ''}
     name: card_3
-    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"ZVWUZE":11,"GQJVQK":9,"AWDUHK":9,"PANAZM":9,"QLMTRC":8,"ZOKNDR":7,"XSDNTF":7}', foreground: '', role: card, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"KIXOOY":15,"APJFIG":15}', foreground: '', role: card, spacing_above: none, spacing_below: none, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
   layout_properties:
     col_widths: {}
