@@ -66,7 +66,7 @@ package_name: JMM_Formation
 renamed: true
 runtime_options:
   client_version: '3'
-  server_spec: null
+  server_spec: {base: python310-standard}
   server_spec_disabled: {base: python310-minimal, requirements: ''}
   server_version: python3-full
   version: 2
