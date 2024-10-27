@@ -16,7 +16,7 @@ def add_contact_info(name,tel, email, topic, message, check):
   else:
         sov = "N'a pas accepté d'être référencé."
        
-  anvil.email.send(to="jmweb34.net",
+  anvil.email.send(to="contact@jmweb34.net",
                    from_name="Contact/Site Web 'jmweb34.net'", 
                    subject="Nouveau contact Web",
                    
