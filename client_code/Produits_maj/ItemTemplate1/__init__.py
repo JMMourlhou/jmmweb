@@ -42,6 +42,10 @@ class ItemTemplate1(ItemTemplate1Template):
             # Réaffichage 
             self.f = get_open_form()   # récupération de la forme mère pour appeler la forme appelante
             self.f.affichage()
+            
+    def text_box_code_change(self, **event_args):
+        """This method is called when this checkbox is checked or unchecked"""
+        self.text_box_prestation_change()
 
     def text_box_tarif_1j_change(self, **event_args):
         """This method is called when the text in this text box is edited"""

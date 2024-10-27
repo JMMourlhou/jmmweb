@@ -4,7 +4,7 @@ components:
     name: spacer_1
     properties: {height: 32}
     type: Spacer
-  - event_bindings: {change: text_box_2_change}
+  - event_bindings: {change: text_box_prestation_change}
     layout_properties: {width: 41.28131328125}
     name: text_box_code
     properties: {background: 'theme:background bleu foncé', font_size: 12, foreground: 'theme:White', role: outlined, text: Code}
