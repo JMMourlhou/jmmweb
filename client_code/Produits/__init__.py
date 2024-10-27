@@ -5,7 +5,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 global dico_prestation
-dico_prestation = app_tables.produits.search() 
+dico_prestation = {} 
 
 
 class Produits(ProduitsTemplate):
@@ -13,35 +13,35 @@ class Produits(ProduitsTemplate):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         self.timer = 1
-        #dico_prestation = app_tables.produits.search()    # tte la table produits lue
-        
         global dico_prestation
-        if dico_prestation[0]['visible'] == True:
+        dico_prestation = app_tables.produits.search()    # tte la table produits lue
+        
+        if dico_prestation[0]['visible'] is True:
             self.button_1.text = dico_prestation[0]['prestation']
         else:
             self.button_1.visible = False
         
-        if dico_prestation[1]['visible'] == True:
+        if dico_prestation[1]['visible'] is True:
             self.button_2.text = dico_prestation[1]['prestation']
         else:
             self.button_2.visible = False
              
-        if dico_prestation[2]['visible'] == True:
+        if dico_prestation[2]['visible'] is True:
             self.button_3.text = dico_prestation[2]['prestation']
         else:
             self.button_3.visible = False
             
-        if dico_prestation[3]['visible'] == True:
+        if dico_prestation[3]['visible'] is True:
             self.button_4.text = dico_prestation[3]['prestation']
         else:
             self.button_4.visible = False
             
-        if dico_prestation[4]['visible'] == True:
+        if dico_prestation[4]['visible'] is True:
             self.button_5.text = dico_prestation[4]['prestation']
         else:
             self.button_5.visible = False
              
-        if dico_prestation[5]['visible'] == True:
+        if dico_prestation[5]['visible'] is True:
             self.button_6.text = dico_prestation[5]['prestation']
         else:
             self.button_6.visible = False
@@ -49,7 +49,7 @@ class Produits(ProduitsTemplate):
         # condition="SST%"
         # self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
         
-        # Any code you write here will run when the form opens.
+       
 
     
     def affiche_prix(self, condition):
