@@ -14,6 +14,9 @@ class Produits_maj(Produits_majTemplate):
 
         # lecture table Produits
         self.list_produits = app_tables.produits.search(tables.order_by("code", ascending=True))
+        self.nb_produits = len(self.list_produits)
+        if self.nb_produits >= 6:
+            self.button_new.visible = False
         self.repeating_panel_1.items = self.list_produits
 
     def button_new_click(self, **event_args):

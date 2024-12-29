@@ -41,7 +41,7 @@ db_schema:
   produits:
     client: search
     columns:
-    - admin_ui: {order: 0, width: 128.17}
+    - admin_ui: {order: 0, width: 123.17}
       name: code
       type: number
     - admin_ui: {order: 1, width: 200}
@@ -73,7 +73,7 @@ runtime_options:
 secrets:
   pass_word:
     type: secret
-    value: {TKG7FZR3ZP7CNQYJ: kLGRo+wHF2ppNesaQik/VWZZ6LJmx0uQjos+CMcHJXHV2z5GtO05rwbIkewlSmtJ/D9vOFlc+7QebA9mI4MR7Qmhq6BNoeVSmQk/8ufepPY1LKG79bpW2jIZaKihfO0rZJN0veBrE2tk/Q==}
+    value: {TKG7FZR3ZP7CNQYJ: lHfCWBQ8zRwjXPwhyMDT6o7NrXOE6fJBeHb2tq/Xo0VZjjFxegWxPCOWFnnMz4IKosMvjMrF27BKriJeGaBeYZLjnta8AXb7S4d2rJbRsIszzTiDpGVy6psp3bLdWkUMfG29}
 services:
 - client_config: {enable_v2: true}
   server_config: {}

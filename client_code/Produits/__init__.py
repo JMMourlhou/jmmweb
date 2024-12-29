@@ -14,43 +14,38 @@ class Produits(ProduitsTemplate):
         self.init_components(**properties)
         self.timer = 1
         global dico_prestation
-        dico_prestation = app_tables.produits.search()    # tte la table produits lue
-        
+        dico_prestation = app_tables.produits.search(tables.order_by("code", ascending=True))    # tte la table produits lue
+
+        # Prestation 1
         if dico_prestation[0]['visible'] is True:
             self.button_1.text = dico_prestation[0]['prestation']
         else:
             self.button_1.visible = False
-        
+            
+        # Prestation 2
         if dico_prestation[1]['visible'] is True:
             self.button_2.text = dico_prestation[1]['prestation']
         else:
             self.button_2.visible = False
-             
+        
+        # Prestation 3            
         if dico_prestation[2]['visible'] is True:
             self.button_3.text = dico_prestation[2]['prestation']
         else:
             self.button_3.visible = False
-            
+
+        # Prestation 4
         if dico_prestation[3]['visible'] is True:
             self.button_4.text = dico_prestation[3]['prestation']
         else:
             self.button_4.visible = False
-            
+
+        # Prestation 5
         if dico_prestation[4]['visible'] is True:
             self.button_5.text = dico_prestation[4]['prestation']
         else:
             self.button_5.visible = False
-             
-        if dico_prestation[5]['visible'] is True:
-            self.button_6.text = dico_prestation[5]['prestation']
-        else:
-            self.button_6.visible = False
-        # selects the prestations starting with "SST"
-        # condition="SST%"
-        # self.repeating_panel_1.items = app_tables.produits.search(prestation=q.ilike(condition))
-        
-       
-
+ 
     
     def affiche_prix(self, condition):
         # selects the prestations starting with var condition
@@ -93,7 +88,7 @@ class Produits(ProduitsTemplate):
         self.affiche_prix("SST-M%")
         
 
-    def code3_click(self, **event_args):
+    def code3_click(self, **event_args):               #PSE1
         """This method is called when the button is clicked"""
         global dico_prestation
         self.label_en_tete.text = dico_prestation[2]['prestation']   
@@ -110,7 +105,7 @@ class Produits(ProduitsTemplate):
         """
         self.affiche_prix("PSE1%")
 
-    def code4_click(self, **event_args):
+    def code4_click(self, **event_args):            #PSE2
         """This method is called when the button is clicked"""
         global dico_prestation
         self.label_en_tete.text = dico_prestation[3]['prestation']   
@@ -138,21 +133,15 @@ class Produits(ProduitsTemplate):
         self.column_panel_bt_03.visible = False
         self.column_panel_bt_04.visible = False
         self.column_panel_bt_05.visible = True
-        """
-        self.column_panel_bt_06.visible = False
-        """
+        
         self.affiche_prix("PSE%")
 
-    def code6_click(self, **event_args):
-        """This method is called when the button is clicked"""
-        self.affiche_prix("Ang%")
 
     def timer_1_tick(self, **event_args):
         """This method is called Every [0,5] seconds. Does not trigger if [interval] is 0."""
-       
         if self.timer == 1:
             self.button_1.foreground = "red"
-            self.button_6.foreground = "theme:background bleu foncé"
+            self.button_5.foreground = "theme:background bleu foncé"
         if self.timer == 2:
             self.button_2.foreground = "red"
             self.button_1.foreground = "theme:background bleu foncé"
@@ -165,14 +154,10 @@ class Produits(ProduitsTemplate):
         if self.timer == 5:
             self.button_5.foreground = "red"
             self.button_4.foreground = "theme:background bleu foncé"
-        if self.timer == 6:
-            self.button_6.foreground = "red"
-            self.button_5.foreground = "theme:background bleu foncé"
+
         self.timer += 1
-        if self.timer == 7:
-            print("reset")
+        if self.timer == 6:
             self.timer = 1
-        print(self.timer)
 
 
 
