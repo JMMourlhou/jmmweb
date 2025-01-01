@@ -4,7 +4,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 import anvil.server
-anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
+#anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
 
 # lecture de la table Produits chez Anvil et écriture sur tables locales
 @anvil.server.callable
