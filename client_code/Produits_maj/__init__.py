@@ -91,4 +91,10 @@ class Produits_maj(Produits_majTemplate):
         """This method is called when the button is clicked"""
         open_form('Main')
 
+    def button_up_link_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        nb_rows=anvil.server.call('up_link_connection')
+        msg=str(nb_rows)+" lignes lues"
+        alert(msg)
+
 
