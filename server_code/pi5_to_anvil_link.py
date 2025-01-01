@@ -11,7 +11,7 @@ import anvil.server
 def up_link_connection():
     liste_produits = app_tables.produits.search()
     nb_rows = len(liste_produits)
-    anvil.server.disconnect() # déconnexion d'Anvil
+    #anvil.server.disconnect() # déconnexion d'Anvil
 
     # écriture table produits
     for row in liste_produits:
