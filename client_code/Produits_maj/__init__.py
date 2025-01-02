@@ -93,7 +93,13 @@ class Produits_maj(Produits_majTemplate):
 
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
-        nb_rows=anvil.server.call('up_link_connection')
+        import anvil.server
+        anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
+
+        liste_produits = app_tables.produits.search()
+        nb_rows = len(liste_produits)
+        anvil.server.disconnect() # déconnexion d'Anvil
+
         msg=str(nb_rows)+" lignes lues"
         alert(msg)
 
