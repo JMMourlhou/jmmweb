@@ -93,49 +93,23 @@ class Produits_maj(Produits_majTemplate):
 
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
-        import anvil.server
+        import anvil.server # connexion à Anvil cloud
         anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
         rows = app_tables.produits.search()
-        anvil.server.
+        anvil.server.disconnect() # déconnexion d'Anvil cloud
         nb_rows = len(rows)
         print(nb_rows)
-        
-        anvil.server.call('writing_after_uplink',rows)
+        for row in rows:
+            anvil.server.call('add',
+                            row["code"],
+                            row["prestation"],
+                            row["visible"],
+                            row["tarif_1_jour"],
+                            row["tarif_1demi_jour"]
+                            )
+        self.affichage()
 
 
-# fonction --------------------------------------------------
-def get_data_from_anvil():
-    rows = app_tables.produits.search()
-    nb_rows = len(rows)
-    print(nb_rows)
-    return rows
 
-# Main -------------------------------------------------------
-rows = get_data_from_anvil()
-for row in rows:
-    print(row["code"],row["prestation"],row["visible"],row["tarif_1_jour"],row["tarif_1demi_jour"])
-print("Fin de fichier")
-        anvil.server.disconnect() # déconnexion d'Anvil
-
-        msg=str(nb_rows)+" lignes lues"
-        alert(msg)
-
-        # ----------------------------------------------------------
-import anvil.server
-from anvil.tables import app_tables
-anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
-
-# fonction --------------------------------------------------
-def get_data_from_anvil():
-    rows = app_tables.produits.search()
-    nb_rows = len(rows)
-    print(nb_rows)
-    return rows
-
-# Main -------------------------------------------------------
-rows = get_data_from_anvil()
-for row in rows:
-    print(row["code"],row["prestation"],row["visible"],row["tarif_1_jour"],row["tarif_1demi_jour"])
-print("Fin de fichier")
 
 
