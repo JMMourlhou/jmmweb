@@ -93,7 +93,7 @@ class Produits_maj(Produits_majTemplate):
 
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
-        import anvil.server # connexion à Anvil cloud
+        # import anvil.server # connexion à Anvil cloud
         # import anvil.secrets
         
         # connection à anvil_app
