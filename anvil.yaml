@@ -71,12 +71,12 @@ runtime_options:
   server_version: python3-full
   version: 2
 secrets:
+  key_cloud:
+    type: secret
+    value: {TKG7FZR3ZP7CNQYJ: R8FlgX8xKpgpNVcjo3jUK9DQIMkwqH7AQqVvGLo2GYJz+ET59AxZdBKrIOz3yVtoVRbQhWHSBdmqu/utB20ExWLG5S1nLzDXvx+dAM79HMDxUKzlSpN3veD0y3P5IV0zO2PP+mu9f69+gjmP8K/pCm09i5bz6aGKZaQ7aRebqI2mugfbzeS153LW3XZKOCo=}
   pass_word:
     type: secret
     value: {TKG7FZR3ZP7CNQYJ: HZIjCPKNIJ9LYe166OxhDDHWooDxmgOlbYNAGfnJNL7d6FL8uaYdR97kcogkYpTSN5lavbt/H+uAqdDEPtQZgjShgqby6CRj1bMWxV2NqxmmBd4bug8wu9SfAxl5TrYtV4rY}
-  up_link:
-    type: secret
-    value: {TKG7FZR3ZP7CNQYJ: 8jzypjwa9SkWE2hjaqdmjvE+stTC2ZeWBoFL1iln4Unq7pQ8KOIjfrtkwEKpsEjqSfWLL2AeRYXLwv85EwYbtBN5EbTP7d7M/A2r+pczjF1rkfWtYycF77THzf5rfwruUVAj9ycKoBDQFkLPoXPxJFeYgeALe6Y+byIDfmm7oy2XHh2ArTSSZJQBp/8Scj4=}
 services:
 - client_config: {enable_v2: true}
   server_config: {}

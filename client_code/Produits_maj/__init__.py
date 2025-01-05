@@ -94,20 +94,29 @@ class Produits_maj(Produits_majTemplate):
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
         import anvil.server # connexion à Anvil cloud
-        anvil.server.connect("server_X4KQFEN7FOJZABUTXN2Q4YTJ-TKG7FZR3ZP7CNQYJ")
-        rows = app_tables.produits.search()
-        anvil.server.disconnect() # déconnexion d'Anvil cloud
-        nb_rows = len(rows)
-        print(nb_rows)
-        for row in rows:
-            anvil.server.call('add',
-                            row["code"],
-                            row["prestation"],
-                            row["visible"],
-                            row["tarif_1_jour"],
-                            row["tarif_1demi_jour"]
-                            )
-        self.affichage()
+        # import anvil.secrets
+        
+        # connection à anvil_app
+        # key=anvil.secrets.get_secret("key_cloud")
+        key = "client_KCCEXOEVIQUVDV4DWLFQPUCY-TKG7FZR3ZP7CNQYJ"
+        alert(key)
+        anvil.server.connect(key)
+        try:
+            rows=app_tables.temp.search()
+            anvil.server.disconnect() # déconnexion d'Anvil cloud
+            nb_rows = len(rows)
+            alert(nb_rows)
+            result = anvil.server.call('update_after_uplink', rows)
+            if result:
+                alert("Table mise à jour")
+            else:
+                alert("Table NON mise à jour")
+            self.affichage()
+        except:
+            alert("Table temp non lue")
+        
+        
+        
 
 
 
