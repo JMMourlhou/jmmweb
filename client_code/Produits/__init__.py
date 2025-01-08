@@ -15,36 +15,36 @@ class Produits(ProduitsTemplate):
         self.timer = 1
         global dico_prestation
         dico_prestation = app_tables.produits.search(tables.order_by("code", ascending=True))    # tte la table produits lue
-
-        # Prestation 1
-        if dico_prestation[0]['visible'] is True:
-            self.button_1.text = dico_prestation[0]['prestation']
-        else:
-            self.button_1.visible = False
+        if len(dico_prestation)>0:
+            # Prestation 1
+            if dico_prestation[0]['visible'] is True:
+                self.button_1.text = dico_prestation[0]['prestation']
+            else:
+                self.button_1.visible = False
+                
+            # Prestation 2
+            if dico_prestation[1]['visible'] is True:
+                self.button_2.text = dico_prestation[1]['prestation']
+            else:
+                self.button_2.visible = False
             
-        # Prestation 2
-        if dico_prestation[1]['visible'] is True:
-            self.button_2.text = dico_prestation[1]['prestation']
-        else:
-            self.button_2.visible = False
-        
-        # Prestation 3            
-        if dico_prestation[2]['visible'] is True:
-            self.button_3.text = dico_prestation[2]['prestation']
-        else:
-            self.button_3.visible = False
-
-        # Prestation 4
-        if dico_prestation[3]['visible'] is True:
-            self.button_4.text = dico_prestation[3]['prestation']
-        else:
-            self.button_4.visible = False
-
-        # Prestation 5
-        if dico_prestation[4]['visible'] is True:
-            self.button_5.text = dico_prestation[4]['prestation']
-        else:
-            self.button_5.visible = False
+            # Prestation 3            
+            if dico_prestation[2]['visible'] is True:
+                self.button_3.text = dico_prestation[2]['prestation']
+            else:
+                self.button_3.visible = False
+    
+            # Prestation 4
+            if dico_prestation[3]['visible'] is True:
+                self.button_4.text = dico_prestation[3]['prestation']
+            else:
+                self.button_4.visible = False
+    
+            # Prestation 5
+            if dico_prestation[4]['visible'] is True:
+                self.button_5.text = dico_prestation[4]['prestation']
+            else:
+                self.button_5.visible = False
  
     
     def affiche_prix(self, condition):
