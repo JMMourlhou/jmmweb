@@ -93,17 +93,11 @@ class Produits_maj(Produits_majTemplate):
 
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
-        # import anvil.server # connexion à Anvil cloud
-        # import anvil.secrets
-        
-        # connection à anvil_app
-        # key=anvil.secrets.get_secret("key_cloud")
-        key = "client_KCCEXOEVIQUVDV4DWLFQPUCY-TKG7FZR3ZP7CNQYJ"
-        alert(key)
-        anvil.server.connect(key)
+        import sys
+        sys.path.append('/home/jmm/scripts/scripts_python/up_link.py')
+        from up_link import rows
         try:
             rows=app_tables.temp.search()
-            anvil.server.disconnect() # déconnexion d'Anvil cloud
             nb_rows = len(rows)
             alert(nb_rows)
             result = anvil.server.call('update_after_uplink', rows)
