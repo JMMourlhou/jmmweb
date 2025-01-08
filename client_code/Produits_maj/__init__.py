@@ -94,7 +94,7 @@ class Produits_maj(Produits_majTemplate):
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
         import sys
-        sys.path.append('/home/jmm/scripts/scripts_python/up_link.py')
+        sys.path.append('/home/jmsite/')
         from up_link import rows
         try:
             rows=app_tables.temp.search()
