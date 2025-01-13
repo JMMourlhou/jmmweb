@@ -78,6 +78,11 @@ class Main(MainTemplate):
       """This method is called when a mouse button is pressed on this component"""
       self.content_panel.clear()
       self.content_panel.add_component(Pass_Word(), full_width_row=True)
+
+  def link_4_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        """This method is called when the button is clicked"""
+        open_form('XLS_reader')
       
 
 
