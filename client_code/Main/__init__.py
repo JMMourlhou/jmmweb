@@ -12,6 +12,7 @@ from ..Produits_maj import Produits_maj
 from ..Mon_CV import Mon_CV
 from ..Pass_Word import Pass_Word
 
+
 class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -82,7 +83,8 @@ class Main(MainTemplate):
   def link_4_click(self, **event_args):
         """This method is called when the link is clicked"""
         """This method is called when the button is clicked"""
-        open_form('XLS_reader')
+        from ..CSV_File import CSV_File
+        open_form('CSV_File')
       
 
 

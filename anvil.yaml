@@ -26,13 +26,13 @@ db_schema:
   files:
     client: none
     columns:
-    - admin_ui: {order: 0, width: 200}
+    - admin_ui: {order: 0, width: 156}
       name: path
       type: string
     - admin_ui: {order: 1, width: 200}
       name: file
       type: media
-    - admin_ui: {order: 2, width: 200}
+    - admin_ui: {order: 2, width: 267}
       name: file_version
       type: string
     server: full
@@ -80,8 +80,8 @@ package_name: JMM_Formation
 renamed: true
 runtime_options:
   client_version: '3'
-  server_spec: {base: python310-standard}
-  server_spec_disabled: {base: python310-minimal, requirements: ''}
+  server_spec: null
+  server_spec_disabled: {base: python310-standard, requirements: ''}
   server_version: python3-full
   version: 2
 secrets:
