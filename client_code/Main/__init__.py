@@ -84,9 +84,10 @@ class Main(MainTemplate):
         """This method is called when the link is clicked"""
         """This method is called when the button is clicked"""
         from ..CSV_File import CSV_File
-        open_form('CSV_File')
+        #open_form('CSV_File')
       
-
+        self.content_panel.clear()
+        self.content_panel.add_component(CSV_File(), full_width_row=True)
 
  
 

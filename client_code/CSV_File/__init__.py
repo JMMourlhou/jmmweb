@@ -18,3 +18,5 @@ class CSV_File(CSV_FileTemplate):
         verif, nb = anvil.server.call('csv_file_reader', file)
         msg = f"{verif}, {nb} lignes écrites"
         alert(msg)
+
+    
