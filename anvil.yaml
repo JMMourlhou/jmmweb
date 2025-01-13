@@ -1,7 +1,7 @@
 allow_embedding: false
 db_schema:
   contact:
-    client: none
+    client: search
     columns:
     - admin_ui: {width: 200}
       name: name
@@ -24,7 +24,7 @@ db_schema:
     server: full
     title: Contact
   files:
-    client: none
+    client: search
     columns:
     - admin_ui: {order: 0, width: 156}
       name: path
@@ -37,21 +37,6 @@ db_schema:
       type: string
     server: full
     title: Files
-  images:
-    client: none
-    columns:
-    - admin_ui: {order: 0, width: 200}
-      name: presta
-      target: produits
-      type: link_multiple
-    - admin_ui: {order: 2, width: 200}
-      name: commentaire
-      type: string
-    - admin_ui: {order: 2, width: 200}
-      name: lien
-      type: media
-    server: full
-    title: Images
   produits:
     client: search
     columns:

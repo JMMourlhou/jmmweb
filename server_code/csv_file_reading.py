@@ -54,7 +54,7 @@ def csv_file_reader(csv_file):
                                         prestation=col2,         # prestation   tesxt
                                         visible=col3,            # visible ? True, false
                                         tarif_1_jour=col4,       # text
-                                        tarif_1demi_jour=col5    # text
+                                        tarif_1demi_jour=col5.strip('"')    # text
                                         )
         
         
