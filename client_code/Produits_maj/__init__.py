@@ -93,8 +93,9 @@ class Produits_maj(Produits_majTemplate):
 
     def button_up_link_click(self, **event_args):
         """This method is called when the button is clicked"""
+        """
         import sys
-        sys.path.append('/home/jmsite/')
+        sys.path.append('/home/jmm/jmsite/')
         from up_link import rows
         try:
             rows=app_tables.temp.search()
@@ -108,7 +109,7 @@ class Produits_maj(Produits_majTemplate):
             self.affichage()
         except:
             alert("Table temp non lue")
-        
+        """
         
         
 
