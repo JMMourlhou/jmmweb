@@ -35,6 +35,9 @@ db_schema:
     - admin_ui: {order: 2, width: 267}
       name: file_version
       type: string
+    - admin_ui: {order: 3, width: 200}
+      name: simple_o
+      type: simpleObject
     server: full
     title: Files
   produits:
